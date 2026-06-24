@@ -385,19 +385,38 @@ function say(text, rate){
     speechSynthesis.speak(u);
   });
 }
-let singleSpeaking=false;
+let singleSpeaking=false, _gymAudio=null, _abortCtrl=null;
 const note=document.getElementById('note');
+async function elevenSay(text,charId){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();}
+  _abortCtrl=new AbortController();
+  let resp;
+  try{
+    resp=await fetch('/.netlify/functions/gym-tts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({characterId:charId,text}),signal:_abortCtrl.signal});
+  }catch(e){return;}
+  if(!resp.ok)return;
+  const blob=await resp.blob();
+  const url=URL.createObjectURL(blob);
+  _gymAudio=new Audio(url);
+  return new Promise(res=>{
+    _gymAudio.onended=()=>{URL.revokeObjectURL(url);_gymAudio=null;res();};
+    _gymAudio.onerror=()=>{URL.revokeObjectURL(url);_gymAudio=null;res();};
+    _gymAudio.play().catch(res);
+  });
+}
 async function speakSingle(){
-  if(!('speechSynthesis' in window)){note.textContent='Your browser will not read aloud, but the cues are right there. Read them like a coach.';return;}
   stopSpeak(); singleSpeaking=true;
-  document.getElementById('speak').textContent='⏸ Reading...';
-  note.textContent='Coach is talking. Move with the cues and do not rush the lowering.';
+  document.getElementById('speak').textContent='⏸ Loading...';
+  note.textContent='Coach is loading. One sec.';
   const m=DB[partSel.value][+moveSel.value];
   const lines=[m.name+'. Let us go.'].concat(m.script);
-  for(const line of lines){ if(!singleSpeaking)return; await say(line+' ... '); }
-  stopSpeak(); note.textContent='Nice. Run it again, or pick the next move.';
+  await elevenSay(lines.join(' ... '),'trainer');
+  if(singleSpeaking){stopSpeak();note.textContent='Nice. Run it again, or pick the next move.';}
 }
 function stopSpeak(){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();_abortCtrl=null;}
   if('speechSynthesis' in window)speechSynthesis.cancel();
   singleSpeaking=false;
   const b=document.getElementById('speak'); if(b)b.innerHTML='&#9654;&nbsp; Coach, talk me through it';

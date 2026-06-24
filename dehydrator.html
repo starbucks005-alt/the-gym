@@ -331,39 +331,44 @@ function renderFood(){
 catSel.addEventListener('change',fillFoods);
 foodSel.addEventListener('change',renderFood);
 
-function pickVoice(){
-  const vs=window.speechSynthesis?speechSynthesis.getVoices():[];
-  return vs.find(v=>/en(-|_)?(US|GB)/i.test(v.lang))||null;
-}
-function say(text){
+let speaking=false, _gymAudio=null, _abortCtrl=null;
+const note=document.getElementById('note');
+async function elevenSay(text,charId){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();}
+  _abortCtrl=new AbortController();
+  let resp;
+  try{
+    resp=await fetch('/.netlify/functions/gym-tts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({characterId:charId,text}),signal:_abortCtrl.signal});
+  }catch(e){return;}
+  if(!resp.ok)return;
+  const blob=await resp.blob();
+  const url=URL.createObjectURL(blob);
+  _gymAudio=new Audio(url);
   return new Promise(res=>{
-    if(!('speechSynthesis' in window)){res();return;}
-    const u=new SpeechSynthesisUtterance(text);
-    const v=pickVoice(); if(v)u.voice=v;
-    u.rate=0.97; u.onend=res; u.onerror=res;
-    speechSynthesis.speak(u);
+    _gymAudio.onended=()=>{URL.revokeObjectURL(url);_gymAudio=null;res();};
+    _gymAudio.onerror=()=>{URL.revokeObjectURL(url);_gymAudio=null;res();};
+    _gymAudio.play().catch(res);
   });
 }
-let speaking=false;
-const note=document.getElementById('note');
 async function speakSteps(){
-  if(!('speechSynthesis' in window)){note.textContent='Your browser will not read aloud, but the steps are right there.';return;}
   stopSpeak(); speaking=true;
-  document.getElementById('speak').textContent='⏸ Reading...';
-  note.textContent='Reading the prep. Get your trays ready.';
+  document.getElementById('speak').textContent='⏸ Loading...';
+  note.textContent='Loading Reece...';
   const f=DB[catSel.value][+foodSel.value];
   const lines=[f.name+'. Dry at '+f.temp+'.'].concat(f.script).concat([f.doneness]);
-  for(const line of lines){ if(!speaking)return; await say(line+' ... '); }
-  stopSpeak(); note.textContent='That is the prep. The rest is patience.';
+  await elevenSay(lines.join(' ... '),'movement');
+  if(speaking){stopSpeak();note.textContent='That is the prep. The rest is patience.';}
 }
 function stopSpeak(){
-  if('speechSynthesis' in window)speechSynthesis.cancel();
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();_abortCtrl=null;}
   speaking=false;
   const b=document.getElementById('speak'); if(b)b.innerHTML='&#9654;&nbsp; Read me the steps';
 }
 document.getElementById('speak').addEventListener('click',speakSteps);
 document.getElementById('stop').addEventListener('click',()=>{stopSpeak();note.textContent='Stopped.';});
-window.addEventListener('beforeunload',stopSpeak);
+window.addEventListener('beforeunload',()=>stopSpeak());
 
 fillFoods();
 if('speechSynthesis' in window){ speechSynthesis.onvoiceschanged=()=>{}; }
