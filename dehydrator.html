@@ -93,6 +93,7 @@
   .crew li{font-size:.92rem;color:var(--ink);}
   .crew li b{color:var(--accent-dk);}
   .crew .bp{font-size:.68rem;background:#d8f0e2;color:#1f7a45;padding:.08rem .45rem;border-radius:999px;margin-left:.3rem;white-space:nowrap;}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
 </style>
 </head>
 <body>
@@ -139,7 +140,10 @@
   </div>
 
     <div class="castcard">
-    <div class="cc-photo"><span class="cc-mono">RA</span></div>
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Reece_eyes_open.png" alt="Reece Ashford" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Reece_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.4s infinite;">
+    </div>
     <div class="cc-body">
       <h3 class="cc-nm">Reece Ashford</h3>
       <div class="cc-role">Movement / PT Intern &middot; Your host</div>

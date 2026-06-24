@@ -96,6 +96,7 @@
   .cc-emp{background:#eef0f2;color:#5a6a78;}
   .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
   .cc-hire:hover{background:#000;}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
 </style>
 </head>
 <body>
@@ -149,7 +150,11 @@
     </div>
   </div>
     <div class="castcard">
-    <div class="cc-photo"><span class="cc-mono">DC</span><span class="cc-mcp">&#127890; MCP</span></div>
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Coach_Dom_Eyes_open.png" alt="Coach Dom Castellanos" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Coach_Dom_Eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.4s infinite;">
+      <span class="cc-mcp" style="position:absolute;top:.5rem;right:.5rem;z-index:2;">&#127890; MCP</span>
+    </div>
     <div class="cc-body">
       <h3 class="cc-nm">Coach Dom Castellanos</h3>
       <div class="cc-role">Strength &amp; Conditioning Coach (CSCS)</div>
