@@ -1,0 +1,6 @@
+# The Gym, https://the-gym.net
+
+User-agent: *
+Allow: /
+
+Sitemap: https://the-gym.net/sitemap.xml
