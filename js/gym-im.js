@@ -28,7 +28,7 @@ export const CAST = {
   },
   recovery: {
     name: 'Dr. Sana Qureshi', short: 'Dr. Sana', role: 'Sleep & Recovery',
-    chat: 'recovery', voice: null, color: '#2f8f7f',
+    chat: 'recovery', voice: 'recovery', color: '#2f8f7f',
     img: '/assets/Sana_eyes_open.png', page: '/sleep-lab.html',
     lane: 'sleep, HRV, deloads, and the gains that happen while you rest',
   },

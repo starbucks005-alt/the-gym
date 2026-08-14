@@ -91,14 +91,16 @@ const VOICES = {
     },
   },
 
-  // Dr. Sana Qureshi — recovery specialist. Voice TBD; stub until cast.
+  // Dr. Sana Qureshi, PhD — sleep and recovery physiologist. Measured, warm,
+  // citation-ready. High stability for the even, evidence-first read; low
+  // style because she is never smug. Multilingual to hold the accent.
   recovery: {
-    voiceId: null,
-    model: MODEL_DEFAULT,
+    voiceId: "F9yCRElGuNvX7A2kGbWz",
+    model: MODEL_MULTILINGUAL,
     settings: {
-      stability: 0.60,
-      similarity_boost: 0.80,
-      style: 0.15,
+      stability: 0.70,
+      similarity_boost: 0.85,
+      style: 0.12,
       use_speaker_boost: false,
     },
   },
