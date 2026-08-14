@@ -12,6 +12,7 @@
 // - Topics rotate: training, recovery, team dynamics, life outside.
 //
 // Keys map to cast roles:
+//   director   = Stephen Thomas (General Manager & Wellness Director)
 //   coach      = Coach Dom Castellanos (CSCS)
 //   therapist  = Dr. Lena Brandt, DPT
 //   breathwork = Noor Haddad (RYT-500)
@@ -24,6 +25,52 @@
 //   stoplight  = Eli Adler (Myth-Check Stoplight, cross from The Dose)
 
 export const PERSONAL_NOTES = {
+
+  // ─────────────────────────────────────────────────────────────────────
+  // Stephen Thomas. General Manager and Wellness Director, and the newest
+  // person on the floor. Came up through operations, not coaching. Warm,
+  // question-first, allergic to salesmen. Outnumbered at home four to one
+  // by his wife, two preschool daughters, and the puppy, and delighted
+  // about it.
+  // ─────────────────────────────────────────────────────────────────────
+  director: [
+    {
+      date: "2026-08-12",
+      body: "Six weeks in. I have stopped trying to be useful on the floor and started doing the job I was actually hired for, which is standing near the door and asking better questions. A woman told me today she wanted to lose twenty pounds. I asked what made today the day. She said she could not carry her son up the stairs on Sunday. Those are not the same goal. The second one we can build something around.",
+    },
+    {
+      date: "2026-08-05",
+      body: "My youngest informed me at dinner that I am not the boss of the house. My oldest agreed. My wife did not look up from her plate, which I took as a third vote. Even the puppy has more standing than I do. Four girls and a dog and I am somewhere below the dog. I would not change one thing about it. Honestly, it is good practice for work. You cannot walk into a room full of experts needing to be the smartest one, and I get that ego sanded off me nightly by a four-year-old.",
+    },
+    {
+      date: "2026-07-29",
+      body: "Dom called me boss again today, and this time he meant it. I backed him on a member complaint that I could have made go away by agreeing with the member. The member was wrong and Dom was right and it cost us a membership. I would do it again. If I overrule my coach to keep a customer happy, I do not have a gym, I have a shop.",
+    },
+    {
+      date: "2026-07-22",
+      body: "The girls have decided that Everly Castle is the greatest thing at ETL You and possibly the world. I have heard about it every evening for eleven days. I have opinions about it now. I have theories. My wife caught me asking a follow-up question about it unprompted and has not let it go since.",
+    },
+    {
+      date: "2026-07-15",
+      body: "I keep a note on my desk of what every member said they came in for, in their own words. Not the goal they wrote on the form. The thing they said out loud when they were not being careful. Reece asked me why. Because in four months they will be discouraged, and I will read their own sentence back to them, and it lands in a way that nothing I could say ever would.",
+    },
+    {
+      date: "2026-07-08",
+      body: "Told the staff my shoulder story this week. Thirty-one, ten years out of the field, decided to get back in shape, followed the loudest advice I could find and tore something that took a licensed physical therapist eleven months to undo. I have a kinesiology degree. I had studied the exact tissue I tore. Knowing the material did not save me, because knowing the material is not the same as having somebody who knows you. Lena did not say anything when I finished. She just nodded once. That is the whole reason this floor is built the way it is.",
+    },
+    {
+      date: "2026-07-01",
+      body: "Saturday morning with the young men again. One of them asked me why I keep showing up when I am not getting paid and I am not their father. I told him that is exactly the reason. They do not need me to be their dad. They need to watch a grown man be on time, keep his word, be gentle with his wife and his girls, and say I do not know out loud when he does not know. Not so they have somebody to look up to. So they can be that for somebody else. The chain is the point. I am just one link and not the important one.",
+    },
+    {
+      date: "2026-06-24",
+      body: "Six months in Dayton. We did not move here for a job. My wife's parents are getting older and needed family closer, and we decided it at the kitchen table in about twenty minutes. The job came after. People keep telling me that was a big sacrifice for my career. It was a Tuesday, and it was not close.",
+    },
+    {
+      date: "2026-06-17",
+      body: "The MBA is the part people find funny sitting next to the kinesiology. I understand it. But the reason this place has no sales floor is not that I am noble, it is that I can read the model and I know exactly how much money is in the contract people forget to cancel. You cannot refuse to build something if you never learned how it gets built.",
+    },
+  ],
 
   // ─────────────────────────────────────────────────────────────────────
   // Coach Dom Castellanos. Mexican-American. CSCS. Former linebacker

@@ -4,11 +4,66 @@
 // Every claim the staff have run through The Gym Stoplight, scraped from the
 // myth checks written into each page so the index cannot drift from the source.
 //
-// 155 claims: 30 green, 71 amber, 54 red.
+// 160 claims: 30 green, 74 amber, 56 red.
 
 export const STOPLIGHT = [
  {
   "id": 1,
+  "verdict": "red",
+  "claim": "\"The free assessment is a free assessment.\"",
+  "truth": "At most commercial gyms it is a sales appointment with a tape measure. The structure gives it away: it is booked by someone on commission, it ends in a private room, and the findings always imply a package. A genuine assessment is performed by a licensed clinician, produces a written plan you can take elsewhere, and does not conclude with a price. There is nothing wrong with a gym selling training. There is something wrong with calling the sale an assessment.",
+  "source": "FTC guidance on deceptive advertising and negative-option marketing; state health-club contract statutes",
+  "page": "Start Here",
+  "href": "/start-here.html",
+  "host": "Stephen Thomas",
+  "topic": "The industry"
+ },
+ {
+  "id": 2,
+  "verdict": "amber",
+  "claim": "\"The body composition scan tells you your body fat percentage.\"",
+  "truth": "It gives you a number, and the number is less precise than it looks. Bioelectrical impedance, the method in most gym scales and handhelds, estimates body fat by passing a current through you, and the reading moves with hydration, food, exercise and time of day, with errors commonly several percentage points. It is genuinely useful as a trend measured the same way each time. It is not useful as a single number, and it should never be the emotional centre of your week.",
+  "source": "PubMed validation studies of bioelectrical impedance analysis against DXA",
+  "page": "Start Here",
+  "href": "/start-here.html",
+  "host": "Stephen Thomas",
+  "topic": "The industry"
+ },
+ {
+  "id": 3,
+  "verdict": "amber",
+  "claim": "\"You have to sign up for a year to get the good rate.\"",
+  "truth": "It depends what you are buying, and the discount is real because the risk transfer is real: they are betting you will stop attending and keep paying, and the industry data says that bet is a good one. Two things worth knowing before you sign anything. Many US states give you a statutory cooling-off period to cancel a health club contract, often three days, regardless of what the contract says. And cancellation terms, not the monthly price, are where the money actually is.",
+  "source": "State health-club contract and cooling-off statutes; FTC on negative-option billing",
+  "page": "Start Here",
+  "href": "/start-here.html",
+  "host": "Stephen Thomas",
+  "topic": "The industry"
+ },
+ {
+  "id": 4,
+  "verdict": "red",
+  "claim": "\"I should get in shape before I join a gym.\"",
+  "truth": "This is the single most common reason people never start, and it is exactly backwards. There is no fitness threshold for beginning, and the people best served by structured guidance are the ones who have never had any. Stephen's version: he was thirty-one, had never trained, waited until he felt ready, then followed the loudest advice he could find and hurt himself. Waiting did not protect him. Getting the right person did.",
+  "source": "ACSM guidance on exercise initiation; Physical Activity Guidelines for Americans",
+  "page": "Start Here",
+  "href": "/start-here.html",
+  "host": "Stephen Thomas",
+  "topic": "The industry"
+ },
+ {
+  "id": 5,
+  "verdict": "amber",
+  "claim": "\"A personal trainer is a qualified professional.\"",
+  "truth": "It depends entirely on the certification, and the range is enormous. Reputable credentials such as NSCA, ACSM or NASM require an accredited exam and continuing education. Others can be completed in a weekend online. No US state licenses personal trainers the way it licenses physical therapists, so the title itself guarantees nothing. Ask which certification, ask whether it is NCCA-accredited, and know that a trainer is not qualified to diagnose pain, prescribe rehab, or give you a meal plan in most states.",
+  "source": "NCCA accreditation standards; state scope-of-practice rules for PT and dietetics",
+  "page": "Start Here",
+  "href": "/start-here.html",
+  "host": "Stephen Thomas",
+  "topic": "The industry"
+ },
+ {
+  "id": 6,
   "verdict": "amber",
   "claim": "\"Curls give you a peak if you hit enough angles.\"",
   "truth": "Your biceps peak is mostly genetics. Training builds the muscle bigger, but the shape is the one your parents handed you.",
@@ -19,7 +74,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 2,
+  "id": 7,
   "verdict": "green",
   "claim": "\"Grip and forearm work carries over to my other lifts.\"",
   "truth": "True. Grip is a real limiter on rows, deadlifts, and carries, and it tracks with overall strength.",
@@ -30,7 +85,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 3,
+  "id": 8,
   "verdict": "green",
   "claim": "\"Thinking about the muscle actually does something.\"",
   "truth": "For smaller isolation moves, focusing on the working muscle can increase its activation and growth a touch. Mind-muscle connection is real here.",
@@ -41,7 +96,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 4,
+  "id": 9,
   "verdict": "red",
   "claim": "\"Kickbacks are the best move for bigger arms.\"",
   "truth": "Two thirds of your upper arm is triceps, but kickbacks load it in its weakest position. Overhead extensions train it where it grows.",
@@ -52,7 +107,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 5,
+  "id": 10,
   "verdict": "amber",
   "claim": "\"Dips wreck your shoulders, avoid them.\"",
   "truth": "Fine for most people if you do not drop too deep and keep the shoulders packed down. Cranky shoulder? Limit depth. It depends on your joint.",
@@ -63,7 +118,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 6,
+  "id": 11,
   "verdict": "amber",
   "claim": "\"Push-ups can't build real muscle, only the bench can.\"",
   "truth": "For beginners and intermediates, hard push-ups build the chest and triceps well. Once they get easy you add load or elevation. It depends on how challenging you make them.",
@@ -74,7 +129,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 7,
+  "id": 12,
   "verdict": "green",
   "claim": "\"Wide shoulders make my waist look smaller.\"",
   "truth": "True, and it is just geometry. Building side delts widens your frame and improves the shoulder to waist ratio with zero change to your waist.",
@@ -85,7 +140,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 8,
+  "id": 13,
   "verdict": "red",
   "claim": "\"Overhead pressing is bad for your shoulders.\"",
   "truth": "For a healthy shoulder, pressing overhead is normal and useful. Avoiding it leaves you weaker in a range you use daily. Build up slowly.",
@@ -96,7 +151,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 9,
+  "id": 14,
   "verdict": "amber",
   "claim": "\"I need direct front delt work to build my shoulders.\"",
   "truth": "Your front delts already get hammered by every press and push-up. A little direct work is fine, but it is often the least necessary. It depends on your pressing volume.",
@@ -107,7 +162,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 10,
+  "id": 15,
   "verdict": "red",
   "claim": "\"Rear delts are tiny and not worth training.\"",
   "truth": "Rear delts balance out all your pressing, support your posture, and round out the shoulder. Skipping them is how you end up hunched and front-heavy.",
@@ -118,7 +173,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 11,
+  "id": 16,
   "verdict": "amber",
   "claim": "\"Face pulls fix your posture.\"",
   "truth": "They help strengthen the muscles that hold you upright, but posture is also about how much you move and sit. One exercise is a piece, not a cure. It depends on the whole day.",
@@ -129,7 +184,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 12,
+  "id": 17,
   "verdict": "amber",
   "claim": "\"Rows round your back and are dangerous.\"",
   "truth": "A braced, flat-back row is safe and one of the best back builders. The risk is loading a rounded spine, not the row itself. It depends on your position.",
@@ -140,7 +195,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 13,
+  "id": 18,
   "verdict": "amber",
   "claim": "\"A lifting belt makes your core weak.\"",
   "truth": "Used on heavy sets, a belt can help you brace and lift more, and it does not weaken your core for most people. Wearing it for everything is unnecessary. It depends on the load.",
@@ -151,7 +206,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 14,
+  "id": 19,
   "verdict": "green",
   "claim": "\"You should actually train your lower back, not just protect it.\"",
   "truth": "The lower back is a muscle that gets stronger and more resilient when you train it through a comfortable range. Avoiding it entirely tends to leave it weaker.",
@@ -162,7 +217,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 15,
+  "id": 20,
   "verdict": "amber",
   "claim": "\"You can't build a back without pull-ups.\"",
   "truth": "Pull-ups are great, but rows build the back just as well. If a bar is not your friend yet, rows will get you there. It depends on what you have access to.",
@@ -173,7 +228,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 16,
+  "id": 21,
   "verdict": "red",
   "claim": "\"Push-ups are just for beginners.\"",
   "truth": "Elevate the feet, slow the tempo, or add a weighted pack and push-ups challenge anyone. Strength is about how hard the variation is, not the name.",
@@ -184,7 +239,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 17,
+  "id": 22,
   "verdict": "amber",
   "claim": "\"Incline push-ups carve the upper chest.\"",
   "truth": "Incline pressing does bias the upper chest somewhat, but you cannot sculpt one corner of a muscle in isolation. It is emphasis, not magic. It depends, modestly.",
@@ -195,7 +250,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 18,
+  "id": 23,
   "verdict": "red",
   "claim": "\"You must train chest to failure every set to grow.\"",
   "truth": "Stopping a rep or two short of failure builds nearly the same muscle with less fatigue and lower injury risk. Failure every set is not required.",
@@ -206,7 +261,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 19,
+  "id": 24,
   "verdict": "red",
   "claim": "\"Flys carve out the inner chest.\"",
   "truth": "There is no separate inner chest to isolate. The chest is one muscle that you build as a whole. Flys add a nice stretch, not a secret inner line.",
@@ -217,7 +272,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 20,
+  "id": 25,
   "verdict": "red",
   "claim": "\"Knees should never go past your toes.\"",
   "truth": "Knees traveling past the toes is normal and safe for healthy knees. You cannot climb stairs without it. Forcing knees back just shifts strain to your back.",
@@ -228,7 +283,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 21,
+  "id": 26,
   "verdict": "amber",
   "claim": "\"Deadlifts wreck your back.\"",
   "truth": "Hinging with a braced, flat spine is one of the best things for a healthy back. The risk comes from rounding under heavy load, not the movement. It depends on technique.",
@@ -239,7 +294,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 22,
+  "id": 27,
   "verdict": "amber",
   "claim": "\"Lifting weights makes women bulky.\"",
   "truth": "Building large muscle takes years, lots of food, and usually more testosterone than most women make. For nearly everyone, strength training builds tone, not bulk. It depends on training like a bodybuilder, which does not happen by accident.",
@@ -250,7 +305,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 23,
+  "id": 28,
   "verdict": "red",
   "claim": "\"You can burn the fat off your hips with the right move.\"",
   "truth": "Spot reduction is not real. You build the glute with bridges, and you lose fat overall through a deficit and time. Both, not either.",
@@ -261,7 +316,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 24,
+  "id": 29,
   "verdict": "amber",
   "claim": "\"Calves are pure genetics, training is pointless.\"",
   "truth": "Genetics set the ceiling and shape, but calves still grow with full-range work and enough volume. The people who call it hopeless usually trained them twice and quit.",
@@ -272,7 +327,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 25,
+  "id": 30,
   "verdict": "amber",
   "claim": "\"The longer the wall sit, the better.\"",
   "truth": "Wall sits build endurance and a mind-quad connection, but a marathon hold is not the goal. Strength comes from harder movement and load too. It depends on what you are training for.",
@@ -283,7 +338,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 26,
+  "id": 31,
   "verdict": "red",
   "claim": "\"Enough planks and crunches and you get a six pack.\"",
   "truth": "Everyone already has a six pack, it just sits under body fat. Core work thickens the muscle, but you see it by lowering body fat overall.",
@@ -294,7 +349,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 27,
+  "id": 32,
   "verdict": "green",
   "claim": "\"Anti-movement core work beats endless crunches for back health.\"",
   "truth": "For most people, dead bugs and planks build stability that supports the lower back with less strain than high-rep crunching. General guidance, not a fix for an existing injury.",
@@ -305,7 +360,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 28,
+  "id": 33,
   "verdict": "amber",
   "claim": "\"You need a daily ab routine for a strong core.\"",
   "truth": "Your core already works hard in squats, presses, rows, and carries. A little focused work helps, daily grind is not required. It depends on how much your big lifts challenge your trunk.",
@@ -316,7 +371,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 29,
+  "id": 34,
   "verdict": "red",
   "claim": "\"Oblique training shrinks your waist.\"",
   "truth": "Trained obliques can slightly thicken the waist, not shrink it. Waist size is mostly body fat and your skeletal structure, neither set by side planks.",
@@ -327,7 +382,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 30,
+  "id": 35,
   "verdict": "red",
   "claim": "\"Hollow holds flatten your stomach.\"",
   "truth": "They build serious core control, but a flat stomach is a body fat outcome, not a hold-this-pose outcome. Strong core, yes. Spot-flattened belly, no.",
@@ -338,7 +393,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 31,
+  "id": 36,
   "verdict": "amber",
   "claim": "\"Leg raises train a separate lower ab muscle.\"",
   "truth": "Your six pack is one sheet of muscle, the rectus abdominis. Leg raises can emphasize the lower region a bit, but there is no separate lower ab to isolate. It depends, modestly.",
@@ -349,7 +404,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 32,
+  "id": 37,
   "verdict": "green",
   "claim": "\"Short daily movement counts, even without a full session.\"",
   "truth": "True. Short bouts add up and improve health, and any movement beats none. The best workout is the one you will actually repeat.",
@@ -360,7 +415,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 33,
+  "id": 38,
   "verdict": "amber",
   "claim": "\"Static stretching before a workout prevents injury and boosts performance.\"",
   "truth": "Long static holds before training can dial down power for a bit and do not reliably prevent injury. A dynamic warm-up like this is the better pre-workout choice. It depends on timing.",
@@ -371,7 +426,7 @@ export const STOPLIGHT = [
   "topic": "Training"
  },
  {
-  "id": 34,
+  "id": 39,
   "verdict": "amber",
   "claim": "\"No-sugar-added dried mango is a low-sugar snack.\"",
   "truth": "No added sugar is true, but the fruit's own sugar concentrates as the water leaves, so dried mango is very sweet and easy to overeat. A few strips is a snack, the whole tray is dessert. It depends on portion.",
@@ -382,7 +437,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 35,
+  "id": 40,
   "verdict": "green",
   "claim": "\"Dried blueberries keep most of their antioxidants.\"",
   "truth": "Largely true. The anthocyanins, fiber, and minerals survive drying well. Some vitamin C is lost to heat and air, but they stay little concentrated antioxidant bombs.",
@@ -393,7 +448,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 36,
+  "id": 41,
   "verdict": "amber",
   "claim": "\"Dried fruit is a health food, eat all you want.\"",
   "truth": "It keeps fiber and minerals, but drying concentrates the sugar and calories and removes the water that fills you up. A handful is a snack, a bag is dessert. It depends on portion.",
@@ -404,7 +459,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 37,
+  "id": 42,
   "verdict": "amber",
   "claim": "\"Banana chips are a healthy snack.\"",
   "truth": "The crunchy banana chips in stores are usually fried in oil and sweetened. Your home-dried ones are far better, but still a concentrated sugar snack, not a free pass. It depends on how they were made.",
@@ -415,7 +470,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 38,
+  "id": 43,
   "verdict": "green",
   "claim": "\"Dried berries keep most of their fiber and minerals.\"",
   "truth": "True. Fiber, potassium, and many antioxidants survive drying well. Vitamin C does drop because it is heat and air sensitive, but the rest largely stays.",
@@ -426,7 +481,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 39,
+  "id": 44,
   "verdict": "amber",
   "claim": "\"Fruit roll-ups are basically just fruit.\"",
   "truth": "Homemade leather from pure fruit is mostly fruit, which is great. Many commercial roll-ups add sugar and concentrate, and either way it sticks to teeth, so it is a treat not a serving of produce. It depends on the ingredients.",
@@ -437,7 +492,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 40,
+  "id": 45,
   "verdict": "green",
   "claim": "\"Slow-dried tomatoes keep their lycopene, even concentrate it.\"",
   "truth": "True. Lycopene is heat-stable, and concentrating tomatoes makes it easier for your body to absorb. So her husband is getting a real antioxidant with his snack. The Italian seasoning is purely for joy.",
@@ -448,7 +503,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 41,
+  "id": 46,
   "verdict": "green",
   "claim": "\"Dried tomatoes keep their lycopene.\"",
   "truth": "True, and then some. Lycopene is heat stable, and concentrating tomatoes actually makes it easier for your body to absorb. One of the rare cases where processing helps.",
@@ -459,7 +514,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 42,
+  "id": 47,
   "verdict": "amber",
   "claim": "\"Dehydrating destroys all the nutrients.\"",
   "truth": "Minerals, fiber, and many phytonutrients stay put. The losses are mostly heat and light sensitive vitamins like C and some B and folate. So it is real but partial, not total. It depends on the nutrient.",
@@ -470,7 +525,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 43,
+  "id": 48,
   "verdict": "amber",
   "claim": "\"Kale chips are just as nutritious as raw kale.\"",
   "truth": "At low temps most of the minerals and fiber survive, so they are a solid snack. Some vitamin C is lost, and store versions can be oily and salty. Close to raw, not identical. It depends.",
@@ -481,7 +536,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 44,
+  "id": 49,
   "verdict": "green",
   "claim": "\"You can make real spice powder at home from dried peppers.\"",
   "truth": "True. Paprika, chili powder, and cayenne are literally dried, ground peppers. Homemade is fresher and additive-free.",
@@ -492,7 +547,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 45,
+  "id": 50,
   "verdict": "amber",
   "claim": "\"Dried herbs are just as flavorful as fresh.\"",
   "truth": "Drying concentrates some flavor but the bright volatile oils fade, so dried tastes different and you use about a third as much. Great for cooking, not identical to fresh. It depends on the herb.",
@@ -503,7 +558,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 46,
+  "id": 51,
   "verdict": "green",
   "claim": "\"Woody herbs dry better than soft ones.\"",
   "truth": "True. Low-moisture herbs like rosemary, thyme, and oregano dry fast and keep their flavor well, which is why they are the classics in the spice rack.",
@@ -514,7 +569,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 47,
+  "id": 52,
   "verdict": "amber",
   "claim": "\"Dried ginger tea cures colds.\"",
   "truth": "Ginger has decent evidence for easing nausea and is pleasant when you are sick, but it does not cure a cold or the flu. Comfort yes, cure no. It depends on what you are asking it to do.",
@@ -525,7 +580,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 48,
+  "id": 53,
   "verdict": "red",
   "claim": "\"Low and slow at 145°F makes safe jerky.\"",
   "truth": "Wrong, and it is the dangerous one. Drying temperatures alone do not reliably kill E. coli and Salmonella. USDA says the meat must reach 160°F, before or after drying. Skipping that has caused real illness.",
@@ -536,7 +591,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 49,
+  "id": 54,
   "verdict": "red",
   "claim": "\"Poultry jerky is fine at the same temp as beef.\"",
   "truth": "No. Poultry has to reach 165°F, a higher bar than beef's 160°F, because of Salmonella and Campylobacter. Treat chicken and turkey jerky with extra care.",
@@ -547,7 +602,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 50,
+  "id": 55,
   "verdict": "green",
   "claim": "\"You can make a jerky without the meat-safety risk.\"",
   "truth": "True. Tofu and mushroom jerky skip the raw-meat pathogen problem entirely, so the 160°F rule does not apply. Still store it clean and cool.",
@@ -558,7 +613,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 51,
+  "id": 56,
   "verdict": "red",
   "claim": "\"Keeping it under 118°F preserves living enzymes that help you digest.\"",
   "truth": "This is the central raw-food claim and it does not hold up. Plant enzymes are broken down by your stomach acid before they do anything, so the 'living enzyme' benefit is unsupported. Raw crackers can be delicious and healthy, just not for that reason.",
@@ -569,7 +624,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 52,
+  "id": 57,
   "verdict": "amber",
   "claim": "\"Raw food is always more nutritious than cooked.\"",
   "truth": "Sometimes, sometimes not. Raw keeps vitamin C and some enzymes-for-the-plant, but gentle heat actually increases absorbable lycopene and beta-carotene. The best diets mix both. It depends on the food and the nutrient.",
@@ -580,7 +635,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 53,
+  "id": 58,
   "verdict": "green",
   "claim": "\"Homemade fruit leather beats store fruit snacks.\"",
   "truth": "True when it is just fruit. No added sugar, no corn syrup, no dyes. It is still sticky and concentrated, so it is a treat, but a much cleaner one.",
@@ -591,7 +646,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 54,
+  "id": 59,
   "verdict": "green",
   "claim": "\"Dried citrus wheels are safe for tea and garnish.\"",
   "truth": "True. They are simple, safe, and pretty. Just know they are a flavor and garnish thing, not a vitamin C supplement, since drying drops the C.",
@@ -602,7 +657,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 55,
+  "id": 60,
   "verdict": "red",
   "claim": "\"You can dry any wild mushroom you find.\"",
   "truth": "No. Drying does not make a toxic mushroom safe, and some have heat-stable poisons. Only dry mushrooms a qualified source has positively identified as edible. When in doubt, do not. This is Silas the Forager's hard rule.",
@@ -613,7 +668,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 56,
+  "id": 61,
   "verdict": "red",
   "claim": "\"Garlic stored in oil on the counter is shelf-stable.\"",
   "truth": "Dangerously false. Garlic is low-acid, and sitting in oil at room temp creates the oxygen-free, low-acid conditions Clostridium botulinum loves. Keep garlic-in-oil refrigerated and brief, or keep garlic dry as powder.",
@@ -624,7 +679,7 @@ export const STOPLIGHT = [
   "topic": "Food & drying"
  },
  {
-  "id": 57,
+  "id": 62,
   "verdict": "red",
   "claim": "\"You have thirty minutes after training to get protein in or you wasted the session.\"",
   "truth": "This is the anabolic window and it is much wider than thirty minutes, likely several hours on either side of the session. What actually drives the result is total daily protein, roughly 1.6 g per kg of bodyweight for most lifters, spread across the day. Drink it when it is convenient. Convenient is why Zara has one right there.",
@@ -635,7 +690,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 58,
+  "id": 63,
   "verdict": "green",
   "claim": "\"Chocolate milk is a legitimate recovery drink.\"",
   "truth": "True, and it is one of the rare cases where the internet is right. It lands close to the carbohydrate-to-protein ratio studied for post-endurance recovery, it replaces fluid and sodium, and it costs a fraction of a marketed recovery powder. It is not magic, it is just a well-shaped mix that was already in the cooler.",
@@ -646,7 +701,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 59,
+  "id": 64,
   "verdict": "amber",
   "claim": "\"Plant protein cannot build muscle the way whey does.\"",
   "truth": "It depends on the dose and the blend. Gram for gram, most single-source plant proteins carry less leucine, the amino acid that triggers the muscle-building signal, so an equal scoop does slightly less. Fix it by taking a modestly larger serving or using a blend such as pea plus rice, and the outcomes close up in the research. Soy holds up especially well on its own.",
@@ -663,7 +718,7 @@ export const STOPLIGHT = [
   ]
  },
  {
-  "id": 60,
+  "id": 65,
   "verdict": "red",
   "claim": "\"You need a pre-workout powder to train hard.\"",
   "truth": "No. In nearly every pre-workout on the shelf, the ingredient carrying the effect is caffeine, at roughly 3 to 6 mg per kg of bodyweight. Coffee delivers that for pennies with a dose you can actually read. Some other ingredients, notably creatine and beta-alanine, do have evidence, but they work from taking them daily, not from taking them thirty minutes before you lift. The tingle is beta-alanine, and the tingle is not the benefit.",
@@ -674,7 +729,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 61,
+  "id": 66,
   "verdict": "amber",
   "claim": "\"Beet juice makes you faster.\"",
   "truth": "It depends on who you are and what you are doing. Dietary nitrate does have a real mechanism and shows small but genuine benefits for endurance efforts, mostly in recreational and moderately trained people, at meaningful doses taken two to three hours out. In highly trained athletes the effect shrinks or disappears. It is a couple of percent at best, not a gear change, and it does nothing measurable for lifting.",
@@ -685,7 +740,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 62,
+  "id": 67,
   "verdict": "amber",
   "claim": "\"Tart cherry juice fixes soreness and fixes your sleep.\"",
   "truth": "It depends on what you expected. There is real, repeated evidence for modest reductions in muscle soreness and small improvements in sleep duration, likely from the anthocyanins and a little natural melatonin. Modest is the operative word: it takes several days of consistent intake, and the effect is a nudge, not a fix. Sleeping eight hours beats every drink on this page, and Dr. Sana would like that in bold.",
@@ -696,7 +751,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 63,
+  "id": 68,
   "verdict": "red",
   "claim": "\"Turmeric is a natural anti-inflammatory as strong as ibuprofen.\"",
   "truth": "Not supported. Curcumin does have measurable anti-inflammatory activity in a lab, but it is poorly absorbed by the human gut, which is why black pepper gets recommended alongside it. Clinical results in people are inconsistent and far weaker than the claim, and the trials showing the most benefit used concentrated extracts at doses you cannot reach with a teaspoon in a smoothie. It is a lovely spice with some promise, not a drug replacement. If you take blood thinners, ask a pharmacist before you take extracts.",
@@ -707,7 +762,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 64,
+  "id": 69,
   "verdict": "red",
   "claim": "\"Blending destroys the fiber, so a smoothie is no better than juice.\"",
   "truth": "Wrong, and this is the one Zara corrects most. Juicing removes the pulp and with it most of the fiber. Blending keeps every bit of it, just in smaller pieces. Breaking the fiber down does speed how fast the sugars hit compared with chewing a whole apple, which is a real and much smaller point, but the fiber is still in the cup and still doing its job. A smoothie and a juice are not the same drink.",
@@ -718,7 +773,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 65,
+  "id": 70,
   "verdict": "amber",
   "claim": "\"A smoothie is never as filling as real food, so it cannot be a meal.\"",
   "truth": "It depends entirely on what you put in it. Liquid calories do tend to satisfy less than the same food chewed, which is the honest core of this claim, and a fruit-and-juice blend will leave you hungry in an hour. But a blend built with protein, fat, and intact fiber, like this one, closes most of that gap. Build it like a meal and it behaves like one. Build it like a dessert and it behaves like that too, which is where Wyatt and Nadia argue.",
@@ -729,7 +784,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 66,
+  "id": 71,
   "verdict": "red",
   "claim": "\"A smoothie cleanse detoxes your liver and flushes out toxins.\"",
   "truth": "No. Your liver and kidneys perform detoxification continuously and are not waiting on a green drink to start. No smoothie, juice cleanse, or detox program has been shown to remove any specific toxin from the body, and the marketing almost never names the toxin, because there is not one to name. Vegetables are good for you on the merits. That is the whole and sufficient reason to drink this.",
@@ -740,7 +795,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 67,
+  "id": 72,
   "verdict": "amber",
   "claim": "\"Zero proof means it is the healthy option.\"",
   "truth": "It depends on the bottle. Skipping the alcohol is a real win and there is no argument there. But plenty of zero-proof mixers, mocktail syrups, and bottled smoothies carry as much sugar as a dessert, and some non-alcoholic beers and spirits still contain a trace of alcohol, up to about 0.5 percent, which matters if you are avoiding it entirely for medical or recovery reasons. Read the label. Zero proof is a statement about alcohol, not about sugar.",
@@ -751,7 +806,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 68,
+  "id": 73,
   "verdict": "amber",
   "claim": "\"Xylitol is a free pass, it is natural and sugar free.\"",
   "truth": "Mostly good news with two real catches. Xylitol is a sugar alcohol with about 40 percent fewer calories than sugar, it barely moves blood glucose, and it is genuinely good for your teeth, which is why it is in dental gum. The catches: more than a modest amount causes gas, bloating, and a laxative effect in a lot of people, and xylitol is severely toxic to dogs at tiny doses. Do not let the dog finish your cup.",
@@ -762,7 +817,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 69,
+  "id": 74,
   "verdict": "red",
   "claim": "\"A keto protein blend makes your body burn fat.\"",
   "truth": "Not how it works. Keto blends are protein with added fat, usually MCT or coconut oil, so they carry more calories than a standard scoop for less protein. Ketosis is a fuel state, not a fat-burning switch, and head-to-head trials show low-carb diets do not beat other diets once calories and protein are matched. If you eat this way and like it, fine. It is not doing something extra to the fat on your body.",
@@ -773,7 +828,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 70,
+  "id": 75,
   "verdict": "red",
   "claim": "\"Açaí is a superfood that burns fat and detoxes you.\"",
   "truth": "The berry is genuinely good: high in antioxidants, high in fat and fiber, and unusually low in sugar for a fruit, which is why it is on this menu. The claims stapled to it are not. Açaí has never been shown to cause weight loss or remove anything from your body, and the FTC has taken action against companies selling it that way. Order it because it is excellent. Not because of the word superfood, which means nothing and is not a regulated term.",
@@ -784,7 +839,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 71,
+  "id": 76,
   "verdict": "red",
   "claim": "\"Coconut fat is metabolized differently so it does not really count.\"",
   "truth": "This one comes from MCT oil research being quietly applied to coconut, and they are not the same thing. Coconut is mostly lauric acid, which behaves largely like a regular saturated fat, and it raises LDL cholesterol in controlled trials. It is a delicious, filling, perfectly fine ingredient. It is not a metabolic loophole, and coconut oil is not a health supplement.",
@@ -795,7 +850,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 72,
+  "id": 77,
   "verdict": "red",
   "claim": "\"Juice counts as a serving of fruit.\"",
   "truth": "Not really, and this is the biggest hidden sugar lever on the whole board. Juicing strips the fiber and leaves the sugar, so a cup of apple or orange juice delivers roughly the sugar of two to three whole fruits with almost none of the fullness. Your smoothie still keeps the fiber from everything else you picked, but the juice part is contributing sugar and not much else. Swapping to a milk usually drops the sugar by 15 to 20 g and adds protein.",
@@ -806,7 +861,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 73,
+  "id": 78,
   "verdict": "amber",
   "claim": "\"Honey is a healthy natural sugar.\"",
   "truth": "It depends how much you expected from it. Honey carries trace antioxidants and enzymes that table sugar does not, and it tastes better. But it is still about 17 g of sugar per tablespoon and your body handles it almost identically. Natural is a description of where it came from, not of what it does to your blood glucose. One separate hard rule: never give honey to an infant under 12 months, because of infant botulism.",
@@ -823,7 +878,7 @@ export const STOPLIGHT = [
   ]
  },
  {
-  "id": 74,
+  "id": 79,
   "verdict": "red",
   "claim": "\"You have thirty minutes after training to drink it or you wasted the session.\"",
   "truth": "The anabolic window is far wider than thirty minutes, likely several hours either side of your session. What actually drives the result is total daily protein, around 1.6 g per kg of bodyweight for most lifters, spread across the day. Whey is a good, fast, cheap protein and there is nothing wrong with it. Just stop sprinting to the locker room.",
@@ -834,7 +889,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 76,
+  "id": 81,
   "verdict": "amber",
   "claim": "\"Stevia is safe because it is natural.\"",
   "truth": "The conclusion is right, the reasoning is not, and the distinction matters. Purified steviol glycosides are recognized as safe by the FDA at normal intakes and do not raise blood glucose, because they have been tested, not because the word natural means anything. Note the FDA has not approved whole stevia leaf or crude extracts as sweeteners, which is a different product from the packet.",
@@ -845,7 +900,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 77,
+  "id": 82,
   "verdict": "green",
   "claim": "\"Caffeine actually improves a workout.\"",
   "truth": "True, and it is one of the few ergogenic aids with strong evidence behind it. Roughly 3 to 6 mg per kg of bodyweight taken about 60 minutes out improves endurance, and to a smaller degree strength and power output. A shot in your smoothie is about 95 mg, so a 70 kg person is on the low end of that range. Caffeine has a half life around 5 hours, so a late order costs you sleep, and sleep is worth more than the caffeine.",
@@ -856,7 +911,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 78,
+  "id": 83,
   "verdict": "amber",
   "claim": "\"Dates are natural sugar so they do not count like sugar.\"",
   "truth": "Dates are genuinely nutritious, with real fiber, potassium, and magnesium, and the fiber does blunt the blood glucose response compared with the same sugar drunk plain. But a serving still brings around 27 g of sugar, the most of anything on this fruit board. They are a fine ingredient and a poor default. One date-flavored blend, not every blend.",
@@ -867,7 +922,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 79,
+  "id": 84,
   "verdict": "red",
   "claim": "\"Blending destroys the fiber, so this is basically juice.\"",
   "truth": "Wrong, and it is the correction Zara makes most. Juicing removes the pulp and the fiber with it. Blending keeps every bit of the fiber, just in smaller pieces. The smaller point that is true is that broken-down fiber lets sugars hit a little faster than chewing whole food, which is worth knowing and is not the same claim. One genuine note from Dr. Henry: leafy greens are high in vitamin K, so if you take warfarin, keep your green intake steady rather than suddenly daily, and tell whoever manages your dose.",
@@ -878,7 +933,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 80,
+  "id": 85,
   "verdict": "green",
   "claim": "\"Orange vegetables are actually worth putting in a smoothie.\"",
   "truth": "True. Carrot and pumpkin are loaded with beta-carotene, which your body converts to vitamin A, and both bring fiber and potassium for very few calories. They also blend sweeter than people expect. One harmless and genuinely fun side effect: eat a lot of them and your palms and nose can turn faintly orange. That is carotenemia, it is not dangerous, and it fades.",
@@ -889,7 +944,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 81,
+  "id": 86,
   "verdict": "amber",
   "claim": "\"The bromelain in pineapple fights inflammation and soreness.\"",
   "truth": "Bromelain is a real enzyme with real activity, and it is studied as a concentrated supplement, mostly for swelling after surgery. The gap is dose and location: most bromelain sits in the stem, not the flesh you are drinking, and the fruit in your cup is nowhere near a studied dose. Pineapple is a great ingredient with a lot of vitamin C and manganese. Order it for the taste.",
@@ -900,7 +955,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 82,
+  "id": 87,
   "verdict": "amber",
   "claim": "\"Watermelon is nature's sports drink.\"",
   "truth": "It depends on how hard you sweated. Watermelon is over 90 percent water and brings potassium, so it rehydrates nicely after a normal session. What it does not have is meaningful sodium, and sodium is the electrolyte you actually lose in sweat. For a long, hot, genuinely sweaty effort, this plus a pinch of salt does the job better than this alone.",
@@ -911,7 +966,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 83,
+  "id": 88,
   "verdict": "amber",
   "claim": "\"Eat a banana so you do not cramp.\"",
   "truth": "Bananas are a great pre-workout carb with real potassium, and that part holds up. The cramping claim mostly does not. Exercise cramps appear to be driven more by muscle fatigue and neuromuscular overload than by low potassium, and a single banana would not shift your potassium status quickly anyway. Eat it because it fuels you and blends beautifully.",
@@ -922,7 +977,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 84,
+  "id": 89,
   "verdict": "green",
   "claim": "\"Berries are the best fruit to put in a smoothie.\"",
   "truth": "Defensible, and Zara will defend it. Berries carry the most fiber and the least sugar of anything on the fruit board, raspberries especially at around 5 g of fiber per serving, plus a real load of anthocyanins and vitamin C. Frozen is nutritionally equal to fresh and often better, because it is picked ripe. It is the cheapest upgrade on this menu.",
@@ -933,7 +988,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 85,
+  "id": 90,
   "verdict": "green",
   "claim": "\"Protein powder is just food in powder form.\"",
   "truth": "Largely true, and worth saying plainly because powders get treated as either magic or poison. A protein blend is dried protein, usually whey plus casein or plant sources, and it is a convenient way to hit a daily target you could also hit with chicken, dairy, or beans. The one caveat is regulatory: supplements are not reviewed by the FDA for safety or effectiveness before sale, so buy third-party tested, NSF Certified for Sport or Informed Sport, especially if you get drug tested.",
@@ -944,7 +999,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 86,
+  "id": 91,
   "verdict": "amber",
   "claim": "\"Sparkling water is bad for your teeth and leaches calcium from your bones.\"",
   "truth": "Mostly overblown, with one small real part. Plain carbonated water is mildly acidic and is far less erosive to enamel than soda or citrus juice, and it has no effect on bone density. That was a myth traced to cola specifically, where the phosphoric acid and the sugar were doing the work. The genuine caveat: adding a lot of citrus raises the acidity, so if you drink these all day, use a straw and rinse with plain water.",
@@ -955,7 +1010,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 87,
+  "id": 92,
   "verdict": "red",
   "claim": "\"Cucumber water flushes toxins and reduces bloating.\"",
   "truth": "No. Cucumber water is water with cucumber in it, and that is a genuinely good thing. Your kidneys and liver handle detoxification continuously and are not waiting on a garnish. The anti-bloat claim is backwards in an amusing way: the most reliable thing in this glass for bloating is the water itself, plus the fact that you are drinking it instead of something carbonated and sugary. Drink it because it is delicious.",
@@ -966,7 +1021,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 88,
+  "id": 93,
   "verdict": "amber",
   "claim": "\"Hibiscus tea lowers your blood pressure.\"",
   "truth": "There is real evidence here, which makes this one of the more legitimate items on the bar, but keep the scale honest. Controlled trials of hibiscus tea show small average reductions in blood pressure, meaningful at a population level and modest for any one person. It is not a substitute for medication, and that is the important part: hibiscus may also interact with some blood pressure and diuretic drugs, so if you are on either, this is a conversation with your pharmacist, not a swap you make yourself.",
@@ -977,7 +1032,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 89,
+  "id": 94,
   "verdict": "red",
   "claim": "\"Tonic water is basically fizzy water, and the quinine helps leg cramps.\"",
   "truth": "Both halves are wrong. Tonic water is a soft drink: a standard serving carries around 21 to 23 g of sugar, close to a cola, which surprises almost everyone ordering it as the healthy option. And the quinine, once genuinely used for cramps, is present in tiny amounts here anyway. The FDA has warned against using quinine for leg cramps at all, because of serious blood and heart side effects. Order tonic because you like it, and know it is a sugared mixer.",
@@ -988,7 +1043,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 90,
+  "id": 95,
   "verdict": "amber",
   "claim": "\"Non-alcoholic spirits and bitters are alcohol free.\"",
   "truth": "Not quite, and if you are in recovery this is the detail that matters most on the whole bar. In the United States a drink can be labeled non-alcoholic and still contain up to 0.5 percent alcohol by volume, and aromatic bitters are typically 35 to 45 percent alcohol, though a dash is a very small absolute amount. For most people cutting back, this is negligible. For anyone avoiding alcohol completely, for recovery, pregnancy, liver disease, or a medication that reacts with it, it is a real distinction and you deserve to be told. There is a separate, non-chemical question worth asking too: whether the ritual and the taste help you or pull at you. Only you can answer that one.",
@@ -999,7 +1054,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 91,
+  "id": 96,
   "verdict": "green",
   "claim": "\"Aquafaba really does work as an egg white replacement.\"",
   "truth": "True, and it is one of the genuinely great discoveries of modern bartending. The proteins and starches left in chickpea cooking liquid foam and stabilize very much like egg white, which gives you the silky top on a sour with no raw egg, no allergen for most people, and no cost, since it is the liquid you were pouring down the drain. It is a rare case where the substitute is not a compromise.",
@@ -1010,7 +1065,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 92,
+  "id": 97,
   "verdict": "amber",
   "claim": "\"Tart cherry juice is a natural sleep aid.\"",
   "truth": "There is real evidence, and it is smaller than the internet suggests. Trials show modest improvements in sleep duration and efficiency, likely from the natural melatonin and the anthocyanins, and it takes consistent intake over about a week rather than one glass. Modest is the word: we are talking tens of minutes, not a transformation. Dr. Sana's line is that a consistent bedtime beats every drink ever invented, and she would like that noted before you buy the juice.",
@@ -1021,7 +1076,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 93,
+  "id": 98,
   "verdict": "amber",
   "claim": "\"Lavender calms anxiety.\"",
   "truth": "It depends on the form, and this is a case where the delivery method matters more than the plant. The better evidence is for lavender aromatherapy and for a specific standardized oral preparation studied for anxiety, both showing modest effects. A splash of lavender syrup in a drink is not either of those things and has not been studied. What it does do is smell lovely and mark the end of your evening, and a deliberate wind-down ritual has real value on its own terms. Just credit the ritual honestly.",
@@ -1038,7 +1093,7 @@ export const STOPLIGHT = [
   ]
  },
  {
-  "id": 94,
+  "id": 99,
   "verdict": "amber",
   "claim": "\"Coconut water is nature's sports drink.\"",
   "truth": "Half right, and the half it gets wrong is the important one. Coconut water is genuinely excellent for potassium and it rehydrates well after a normal session. What it is low in is sodium, and sodium is the electrolyte you actually lose in meaningful quantities in sweat. For long, hot, genuinely sweaty efforts, coconut water alone under-replaces the thing that matters most, which is exactly why Wyatt adds the salt. With the salt, it is a legitimately good sports drink. Without it, it is a nice potassium drink.",
@@ -1055,7 +1110,7 @@ export const STOPLIGHT = [
   ]
  },
  {
-  "id": 95,
+  "id": 100,
   "verdict": "amber",
   "claim": "\"The citrulline in watermelon improves blood flow and workout performance.\"",
   "truth": "There is a real mechanism and a real gap between it and the glass. Citrulline is genuinely converted to arginine and then nitric oxide, and concentrated citrulline malate supplements do show modest performance effects in some studies. The problem is dose: studied amounts are grams, and you would need a very large volume of watermelon to approach them. This is a wonderfully hydrating drink with real potassium. Order it for that.",
@@ -1066,7 +1121,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 96,
+  "id": 101,
   "verdict": "green",
   "claim": "\"Ginger actually settles your stomach.\"",
   "truth": "True, and it is one of the best-supported botanicals on this entire bar. Ginger has repeatedly shown genuine benefit for nausea, including morning sickness in pregnancy, motion sickness, and post-operative nausea, with a plausible mechanism in the gut and reasonably consistent trials. Two honest limits: it is nausea specifically, not indigestion or bloating in general, and at high supplemental doses it may interact with blood thinners. In a drink, at this amount, it is both effective and unremarkable in the best way.",
@@ -1077,7 +1132,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 97,
+  "id": 102,
   "verdict": "red",
   "claim": "\"Turmeric is a powerful natural anti-inflammatory.\"",
   "truth": "Not at this dose, and the claim is far ahead of the evidence generally. Curcumin has measurable anti-inflammatory activity in a laboratory, but it is very poorly absorbed by the human gut, which is why black pepper is always recommended alongside it. Piperine does meaningfully increase absorption, so the pepper is doing real work, and it is still nowhere near the concentrated extract doses used in the trials, which themselves produce inconsistent results in people. It is a wonderful spice with some genuine promise. It is not a drug, and if you take blood thinners, ask a pharmacist before you take concentrated extracts.",
@@ -1094,7 +1149,7 @@ export const STOPLIGHT = [
   ]
  },
  {
-  "id": 98,
+  "id": 103,
   "verdict": "red",
   "claim": "\"Grapefruit is just a citrus, it is healthy.\"",
   "truth": "The fruit is genuinely healthy. The problem is that it is also pharmacologically active. Compounds in grapefruit block an enzyme called CYP3A4 in your gut, which many medications rely on to be broken down, so the drug can build up to higher levels than intended. The list is long and includes several statins, some blood pressure medications, certain anti-anxiety drugs, and immunosuppressants, and the effect can last more than 24 hours, so timing it away from your dose does not solve it. This is Dr. Henry's hard rule: if you take a daily prescription, ask a pharmacist before grapefruit becomes a habit. If you do not, enjoy it.",
@@ -1105,7 +1160,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 99,
+  "id": 104,
   "verdict": "red",
   "claim": "\"Activated charcoal detoxes your body.\"",
   "truth": "No, and this one can actively cause harm. Activated charcoal is a real medical treatment, used in emergency rooms for certain poisonings, and it works precisely because it binds things in your gut indiscriminately. That is the problem in a drink: it does not distinguish toxins from your medication. It can reduce absorption of prescriptions taken around the same time, including oral contraceptives, and it has no evidence of removing anything your liver and kidneys were not already handling. It is a black drink with a dramatic story and a genuine interaction risk. Wyatt keeps it on the board so he can tell you this.",
@@ -1116,7 +1171,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 100,
+  "id": 105,
   "verdict": "amber",
   "claim": "\"If it is on the zero-proof menu, it contains no alcohol.\"",
   "truth": "Not always, and you deserve the real number. In the United States a beverage can be labeled non-alcoholic and still contain up to 0.5 percent alcohol by volume. Aromatic bitters are typically 35 to 45 percent alcohol, though a dash is a very small absolute amount. Kombucha ferments continuously and can drift past 0.5 percent, particularly homebrewed or stored warm. For most people cutting back this is negligible. For anyone avoiding alcohol entirely, whether for recovery, pregnancy, liver disease, or a medication such as metronidazole or disulfiram that reacts with it, this is a real distinction, and no bar should let you find out by accident.",
@@ -1127,7 +1182,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 101,
+  "id": 106,
   "verdict": "red",
   "claim": "\"Apple cider vinegar burns fat and resets your metabolism.\"",
   "truth": "The big claims do not hold. Small studies suggest vinegar may slightly blunt the blood glucose rise after a carb-heavy meal, which is a modest and genuinely interesting effect, and there is no good evidence it causes meaningful fat loss, resets metabolism, or detoxes anything. There is a real downside people ignore: undiluted vinegar erodes tooth enamel and can irritate the throat and esophagus. If you use it, always dilute it well, as it is here, and drink it through a straw. It is a nice sharp ingredient in a drink. That is the honest ceiling.",
@@ -1138,7 +1193,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 102,
+  "id": 107,
   "verdict": "red",
   "claim": "\"Tonic and ginger beer are the healthy mixers.\"",
   "truth": "They are soft drinks, and this catches people constantly because both sound botanical and adult. A serving of tonic water carries roughly 21 to 23 g of sugar and ginger beer often more, putting either in the same range as a cola. Tonic's quinine is present in tiny amounts, and separately, the FDA has warned against using quinine for leg cramps because of serious side effects, so there is no health angle there either. Order them because you like them, and cut them with sparkling water the way Wyatt does, which halves the sugar and barely changes the taste.",
@@ -1149,7 +1204,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 103,
+  "id": 108,
   "verdict": "amber",
   "claim": "\"Ashwagandha is a safe natural way to lower stress.\"",
   "truth": "The evidence is real but early, and the safety caveat is the part that gets left off. Several small trials show modest reductions in self-reported stress and anxiety, which is genuinely promising and far from settled, with short study durations and inconsistent preparations. The important part: there are documented case reports of liver injury associated with ashwagandha supplements, it is not recommended in pregnancy, and it may interact with thyroid medication, sedatives, and immunosuppressants. Amara's position is that this is a real botanical worth studying, not a casual daily add-in.",
@@ -1160,7 +1215,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 104,
+  "id": 109,
   "verdict": "amber",
   "claim": "\"Elderberry boosts your immune system and stops a cold.\"",
   "truth": "It depends on what you are asking of it. Some trials suggest elderberry extract may modestly shorten cold and flu symptom duration, and the evidence is mixed, the studies are small, and several were industry funded. It does not prevent infection, and boosting your immune system is not really a thing a functioning immune system needs or benefits from. Two safety notes that matter: raw or unripe elderberries, leaves, and stems are toxic and must be cooked, and commercial preparations vary enormously in strength.",
@@ -1171,7 +1226,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 105,
+  "id": 110,
   "verdict": "amber",
   "claim": "\"Aloe vera juice soothes your gut and cleanses your colon.\"",
   "truth": "It depends entirely on which part of the plant is in the bottle, and the labels are not always clear. Aloe latex, the bitter yellow layer, is a strong stimulant laxative, and the FDA removed it from over-the-counter laxative products in 2002 because manufacturers did not provide the safety data required. Decolorized, purified inner-leaf gel is a different product and is what belongs in a drink. Evidence for gut soothing is thin either way, and the colon cleansing framing is not supported. Buy purified inner leaf, and skip it in pregnancy.",
@@ -1182,7 +1237,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 106,
+  "id": 111,
   "verdict": "red",
   "claim": "\"Agave is a healthy low-glycemic sweetener.\"",
   "truth": "This is one of the better marketing jobs in the sweetener aisle. Agave does have a low glycemic index, and the reason is not flattering: it is roughly 75 to 85 percent fructose, higher than table sugar and higher than high-fructose corn syrup. Fructose does not raise blood glucose much because it is processed in the liver instead, and high fructose intake is associated with less favorable effects on liver fat and blood lipids. Low glycemic here is a description of the mechanism, not a health benefit. Nutritionally it is sugar, at about the same calories.",
@@ -1193,7 +1248,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 107,
+  "id": 112,
   "verdict": "amber",
   "claim": "\"Magnesium helps you relax and sleep.\"",
   "truth": "It depends on whether you are actually short of it, and the form matters more than the marketing. Magnesium is genuinely essential for muscle and nerve function, and many people do fall below recommended intake, so a supplement can help those people. Evidence that extra magnesium improves sleep in people who are not deficient is weak. On form: magnesium oxide is cheap and poorly absorbed and is mostly a laxative, while glycinate and citrate absorb better. High doses cause diarrhea, and people with kidney disease should not supplement without medical advice.",
@@ -1204,7 +1259,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 108,
+  "id": 113,
   "verdict": "amber",
   "claim": "\"Everyone needs electrolytes every day.\"",
   "truth": "It depends on how much you sweat, and for most people on most days the answer is no. Sodium is the electrolyte you lose in meaningful amounts in sweat, and a normal diet replaces it easily. Electrolyte drinks earn their place for long or hot sessions, generally beyond about an hour, for heavy sweaters, and during illness with fluid loss. Two honest notes: sea salt and table salt are nutritionally near identical, since the trace minerals in sea salt are negligible, and table salt is usually iodized, which sea salt is not. If you are watching sodium for blood pressure, count this glass.",
@@ -1215,7 +1270,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 109,
+  "id": 114,
   "verdict": "amber",
   "claim": "\"Green tea boosts your metabolism and burns fat.\"",
   "truth": "It depends which claim you mean. Green tea does contain caffeine and L-theanine, and that combination has decent evidence for calm alertness, which is a real and pleasant effect. The metabolism and fat-burning claims come from EGCG studies, and the effects in people are very small and not clinically meaningful for weight. The caveat worth knowing: concentrated green tea extract supplements, not brewed tea, have been associated with rare liver injury. Brewed tea, as here, is a safe and lovely drink.",
@@ -1226,7 +1281,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 111,
+  "id": 116,
   "verdict": "amber",
   "claim": "\"Kombucha is a probiotic that heals your gut.\"",
   "truth": "Plausible in theory, thin in evidence. Kombucha does contain live bacteria and yeast from fermentation, and that is genuinely interesting, but probiotic benefits are strain-specific and dose-specific, and the strains in a given bottle are usually neither identified nor standardized. Almost all the health claims come from lab or animal work rather than human trials. Two real cautions: it is acidic and can upset some stomachs, and homebrewed kombucha carries contamination risk and unpredictable alcohol content. Commercially made, it is a pleasant fermented drink.",
@@ -1237,7 +1292,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 112,
+  "id": 117,
   "verdict": "amber",
   "claim": "\"Tart cherry juice helps you sleep and recover.\"",
   "truth": "Real evidence, modest size. Trials show small improvements in sleep duration and efficiency and modest reductions in muscle soreness, credited to the natural melatonin and the anthocyanins, and it takes about a week of consistent intake rather than one glass. The catch Wyatt flags: a serving carries around 30 g of sugar, which is a lot for a nightly habit. Unsweetened concentrate diluted in sparkling water gives you the same compounds for a fraction of it. Dr. Sana adds that a consistent bedtime outperforms every drink ever invented.",
@@ -1248,7 +1303,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 113,
+  "id": 118,
   "verdict": "amber",
   "claim": "\"Beet juice improves your endurance.\"",
   "truth": "Real mechanism, modest and specific effect. Dietary nitrate converts to nitric oxide and shows small but genuine endurance benefits, mostly in recreational and moderately trained people, at meaningful doses taken two to three hours before the effort. In highly trained athletes the benefit shrinks or vanishes. A splash in a cocktail is well below a studied dose and the timing here is social, not strategic. Also, harmlessly, it may turn your urine pink. That is beeturia and it alarms people needlessly.",
@@ -1259,7 +1314,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 115,
+  "id": 120,
   "verdict": "green",
   "claim": "\"Monk fruit and stevia are safe zero-calorie sweeteners.\"",
   "truth": "Supported, with the reasoning worth getting right. Purified monk fruit extract and steviol glycosides are both recognized as safe by the FDA at normal intakes and neither raises blood glucose, which makes them a genuinely useful tool for cutting sugar in a drink. That conclusion rests on safety testing, not on either being natural, which is a marketing word and not a safety category. Note the FDA has not approved whole stevia leaf or crude extracts as sweeteners, which are different products from the purified packet.",
@@ -1270,7 +1325,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 116,
+  "id": 121,
   "verdict": "green",
   "claim": "\"Ginger genuinely settles your stomach.\"",
   "truth": "True, and it is the best-supported functional ingredient on this bar. Ginger has shown real benefit for nausea across several contexts, including pregnancy-related nausea, motion sickness, and post-operative nausea, with a plausible mechanism and reasonably consistent trials. Two honest limits: the evidence is for nausea specifically, not indigestion or bloating generally, and at high supplemental doses it may interact with blood thinners. At drink strength it is both effective and unremarkable, in the best way.",
@@ -1281,7 +1336,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 117,
+  "id": 122,
   "verdict": "amber",
   "claim": "\"Hibiscus tea lowers blood pressure.\"",
   "truth": "Genuinely supported, and worth keeping in scale. Controlled trials show small average reductions in blood pressure from regular hibiscus tea, which is meaningful across a population and modest for one person. It is not a replacement for medication. The part that matters more: hibiscus may interact with some blood pressure medications and diuretics, so if you take either, this is a pharmacist conversation rather than a swap you make on your own.",
@@ -1292,7 +1347,7 @@ export const STOPLIGHT = [
   "topic": "Drinks & zero-proof"
  },
  {
-  "id": 120,
+  "id": 125,
   "verdict": "red",
   "claim": "\"You threw your back out because your core is weak and your posture is bad.\"",
   "truth": "This is the most repeated explanation on the gym floor and the evidence does not support it. Studies have not found a reliable link between a specific posture, or a specific 'weak core', and who develops back pain. Bracing your abdomen constantly does not protect you, and there is no single correct sitting posture. What does help is regular movement, gradually increasing load tolerance, sleep, and managing stress. The most protective posture is the next one.",
@@ -1303,7 +1358,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 121,
+  "id": 126,
   "verdict": "amber",
   "claim": "\"Tech neck from looking at your phone is destroying your spine.\"",
   "truth": "It depends on what you are claiming. Sustained static positions do produce muscle fatigue and discomfort, which is real and worth addressing. What is not supported is the idea that phone use causes permanent structural damage or dramatic degeneration. Neck posture is not strongly predictive of who ends up with neck pain, and the sensational images of the neck 'collapsing' are marketing rather than research. The fix is variety and load tolerance, not sitting rigidly upright forever.",
@@ -1314,7 +1369,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 122,
+  "id": 127,
   "verdict": "red",
   "claim": "\"Your shoulder pain is a pinched tendon, so you have to stop lifting until it heals.\"",
   "truth": "The impingement model, where a bone mechanically pinches a tendon, has largely fallen out of favour, and with it the advice to rest. Current guidance for rotator cuff related shoulder pain is progressive exercise, and trials repeatedly show structured loading performs as well as surgery for many people with this presentation. Rest tends to deconditions the tissue and prolong things. The skill is finding the tolerable dose, not stopping.",
@@ -1325,7 +1380,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 123,
+  "id": 128,
   "verdict": "red",
   "claim": "\"Squats wear out your knees, and your knees should never pass your toes.\"",
   "truth": "Both halves are wrong and the second one is nonsense that has cost people a lot of range of motion. Knees travelling forward past the toes is a normal, necessary human movement, and restricting it simply shifts load onto the hips and lower back. As for wear: appropriately loaded squatting builds cartilage and bone tolerance, and lifters do not show higher rates of knee osteoarthritis than the general population. Sudden spikes in load cause problems. Squatting itself does not.",
@@ -1336,7 +1391,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 124,
+  "id": 129,
   "verdict": "amber",
   "claim": "\"You need to foam roll your IT band to release it.\"",
   "truth": "It depends what you think is happening. The IT band is a dense sheet of connective tissue anchored along the femur, and it does not meaningfully lengthen or 'release' under a foam roller. Estimates of the force needed to deform it are far beyond what a person can apply with body weight. What rolling does do is produce a short-term reduction in pain sensitivity, which is genuinely useful before training. So it can feel good and help you move, just not for the reason on the label. Persistent outer hip pain is usually gluteal tendinopathy, and that responds to loading.",
@@ -1347,7 +1402,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 125,
+  "id": 130,
   "verdict": "red",
   "claim": "\"Rest is what heals a sore Achilles.\"",
   "truth": "Rest is close to the worst available option for tendinopathy, and it is still the most common advice given. Tendons adapt to mechanical load, and unloading them reduces their capacity, so pain returns as soon as normal activity resumes. The best supported treatment is progressive, heavy, slow resistance work, continued for months. Some discomfort during loading is expected and acceptable, provided it settles within 24 hours. The hard part is the timeline, not the exercise.",
@@ -1358,7 +1413,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 126,
+  "id": 131,
   "verdict": "amber",
   "claim": "\"A cortisone shot will fix my tennis elbow.\"",
   "truth": "It depends on the timeframe you care about. Corticosteroid injection reliably reduces pain in the short term, over roughly the first six weeks, which is genuinely valuable to some people. The problem appears later: trials show that at six and twelve months, people who had the injection often do worse than those who did exercise or simply waited, with higher recurrence. It is a legitimate tool for buying a window, not a repair. The loading program still has to happen.",
@@ -1369,7 +1424,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 127,
+  "id": 132,
   "verdict": "red",
   "claim": "\"Stretch more and you won't pull a hamstring.\"",
   "truth": "Static stretching before activity has not been shown to reduce injury risk, and done immediately beforehand it can briefly reduce force output. What does have strong evidence is eccentric strengthening, particularly the Nordic hamstring curl, which has been shown across multiple trials to substantially reduce hamstring injury rates in sport. Strength at long muscle lengths is the protective quality, not flexibility. Warm up by moving, then build strength.",
@@ -1380,7 +1435,7 @@ export const STOPLIGHT = [
   "topic": "Injury & rehab"
  },
  {
-  "id": 128,
+  "id": 133,
   "verdict": "green",
   "claim": "\"Slow breathing at about six breaths per minute has a real physiological effect.\"",
   "truth": "Supported, and it is one of the better-evidenced things in this whole space. Breathing at roughly five to six breaths a minute increases heart rate variability and shifts autonomic balance toward parasympathetic activity, an effect measurable in controlled studies and tied to the mechanics of respiratory sinus arrhythmia. Studies also show modest reductions in blood pressure and self-reported stress. It is not a cure for anything, and the mechanism is genuine rather than mystical.",
@@ -1391,7 +1446,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 129,
+  "id": 134,
   "verdict": "amber",
   "claim": "\"Box breathing is what Navy SEALs use, so it is the most effective technique.\"",
   "truth": "It depends on what you want. Box breathing is genuinely used in high-stress professional training and it is genuinely useful, but the association is a marketing story rather than evidence of superiority. Head-to-head research comparing specific patterns is thin, and where slow-breathing techniques have been compared, the shared ingredient doing most of the work appears to be the slow rate itself rather than any particular ratio. Use the one you will actually do. That is the honest ranking.",
@@ -1402,7 +1457,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 130,
+  "id": 135,
   "verdict": "amber",
   "claim": "\"4-7-8 breathing puts you to sleep in sixty seconds.\"",
   "truth": "The mechanism is real and the specific promise is not. Extending the exhale relative to the inhale does shift autonomic balance toward the parasympathetic side, and people frequently report feeling calmer, which is a genuine effect. What does not exist is good evidence for falling asleep in a minute, and the widely repeated claim traces to a single popular advocate rather than to trials. Direct research on this exact ratio is limited. Treat it as a reliable wind-down ritual, not a switch.",
@@ -1413,7 +1468,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 131,
+  "id": 136,
   "verdict": "green",
   "claim": "\"The double-inhale sigh calms you faster than other breathing techniques.\"",
   "truth": "Reasonably supported, with the caveat that this is a young literature. Spontaneous sighs are a documented physiological reflex that reinflate collapsed alveoli and reset breathing rhythm, and a controlled trial comparing daily five-minute practices found cyclic sighing produced greater improvement in mood and greater reduction in breathing rate than mindfulness meditation or other breathwork patterns tested. One good trial is a promising start rather than a settled case, and the acute effect is easy to feel for yourself.",
@@ -1424,7 +1479,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 132,
+  "id": 137,
   "verdict": "green",
   "claim": "\"A longer exhale is genuinely more calming than a longer inhale.\"",
   "truth": "True, and there is a clean mechanism behind it. Heart rate naturally rises slightly during inhalation and falls during exhalation, an effect called respiratory sinus arrhythmia, driven by vagal activity. Lengthening the exhale extends the phase in which vagal, parasympathetic influence dominates. Studies of exhale-biased breathing show shifts in heart rate variability consistent with that. It is a small, real physiological effect, not a sedative, and it is the single most reliable principle in breathwork.",
@@ -1435,7 +1490,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 133,
+  "id": 138,
   "verdict": "amber",
   "claim": "\"Breathing exercises fix insomnia.\"",
   "truth": "They help around the edges and they are not the treatment. Relaxation practices, including paced breathing, are a recognised component of sleep hygiene and can genuinely ease the transition into sleep, particularly when arousal at bedtime is the obstacle. But for chronic insomnia the first-line treatment recommended by major clinical guidelines is cognitive behavioural therapy for insomnia, CBT-I, which outperforms both relaxation techniques alone and sleep medication over the long run. Breathwork is a useful part of a routine. If you have had insomnia for months, ask about CBT-I.",
@@ -1446,7 +1501,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 134,
+  "id": 139,
   "verdict": "amber",
   "claim": "\"You must stretch every morning or you will get tight and injured.\"",
   "truth": "It depends what you want from it. Static stretching does improve range of motion over time, and that is a real, worthwhile adaptation. What it does not reliably do is prevent injury, and reviews have generally failed to show that pre-activity stretching reduces injury rates. Morning stiffness is also normal and largely about fluid distribution overnight rather than tissue shortening. Move because it feels good and because range is useful. Strength through that range protects you better than length alone.",
@@ -1457,7 +1512,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 135,
+  "id": 140,
   "verdict": "red",
   "claim": "\"Sitting is the new smoking.\"",
   "truth": "A memorable line and a badly wrong comparison. Prolonged sitting is genuinely associated with worse health outcomes and it is worth interrupting, so the underlying advice holds. But the magnitude is nowhere near tobacco, which is the single largest preventable cause of death worldwide, and researchers have publicly objected to the phrase for trivialising that. The more useful finding is that the harms of sitting are substantially reduced in people who are otherwise physically active. Break up the sitting, and train. Do not panic about the chair.",
@@ -1468,7 +1523,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 136,
+  "id": 141,
   "verdict": "red",
   "claim": "\"You need to stretch to release the tension stored in your hips.\"",
   "truth": "Emotions are not stored in your hips, and there is no mechanism by which they could be. The idea is widespread in yoga culture and it has no support in physiology. What is real and worth respecting: long, quiet holds involve slow breathing, stillness, and interoceptive attention, all of which can genuinely produce emotional responses in some people, and that experience is not imaginary. The practice is valuable. The explanation attached to it is not, and Noor thinks people deserve the accurate version of why it works.",
@@ -1479,7 +1534,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 137,
+  "id": 142,
   "verdict": "amber",
   "claim": "\"Yoga is proven to cure anxiety and depression.\"",
   "truth": "It depends how strong a word you want. There is genuine evidence that yoga produces modest improvements in symptoms of anxiety and depression, and major health bodies acknowledge it as a reasonable complementary practice. The honest limits: many trials are small, hard to blind, and use inconsistent styles and doses, so effect sizes are uncertain. It is a supportive practice rather than a treatment, and it is not a substitute for therapy or medication for a diagnosed condition. If you are struggling, this page is a good habit and a poor plan on its own.",
@@ -1490,7 +1545,7 @@ export const STOPLIGHT = [
   "topic": "Breath & movement"
  },
  {
-  "id": 138,
+  "id": 143,
   "verdict": "red",
   "claim": "\"You can catch up on sleep at the weekend.\"",
   "truth": "Partly, and not in the ways that matter most. Weekend recovery sleep does restore some alertness, which is why it feels effective. But controlled studies show that when people sleep-restrict during the week and recover at the weekend, the metabolic damage largely persists: insulin sensitivity does not fully recover, and participants often gain weight because the extra waking hours mean extra eating. Shifting your wake time by hours on weekends also drags your body clock, which is sometimes called social jetlag and makes Monday genuinely harder. Consistency beats compensation.",
@@ -1501,7 +1556,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 139,
+  "id": 144,
   "verdict": "red",
   "claim": "\"A nightcap helps me sleep.\"",
   "truth": "It helps you fall asleep and it damages the sleep you then get, which is why the belief persists. Alcohol is sedating, so sleep onset is faster. Then as it metabolises overnight it fragments sleep, suppresses REM in the first half of the night, causes rebound wakefulness in the second half, worsens snoring and sleep apnoea by relaxing the airway, and drives the 3am wake-up. You will spend adequate time in bed and get poor-quality sleep out of it. Sana's version: it is a sedative, and sedation is not sleep.",
@@ -1512,7 +1567,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 140,
+  "id": 145,
   "verdict": "amber",
   "claim": "\"Everyone needs exactly eight hours.\"",
   "truth": "It depends on the person, within a much narrower range than people hope. Adult need generally falls between seven and nine hours, and the amount you personally need is largely genetic and not something you can train down. The nuance runs both ways: the small number of people who genuinely thrive on six hours carry rare gene variants, and almost everyone who believes they are one of them is simply adapted to feeling tired. Hard training pushes your requirement up, not down. Eight is a reasonable default, not a law.",
@@ -1523,7 +1578,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 141,
+  "id": 146,
   "verdict": "amber",
   "claim": "\"Blue light glasses fix your sleep.\"",
   "truth": "It depends which part of the claim you mean. Light exposure in the evening genuinely does suppress melatonin and delay your circadian rhythm, so the underlying mechanism is real. What is oversold is the eyewear: trials of blue-blocking glasses show inconsistent and generally small effects on sleep outcomes. Two other things usually matter more than the wavelength. First, overall brightness, so dimming the room beats filtering the screen. Second, what you are doing on the device, since an engaging feed keeps you alert regardless of colour temperature.",
@@ -1534,7 +1589,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 142,
+  "id": 147,
   "verdict": "amber",
   "claim": "\"My wearable says my recovery score is low, so I should skip training.\"",
   "truth": "It depends on the trend, not the number. HRV is a genuine physiological signal and it is highly variable night to night, sensitive to position, alcohol, illness, a late meal, and where you are in your menstrual cycle. Consumer devices measure it reasonably well and interpret it with proprietary algorithms nobody can inspect. A single low score means very little; a downward trend over one to two weeks alongside worse sleep, a rising resting heart rate, and sessions feeling harder is a real signal worth acting on. Sana's rule: use it to spot your own patterns, never to score a single day.",
@@ -1545,7 +1600,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 143,
+  "id": 148,
   "verdict": "green",
   "claim": "\"A short nap actually helps.\"",
   "truth": "Supported, with the length being the whole trick. Naps of roughly ten to twenty minutes improve alertness and performance without leaving you groggy, because you wake before descending into deep slow-wave sleep. Go past about thirty minutes and you risk sleep inertia, that heavy, worse-than-before feeling that can last half an hour. Keep naps before mid-afternoon so they do not eat into your night-time sleep pressure. For shift workers and the genuinely sleep-deprived, a short nap is one of the better tools available.",
@@ -1556,7 +1611,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 144,
+  "id": 149,
   "verdict": "amber",
   "claim": "\"Melatonin is a sleeping pill.\"",
   "truth": "It is a timing signal, not a sedative, and that distinction explains most of the disappointment. Melatonin tells your body clock that darkness has arrived, so it works best for circadian problems such as jet lag or delayed sleep phase, taken in a small dose several hours before target bedtime. For ordinary insomnia the effect on how fast you fall asleep is modest, averaging a handful of minutes in meta-analyses. Two practical notes: doses sold commonly far exceed what is needed, and as a supplement in the US, actual content has been found to vary substantially from the label.",
@@ -1567,7 +1622,7 @@ export const STOPLIGHT = [
   "topic": "Sleep & recovery"
  },
  {
-  "id": 145,
+  "id": 150,
   "verdict": "red",
   "claim": "\"High protein damages your kidneys.\"",
   "truth": "Not in people with healthy kidneys, and this one has been studied specifically because the belief is so widespread. Controlled trials and long-term observation in healthy adults eating high-protein diets, including athletes well above 2 g per kg, show no meaningful decline in kidney function. The claim comes from correctly transferring advice for people who already have kidney disease onto people who do not. If you do have reduced kidney function, protein restriction may genuinely be indicated, and that is a conversation with your nephrologist rather than with the internet.",
@@ -1578,7 +1633,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 146,
+  "id": 151,
   "verdict": "green",
   "claim": "\"Creatine actually works.\"",
   "truth": "True, and it is the most thoroughly supported supplement in sports nutrition. Creatine monohydrate reliably improves performance in short, high-intensity efforts and supports gains in lean mass alongside training, across hundreds of studies. Three practical points: monohydrate is the studied form and the cheapest, so ignore the expensive variants; you do not need a loading phase, 3 to 5 g daily gets you there in a few weeks; and the early weight gain is water drawn into muscle, not fat. It does not cause hair loss or kidney damage in healthy people, despite both rumours persisting.",
@@ -1589,7 +1644,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 147,
+  "id": 152,
   "verdict": "red",
   "claim": "\"You must eat protein within thirty minutes of training.\"",
   "truth": "The window is far wider than thirty minutes, likely several hours either side of your session. This is the single most persistent myth in the gym and it sells an enormous amount of ready-to-drink protein. What actually drives the outcome is total daily intake, spread reasonably across the day. If you trained fasted first thing, eating sooner rather than later is sensible. If you had a normal meal beforehand, sprinting to the locker room achieves nothing.",
@@ -1600,7 +1655,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 148,
+  "id": 153,
   "verdict": "red",
   "claim": "\"BCAAs build muscle.\"",
   "truth": "Not on their own, and this is the clearest example of a supplement outliving its evidence. Muscle protein synthesis needs all nine essential amino acids; supplying only three leaves the process short of the rest. Trials comparing BCAAs against whole protein consistently favour the whole protein, and if you are already meeting your daily target, BCAAs add essentially nothing. They were a reasonable idea in the 1990s. The research moved and the marketing did not.",
@@ -1611,7 +1666,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 149,
+  "id": 154,
   "verdict": "red",
   "claim": "\"Fat burners and metabolism boosters work.\"",
   "truth": "No, and this category is where the genuine harm sits. The measurable effect of thermogenic ingredients on daily energy expenditure is tiny and does not translate into meaningful fat loss. Worse, weight-loss supplements are the category most frequently found adulterated with undeclared pharmaceuticals, and the FDA has issued repeated warnings and recalls. They are also among the products most associated with liver injury. If a supplement claims to melt fat, that claim alone tells you the company is comfortable saying things it cannot support.",
@@ -1622,7 +1677,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 150,
+  "id": 155,
   "verdict": "red",
   "claim": "\"Eating after eight at night makes you gain fat.\"",
   "truth": "The clock is not doing the work. What matters is total intake across the day, and late eating is associated with weight gain mostly because evening eating tends to be extra eating, often while distracted. The nuance worth keeping: eating a very large meal right before bed can disrupt sleep, and poor sleep does affect appetite regulation the next day. So there is a real indirect effect, and it is not the one the claim describes.",
@@ -1633,7 +1688,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 151,
+  "id": 156,
   "verdict": "amber",
   "claim": "\"You need a protein powder.\"",
   "truth": "It depends entirely on what your food already gives you. Powder is a convenient, usually cheap protein source with no special properties beyond that, and plenty of people hit their target from meals without it. Where it genuinely helps is when the target is high, appetite is low, or the schedule is tight. The one caveat that matters: supplements are not reviewed by the FDA before sale, and independent testing has repeatedly found products with heavy metals or inaccurate labels. Buy third-party tested, NSF Certified for Sport or Informed Sport, especially if you are drug tested.",
@@ -1644,7 +1699,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 152,
+  "id": 157,
   "verdict": "red",
   "claim": "\"Cutting carbs is the fastest way to lose fat.\"",
   "truth": "Not once the variables are controlled. Low-carbohydrate diets often produce fast early weight loss, and most of that is water released as glycogen is depleted, which is why it stops. In trials that match calories and protein, low-carb diets do not outperform other approaches for fat loss over time. The best diet remains the one you can actually keep doing. For training specifically, cutting carbohydrate usually makes hard sessions feel worse for no compensating benefit.",
@@ -1655,7 +1710,7 @@ export const STOPLIGHT = [
   "topic": "Nutrition"
  },
  {
-  "id": 153,
+  "id": 158,
   "verdict": "red",
   "claim": "Cortisol face",
   "truth": "Cortisol is a real hormone and chronically elevated cortisol is a real clinical state, called Cushing syndrome, which does cause facial changes. It is rare, it is diagnosed with actual testing, and it needs a doctor. What it is not is a description of ordinary stress. No over-the-counter supplement has been shown to lower cortisol in a way that changes how your face looks, and day-to-day facial puffiness is usually sodium, alcohol, sleep, and fluid shifts.",
@@ -1666,7 +1721,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 154,
+  "id": 159,
   "verdict": "amber",
   "claim": "Cold plunge after every session",
   "truth": "Here is the part people skip. Cold water immersion does reduce soreness and perceived fatigue, which is genuine and useful in a tournament or a fixture congestion week. But several trials show that regular cold immersion immediately after resistance training blunts the muscle-building signal and reduces long-term strength and hypertrophy gains. The mechanism is that inflammation after training is part of the adaptation, and you are damping the thing you trained to provoke. Timing is everything: leave a gap of several hours, or use it on rest days.",
@@ -1677,7 +1732,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 155,
+  "id": 160,
   "verdict": "red",
   "claim": "Fasted cardio burns more fat",
   "truth": "Dom is right and the research is unusually tidy here. Training fasted does increase the proportion of fat used as fuel during the session itself. Over twenty-four hours, though, total fat oxidation and fat loss come out the same once calories are matched, because the body compensates later. Studies comparing fasted and fed training for body composition find no meaningful difference. What does differ is performance: many people train worse fasted, particularly on longer or harder sessions, and a worse session is a real cost.",
@@ -1688,7 +1743,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 156,
+  "id": 161,
   "verdict": "green",
   "claim": "The 12-3-30 treadmill workout",
   "truth": "This is one of the pleasant ones. It is moderate-intensity steady-state cardio, it meets a meaningful chunk of the weekly physical activity guidelines, and the specific numbers are arbitrary but harmless. Two honest caveats: a steep incline at walking pace loads the calves and Achilles more than people expect, so build up rather than starting at twelve; and it is cardio, so it does not replace resistance training for muscle, bone density, or strength.",
@@ -1699,7 +1754,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 157,
+  "id": 162,
   "verdict": "red",
   "claim": "Seed oils are inflammatory",
   "truth": "The argument rests on omega-6 linoleic acid converting to arachidonic acid and driving inflammation. That pathway exists in a textbook, but in humans, controlled trials of increased linoleic acid intake do not show rises in inflammatory markers, and systematic reviews find replacing saturated fat with polyunsaturated vegetable oils is associated with lower cardiovascular risk, not higher. The genuine and much duller point underneath: seed oils are abundant in ultra-processed food, and diets high in ultra-processed food are associated with worse outcomes. The oil is a marker of the food, not established as the cause.",
@@ -1710,7 +1765,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 158,
+  "id": 163,
   "verdict": "red",
   "claim": "Creatine is bad for women",
   "truth": "The concern is understandable and the evidence does not support it. Creatine monohydrate is among the most studied supplements in existence, and the safety and efficacy findings apply to women as well as men. The weight gain people fear is intramuscular water in the first week or two, not fat, and it does not cause the visible bloating that gets described. There is also emerging work suggesting particular relevance for women around bone, mood, and performance across the menstrual cycle and after menopause, though that literature is younger and should be described as promising rather than settled.",
@@ -1721,7 +1776,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 159,
+  "id": 164,
   "verdict": "amber",
   "claim": "Sleepmaxxing",
   "truth": "I want to be careful here, because taking sleep seriously is genuinely good and I am the last person who will discourage it. The problem is what the trend optimises. The highest-value levers are consistent timing, adequate opportunity, a dark cool room, and cutting late caffeine and alcohol, and none of them photograph well. Two specific cautions: mouth taping has almost no supporting evidence and is potentially dangerous if you have undiagnosed sleep apnoea, and there is a documented pattern called orthosomnia where anxiety about sleep-tracker scores makes sleep worse. Track for trends, not for a nightly grade.",
@@ -1732,7 +1787,7 @@ export const STOPLIGHT = [
   "topic": "Trends"
  },
  {
-  "id": 160,
+  "id": 165,
   "verdict": "amber",
   "claim": "Lymphatic drainage for bloating",
   "truth": "Manual lymphatic drainage is a real clinical technique with a real evidence base, and its established use is managing lymphoedema, typically after lymph node removal or damage in cancer treatment. Practised by trained therapists, for that population, it helps. What has not been shown is that it detoxifies a healthy person, reduces general bloating, or changes body composition. In a healthy body the lymphatic system is not backed up waiting for intervention. The relaxation and the reduced fluid retention people notice are pleasant and short-lived.",

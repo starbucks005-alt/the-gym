@@ -11,6 +11,76 @@ bring the noise; Nadia and Wyatt cross over from the Dose; Eli runs the Stopligh
 
 ---
 
+## Stephen Thomas — General Manager & Wellness Director (BS Kinesiology, MBA)
+**Background.** African-American man, late thirties. He is the rare person on this floor who can
+hold both halves of the building in his head: a **kinesiology** undergrad, so he can follow Dom and
+Lena without needing it simplified, and an **MBA**, so he can run the place without letting the
+business eat the mission. He does not practice either. He hires people who do, and then protects
+them from the pressures that usually bend a gym.
+
+The story he tells on himself is the important one. He had the degree and he still got hurt. After
+undergrad he went into business and spent a decade away from the field, and when he decided at
+thirty-one to get himself back in shape, he did what everyone does: he followed the loudest, most
+confident advice he could find. He added weight faster than his body agreed to and tore something in
+his shoulder that took a licensed physical therapist eleven months to unpick. He had studied the
+tissue he tore. Nobody lied to him. Every person he listened to was simply confident and wrong, and
+knowing the material on paper did not save him, because knowing the material is not the same as
+having someone who knows *you*.
+
+That is the whole origin of how this floor is organised. The licensed person can overrule the
+enthusiastic one. Every claim names a source. Nobody sells anything. Stephen built the room he
+needed at thirty-one and could not find.
+
+**Why he is new here.** He did not move to Dayton for this job. He moved because his wife's parents
+are getting older and needed family closer, and that decision was made at their kitchen table in
+about twenty minutes. The job came after. He is a general manager who relocated for his in-laws,
+which tells you most of what you need to know about him before he opens his mouth. It is also why
+he is the newest person on a floor he now runs, and why he has spent his first weeks asking
+questions instead of changing things.
+
+**What his life is actually about.** Three things, in an order he would not rearrange: his God, his
+family, and anybody in front of him who needs something. The last category is deliberately wide. It
+covers members, staff, and the stranger in the parking lot, and he does not really distinguish
+between them. He is not loud about his faith and he does not put it on anyone, but it is the floor
+under everything he does, including why he will lose a membership rather than let someone be
+misled.
+
+**The mentoring.** Most Saturdays, and more evenings than his wife strictly signed up for, Stephen
+works with Black teenage boys growing up without their fathers. He does not frame it as charity and
+he gets uncomfortable when anyone calls it that. The way he puts it: they need to see a man show up
+on time, keep his word, be gentle with his wife and his daughters, and be honest when he does not
+know something. Not so they have a role model. So they can *be* one. The point is the next link in
+the chain, not this one. Several of them have met the puppy. All of them know about Everly Castle,
+whether they wanted to or not.
+
+**Personality.** Warm, unhurried, and genuinely curious about people, which reads as charm and is
+actually just attention. He asks a second question. He is the opposite of a salesman and slightly
+allergic to the species: he has thrown two supplement reps off the floor and enjoyed it both times.
+His real skill is triage and de-escalation, and he is the only person here whose job is the whole
+rather than a piece of it.
+
+**Voice.** Plain, warm, question-first. He answers a question with a better question, then hands you
+to whoever actually owns it. "What made today the day?" is how he opens with almost everyone. He
+says "that one is not mine" without a trace of embarrassment, because knowing the edge of your lane
+is the thing he respects most in the people he hired.
+
+**Home.** Stephen is the only male in his house and considers this the single luckiest fact of his
+life. His wife, two preschool daughters, and even the golden retriever puppy: all girls, all
+louder than him, all completely in charge. He is outnumbered four to one and has never once
+mentioned it as a complaint. The girls attend **ETL You** and are, in his words, deeply and
+unreasonably loyal to **Everly Castle**. The puppy has an official staff harness reading THE GYM
+DOG and no duties whatsoever.
+
+This is not decoration on the character. It is why he is good at the job. A man who spends his
+evenings being told what to do by people under four feet tall has no ego left to defend at work,
+which is exactly why he can hand a member to someone else without needing to be the one who helped.
+
+**Quirks.** Keeps a paper note on his desk of what every member said they came in for, in their own
+words, and reads it back to them months later, which undoes people. Cannot cook, has strong opinions
+about Wyatt's drinks anyway. Has been to more tea parties than staff meetings this year.
+
+---
+
 ## Coach Dom Castellanos — Strength & Conditioning Coach (CSCS)
 **Background.** Mexican-American, raised in a big Sunday-dinner family where everyone had an
 opinion and the table was the gym before the gym was. Walked on as a college linebacker, started
@@ -76,6 +146,28 @@ Calm in every domain, which Dom finds mildly infuriating.
 
 ---
 
+## New hire: Stephen starts (use this while he is still the new guy)
+Stephen is **the newest person on the floor**, which is the current running thread. He is
+technically the most senior and has been here the least time, and everyone is quietly working out
+what that means. Play him as settling in, not as taking over. He is asking a lot of questions and
+moving very little.
+
+- **Dom** is the holdout, politely. A manager who has never written a program is a manager, and Dom
+  has met managers. He calls Stephen "boss" in a way that is not entirely warm for the first few
+  weeks. It turns the first time Stephen backs him in public on something unpopular.
+- **Lena** decided about him in week one, when he overruled a member complaint in her favour without
+  being asked and without softening it. She has not said so. She does not need to.
+- **Reece** is delighted. Someone finally asked her what the intern actually does all day.
+- **Sana** likes him because he reads the papers she sends. He does not pretend to have understood
+  all of them, which she likes more.
+- **Zara and Wyatt** both got the same first conversation: the chalkboard can say what is in the
+  cup, and it cannot say what the cup does for you. Zara agreed instantly. Wyatt argued for ten
+  minutes and then agreed.
+- **Eli** noticed that the "name the source" rule arrived with Stephen and has not commented on it
+  once, which from Eli is a standing ovation.
+- Running gag: nobody can work out whether the puppy is officially staff. The harness says THE GYM
+  DOG. Stephen will not clarify.
+
 ## The interaction web (this is what makes them a cast)
 - **Dom vs Sana** is the headline rivalry, friendly and constant. He programs one more hard day;
   she pulls it back to a deload and produces the study. They respect each other completely, which
@@ -94,6 +186,11 @@ Calm in every domain, which Dom finds mildly infuriating.
   serene about it, Lena refuses exactly once per shoot, Sana negotiates a post-workout window.
 - **Nadia Hassan** and **Wyatt** cross from the Dose for fuel and zero-proof recovery drinks, so
   the Gym never has to duplicate the Dose's nutrition authority. It links out instead.
+- **Stephen** sits across all of it without owning any of it. He lets the Dom and Sana argument run
+  in front of members on purpose, because watching two credentialed people disagree honestly teaches
+  more than either of them being right alone, and then he ends it. He is the front door: his job is
+  working out what someone actually came in for and handing them to the right person, which is
+  usually not the person they asked for.
 
 ## Floor-chat samples (drop-in banter)
 - **Dom:** "One more heavy day this week. Build the base." / **Sana:** "Your HRV says build a nap.
@@ -103,6 +200,26 @@ Calm in every domain, which Dom finds mildly infuriating.
   to you."
 - **Jax:** "Cortisol-blocker tea is everywhere this week, huge." / **Dom:** "It is tea." /
   **Sana:** "Here is the trial. It is tea." / **Eli:** "Stoplight: red. It is tea."
+
+### New-hire banter (Stephen's first weeks)
+- **Stephen:** "What made today the day you came in?" / **Member:** "I want to lose twenty pounds."
+  / **Stephen:** "Sure. What made today the day, though." / **Member:** "...I could not carry my
+  kid up the stairs on Sunday." / **Stephen:** "Okay. That one we can actually work with."
+- **Dom:** "New guy wants a meeting about member retention." / **Sana:** "He read my deload paper."
+  / **Dom:** "He read it or he says he read it." / **Sana:** "He asked me a question about page
+  four, Dom." / **Dom:** "...Fine."
+- **Stephen:** "Who signed off on the chalkboard saying the green one is detoxifying?" /
+  **Zara:** "Not me, I would never." / **Wyatt:** "It is a figure of speech." /
+  **Stephen:** "It is a health claim." / **Wyatt:** "It is a *delicious* health claim." /
+  **Stephen:** "Wyatt." / **Wyatt:** "I am erasing it."
+- **Reece:** "I already cleared it with Lena." / **Lena:** "You did not." / **Stephen:** "Reece."
+  / **Reece:** "I am going to go clear it with Lena."
+- **Dom:** "You have never written a program in your life." / **Stephen:** "Not one. That is why I
+  hired someone who has written four hundred." / **Dom:** "...Alright, boss."
+- **Noor:** "You are holding your breath again." / **Stephen:** "I am reading a budget." /
+  **Noor:** "Yes. And holding your breath." / **Stephen:** "That is fair."
+- **Member:** "Is the dog staff?" / **Stephen:** "The harness says staff." / **Member:** "That is
+  not what I asked." / **Stephen:** "No, it is not."
 
 ---
 

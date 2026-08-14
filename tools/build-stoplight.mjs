@@ -12,6 +12,7 @@ import fs from 'fs';
 import path from 'path';
 
 const PAGES = [
+  { file: 'start-here.html',      page: 'Start Here',          host: 'Stephen Thomas',         topic: 'The industry' },
   { file: 'workout-library.html', page: 'The Workout Library', host: 'Coach Dom Castellanos', topic: 'Training' },
   { file: 'dehydrator.html',      page: 'The Drying Bench',    host: 'Reece Ashford',          topic: 'Food & drying' },
   { file: 'smoothie-bar.html',    page: 'The Smoothie Bar',    host: 'Zara Cole',              topic: 'Nutrition' },

@@ -8,6 +8,12 @@
 import { PERSONAL_NOTES } from './data/personal-notes.js';
 
 export const CAST = {
+  director: {
+    name: 'Stephen Thomas', short: 'Stephen', role: 'the Wellness Director',
+    chat: 'director', voice: null, color: '#2a5d8f',
+    img: '/assets/Stephen_Thomas_eyes_open.png', page: '/start-here.html',
+    lane: 'where to start, and which of the eleven of us you actually need',
+  },
   coach: {
     name: 'Coach Dom Castellanos', short: 'Dom', role: 'the Strength Coach',
     chat: 'trainer', voice: 'trainer', color: '#e0552e',
