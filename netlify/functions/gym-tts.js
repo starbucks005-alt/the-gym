@@ -74,14 +74,30 @@ const VOICES = {
     },
   },
 
-  // Zara Cole — social, smoothies, bench crew. Voice TBD; stub until cast.
-  zara: {
-    voiceId: null,
-    model: MODEL_DEFAULT,
+  // Wyatt E. Cooper — zero-proof mixologist, cross-platform from The Dose.
+  // Warm hospitality read: measured, precise, unhurried. Moderate stability so
+  // the spec lines land evenly; low style because he does not oversell.
+  wyatt: {
+    voiceId: "IjnA9kwZJHJ20Fp7Vmy6",
+    model: MODEL_MULTILINGUAL,
     settings: {
-      stability: 0.50,
-      similarity_boost: 0.80,
-      style: 0.25,
+      stability: 0.55,
+      similarity_boost: 0.85,
+      style: 0.22,
+      use_speaker_boost: true,
+    },
+  },
+
+  // Zara Cole — smoothie bar, socials, bench crew. Bright and quick.
+  // Lower stability + higher style for the social-media energy;
+  // speaker_boost on so she carries over gym-floor noise.
+  zara: {
+    voiceId: "nFwTWcFdyZXl5ajxEg1h",
+    model: MODEL_MULTILINGUAL,
+    settings: {
+      stability: 0.42,
+      similarity_boost: 0.85,
+      style: 0.38,
       use_speaker_boost: true,
     },
   },

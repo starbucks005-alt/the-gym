@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Smoothie Bar, The Gym</title>
+<meta name="description" content="Zara's smoothie bar. Pick a goal, get the blend, the macros, the swaps, and a myth check on every one. Post-lift protein, pre-workout, recovery, greens. Verify before you believe.">
+<link rel="canonical" href="https://the-gym.net/smoothie-bar.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/smoothie-bar.html">
+<meta property="og:title" content="The Smoothie Bar &middot; The Gym">
+<meta property="og:description" content="Zara's smoothie bar. Pick a goal, get the blend, the macros, the swaps, and a myth check on every one. Verify before you believe.">
+<meta property="og:image" content="https://the-gym.net/assets/Zara%20with%20a%20blender.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--accent-dk:#97285a;--warm:#d98a2b;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--zara:#2e7a3a;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--accent-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:880px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:60ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:62ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1.4rem 0;}
+  .picker{display:grid;grid-template-columns:1fr;gap:1rem;}
+  @media(min-width:620px){.picker{grid-template-columns:1fr 1fr;}}
+  .field label{display:block;font-family:'Lora',serif;font-size:.78rem;color:var(--accent-dk);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem;}
+  .field select{width:100%;padding:.7rem .75rem;font-family:'Inter';font-size:1rem;border:1px solid var(--line);background:#f9fbfa;border-radius:6px;color:var(--ink);}
+  .field select:focus{outline:2px solid var(--accent);outline-offset:1px;}
+  .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 0;}
+  .chip{font-size:.8rem;background:#eaf3f1;border:1px solid #cfe3de;color:#27675c;padding:.3rem .65rem;border-radius:999px;font-weight:600;}
+  .chip.pro{background:#e6f2e9;border-color:#c3e0cc;color:#20693a;}
+  .chip.kcal{background:#fbe6f0;border-color:#f0c4da;color:var(--accent-dk);}
+  .chip.time{background:#eef3f2;border-color:var(--line);color:#37606e;}
+  .ex-head{font-family:'Fraunces',serif;font-size:1.7rem;margin:.2rem 0;}
+  .ex-sub{color:var(--muted);font-size:.95rem;margin:0 0 1rem;}
+  .blend-h{font-family:'Lora',serif;font-size:.78rem;color:var(--accent-dk);text-transform:uppercase;letter-spacing:.07em;margin:1.1rem 0 .45rem;}
+  .ing{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:.3rem;}
+  @media(min-width:620px){.ing{grid-template-columns:1fr 1fr;}}
+  .ing li{font-size:.95rem;padding:.4rem .6rem;background:#f8fbfa;border:1px solid #e7edec;border-radius:6px;}
+  .ing li b{color:var(--zara);font-weight:600;}
+  .script{list-style:none;counter-reset:step;padding:0;margin:0;}
+  .script li{counter-increment:step;position:relative;padding:.55rem 0 .55rem 2.4rem;border-bottom:1px dashed #e7edec;}
+  .script li:last-child{border-bottom:none;}
+  .script li::before{content:counter(step);position:absolute;left:0;top:.5rem;width:1.7rem;height:1.7rem;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;}
+  .swap{margin:1.1rem 0 0;padding:.9rem 1rem;background:#f2f8f4;border:1px solid #cfe3d6;border-radius:8px;font-size:.95rem;} .swap b{color:var(--zara);}
+  .macro{margin:1rem 0 0;padding:.9rem 1rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;font-size:.95rem;} .macro b{color:var(--amber);}
+  .myth{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .myth-top{display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;font-weight:600;color:#fff;}
+  .myth-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;}
+  .myth.green .myth-top{background:var(--green);} .myth.amber .myth-top{background:var(--amber);} .myth.red .myth-top{background:var(--red);}
+  .myth-body{padding:.9rem 1rem;font-size:.95rem;}
+  .myth-body .claim{font-style:italic;color:var(--muted);margin:0 0 .5rem;}
+  .myth-body .src{margin:.6rem 0 0;font-size:.82rem;color:var(--soft);} .myth-body .src b{color:var(--accent-dk);}
+  .safety{margin:1.4rem 0;padding:1rem 1.1rem;background:#fdf3f5;border:1px solid #f1c9d3;border-radius:10px;font-size:.93rem;}
+  .safety b{color:var(--red);}
+  .videobox{margin:1.6rem 0;padding:1.2rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .videobox h3{font-family:'Fraunces',serif;font-size:1.3rem;margin:0 0 .2rem;}
+  .videobox p{font-size:.93rem;color:var(--muted);margin:.2rem 0 .9rem;}
+  .videobox .cap{font-size:.85rem;color:var(--soft);font-style:italic;margin:.75rem 0 0;}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#2a1d28;color:#e7a9c6;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+  .counter{margin:1.4rem 0;padding:1.2rem 1.4rem;background:#fdf1f7;border:1px solid #f2cfe1;border-radius:12px;}
+  .counter-h{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--accent-dk);margin:0 0 .4rem;}
+  .counter p{font-size:.95rem;color:var(--ink);margin:.3rem 0;}
+  .counter .byline{font-size:.86rem;color:var(--muted);font-style:italic;margin-top:.5rem;}
+  .uses{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 .2rem;}
+  .use-chip{font-size:.82rem;background:#fff;border:1px solid #f0c4da;color:var(--accent-dk);padding:.3rem .7rem;border-radius:999px;font-weight:600;}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#5c6675,#3a4452);display:flex;align-items:center;justify-content:center;}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;color:var(--ink);}
+  .cc-role{color:var(--zara);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;}
+  .cc-emp{background:#f4eaf0;color:#9c4d77;}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .cc-hire:hover{background:#000;}
+  .crew{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fbf3f8;border:1px solid #f0cfe2;border-radius:12px;}
+  .crew-h{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--accent-dk);margin-bottom:.55rem;}
+  .crew ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .crew li{font-size:.92rem;color:var(--ink);}
+  .crew li b{color:var(--accent-dk);}
+  .crew .bp{font-size:.68rem;background:#d8f0e2;color:#1f7a45;padding:.08rem .45rem;border-radius:999px;margin-left:.3rem;white-space:nowrap;}
+  .rulebox{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .rulebox h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .6rem;}
+  .rulebox ol{margin:0;padding-left:1.2rem;font-size:.95rem;}
+  .rulebox li{margin:.4rem 0;}
+  .rulebox li b{color:var(--zara);}
+  .actions{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0 .2rem;}
+  .btn{padding:.7rem 1.3rem;border-radius:7px;font-family:'Inter';font-weight:600;font-size:.98rem;cursor:pointer;border:none;}
+  .btn-go{background:var(--zara);color:#fff;} .btn-go:hover{background:#24602d;}
+  .btn-ghost{background:#fff;color:var(--zara);border:1px solid var(--zara);}
+  .speaking-note{font-size:.85rem;color:var(--soft);font-style:italic;margin-top:.5rem;min-height:1.2em;}
+  /* ---- Build your own ---- */
+  .builder{margin:1.6rem 0;padding:1.3rem 1.4rem;background:#fff;border:2px solid var(--accent);border-radius:14px;}
+  .builder h2{font-family:'Fraunces',serif;font-size:1.85rem;margin:0 0 .25rem;}
+  .builder .lede{color:var(--muted);font-size:.98rem;margin:0 0 .3rem;max-width:62ch;}
+  .builder .lede2{color:var(--soft);font-size:.88rem;font-style:italic;margin:0 0 1.1rem;max-width:62ch;}
+  .grp{margin:0 0 1.1rem;}
+  .grp-h{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin:0 0 .5rem;}
+  .grp-h .t{font-family:'Lora',serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600;}
+  .grp-h .c{font-size:.78rem;color:var(--soft);}
+  .opts{display:flex;flex-wrap:wrap;gap:.4rem;}
+  .opt{font-family:'Inter';font-size:.88rem;font-weight:600;padding:.42rem .8rem;border-radius:7px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;transition:all .12s;}
+  .opt:hover{border-color:#9aa8b2;}
+  .opt.on{color:#fff;border-color:transparent;}
+  .g-fruit .grp-h .t{color:#1f6b96;} .g-fruit .opt.on{background:#2b82b8;}
+  .g-veg   .grp-h .t{color:#1f7a45;} .g-veg   .opt.on{background:#2e8b4f;}
+  .g-liq   .grp-h .t{color:#8a2d7a;} .g-liq   .opt.on{background:#a13a8f;}
+  .g-pro   .grp-h .t{color:#b35a17;} .g-pro   .opt.on{background:#dd7522;}
+  .g-ext   .grp-h .t{color:#1d6478;} .g-ext   .opt.on{background:#22758c;}
+  .g-ice   .grp-h .t{color:#5b6770;} .g-ice   .opt.on{background:#6d7a84;}
+  .builder-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin:.2rem 0 0;}
+  .bbtn{padding:.6rem 1.15rem;border-radius:7px;font-family:'Inter';font-weight:600;font-size:.92rem;cursor:pointer;border:1px solid var(--accent);background:#fff;color:var(--accent-dk);}
+  .bbtn.solid{background:var(--accent);color:#fff;border-color:var(--accent);} .bbtn.solid:hover{background:var(--accent-dk);}
+  .bbtn:hover{background:#fdf1f7;}
+  .ticket{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfdfc;}
+  .ticket-top{background:var(--ink);color:#fff;padding:.9rem 1.1rem;}
+  .ticket-top .lbl{font-family:'Lora',serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0ab;}
+  .ticket-top .nm{font-family:'Fraunces',serif;font-size:1.5rem;line-height:1.15;margin:.15rem 0 0;}
+  .ticket-top .pf{font-size:.85rem;color:#c4cfd4;margin:.3rem 0 0;}
+  .ticket-body{padding:1.1rem;}
+  .pipe{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:0 0 1rem;}
+  .pipe .step{font-size:.82rem;font-weight:600;color:#fff;padding:.3rem .65rem;border-radius:6px;}
+  .pipe .arw{color:var(--soft);font-size:.8rem;}
+  .pipe .s-fruit{background:#2b82b8;} .pipe .s-veg{background:#2e8b4f;} .pipe .s-liq{background:#a13a8f;}
+  .pipe .s-pro{background:#dd7522;} .pipe .s-ext{background:#22758c;} .pipe .s-ice{background:#6d7a84;}
+  .nutri{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin:0 0 1rem;}
+  @media(min-width:620px){.nutri{grid-template-columns:repeat(5,1fr);}}
+  .nut{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.6rem .7rem;text-align:center;}
+  .nut .v{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:var(--ink);line-height:1.1;}
+  .nut .k{font-size:.72rem;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem;}
+  .nut.hi .v{color:var(--accent-dk);}
+  .zline{font-size:.95rem;background:#f2f8f4;border:1px solid #cfe3d6;border-radius:8px;padding:.8rem .95rem;margin:0 0 1rem;}
+  .zline b{color:var(--zara);}
+  .flag{font-size:.92rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;padding:.75rem .95rem;margin:0 0 1rem;} .flag b{color:var(--amber);}
+  .empty{color:var(--soft);font-style:italic;font-size:.95rem;padding:.5rem 0;}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;We build the blend, and we check the claim on the label.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>The Smoothie Bar</h1>
+    <p class="tag">Zara runs the blender on the gym floor. Pick what you are actually trying to do, and get the blend, the ratio, the swaps, and the honest number on what is in the cup, with a myth check on every one.</p>
+    <p class="mini">Post-lift protein, pre-workout fuel, recovery, greens, and zero-proof. The smoothie aisle is where supplement marketing and wellness hype meet in one cup, so we put the receipts right next to the recipe.</p>
+  </div>
+
+  <div class="videobox">
+    <h3>Zara makes one</h3>
+    <p>Ninety seconds, start to finish. This is the whole technique: liquid first, soft stuff next, frozen and powder last.</p>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1218313889?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Zara making a smoothie"></iframe></div>
+    <p class="cap">Zara Cole at the bar. "If it takes longer than the walk to the parking lot, nobody is making it twice."</p>
+  </div>
+
+  <div class="counter">
+    <div class="counter-h">The bar is not a supplement store</div>
+    <p>Everything here is food you could buy at a normal grocery store, plus one protein powder if you want it. There is nothing on this menu that requires a subscription, a coach code, or a canister with a lightning bolt on it.</p>
+    <p>The honest catch: a smoothie is a drink you can consume in ninety seconds that took a lot of food to make. That is exactly what you want after a hard session, and exactly what you do not want as a fourth snack. The macro line on every blend is there so you know which one you are having.</p>
+    <div class="uses"><span class="use-chip">Post-lift</span><span class="use-chip">Pre-workout</span><span class="use-chip">Recovery</span><span class="use-chip">Everyday</span></div>
+    <p class="byline">Zara runs the bar and the socials. "I will absolutely make it look good for the camera. I am not going to lie to you about what is in it."</p>
+  </div>
+
+  <div class="safety"><b>Read this first.</b> Two things keep a smoothie honest. One: if you take any prescription medication, grapefruit and high-dose green powders are not automatically safe additions, so check with a pharmacist before you make them a habit. Two: protein powder is a food, not a drug, but it is unregulated in the way supplements are, so buy third-party tested (NSF Certified for Sport or Informed Sport) if you compete or get tested.</div>
+
+  <!-- ============ BUILD YOUR OWN ============ -->
+  <div class="builder">
+    <h2>Build your own</h2>
+    <p class="lede">Tap what you want. Zara builds it in the machine's order, hands you the ticket, and tells you what is actually in the cup, including the part the menu board leaves off.</p>
+    <p class="lede2">Up to two fruits, and then one of everything else, or none of it. There is no wrong combination here, only combinations Zara will have an opinion about.</p>
+
+    <div class="grp g-fruit">
+      <div class="grp-h"><span class="t">1. Fruit</span><span class="c">choose 0, 1, or 2 &middot; pureed fruit pouches</span><span class="c" id="fruit-count"></span></div>
+      <div class="opts" id="opt-fruit"></div>
+    </div>
+    <div class="grp g-veg">
+      <div class="grp-h"><span class="t">2. Vegetable</span><span class="c">choose 0 or 1 &middot; pureed veg pouches</span></div>
+      <div class="opts" id="opt-veg"></div>
+    </div>
+    <div class="grp g-liq">
+      <div class="grp-h"><span class="t">3. Liquid</span><span class="c">choose 0 or 1</span></div>
+      <div class="opts" id="opt-liq"></div>
+    </div>
+    <div class="grp g-pro">
+      <div class="grp-h"><span class="t">4. Protein</span><span class="c">choose 0 or 1</span></div>
+      <div class="opts" id="opt-pro"></div>
+    </div>
+    <div class="grp g-ext">
+      <div class="grp-h"><span class="t">5. Extra</span><span class="c">choose 0 or 1</span></div>
+      <div class="opts" id="opt-ext"></div>
+    </div>
+    <div class="grp g-ice">
+      <div class="grp-h"><span class="t">6. Ice</span><span class="c">optional</span></div>
+      <div class="opts" id="opt-ice"></div>
+    </div>
+
+    <div class="builder-actions">
+      <button class="bbtn solid" id="surprise">&#127864;&nbsp; Surprise me</button>
+      <button class="bbtn" id="clearall">Start over</button>
+    </div>
+
+    <div class="ticket" id="ticket">
+      <div class="ticket-top">
+        <div class="lbl">Order ticket &middot; The Smoothie Bar</div>
+        <div class="nm" id="t-name">Nothing in the jar yet</div>
+        <div class="pf" id="t-profile">Tap a fruit to start building.</div>
+      </div>
+      <div class="ticket-body">
+        <div class="pipe" id="t-pipe"></div>
+        <div class="nutri" id="t-nutri"></div>
+        <div class="zline" id="t-zara"></div>
+        <div id="t-flag"></div>
+        <div id="t-myths"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ZARA'S HOUSE BLENDS ============ -->
+  <div class="hero" style="padding-top:2.2rem;">
+    <h1 style="font-size:1.9rem;">Or take one of Zara's</h1>
+    <p class="tag">Eleven blends she already built and already argued about with Nadia. Pick what you are training for and the whole recipe comes with it.</p>
+  </div>
+
+  <div class="panel">
+    <div class="picker">
+      <div class="field"><label for="cat">1. What are you doing</label><select id="cat"></select></div>
+      <div class="field"><label for="blend">2. Pick your blend</label><select id="blend"></select></div>
+    </div>
+    <div class="meta" id="meta"></div>
+  </div>
+
+  <div class="panel" id="card">
+    <h2 class="ex-head" id="bname"></h2>
+    <p class="ex-sub" id="bsub"></p>
+    <div class="blend-h">In the cup</div>
+    <ul class="ing" id="ing"></ul>
+    <div class="blend-h">How Zara builds it</div>
+    <ol class="script" id="script"></ol>
+    <div class="actions">
+      <button class="btn btn-go" id="speak">&#9654;&nbsp; Zara, talk me through it</button>
+      <button class="btn btn-ghost" id="stop">&#9632;&nbsp; Stop</button>
+    </div>
+    <p class="speaking-note" id="note">Turn your sound on. Zara reads the build the way she calls it out at the bar.</p>
+    <div class="macro" id="macro"></div>
+    <div class="swap" id="swap"></div>
+    <div class="myth" id="myth"><div class="myth-top"><span class="v" id="mythv"></span><span id="mythh"></span></div>
+      <div class="myth-body"><p class="claim" id="mythclaim"></p><div id="mythtruth"></div><p class="src" id="mythsrc"></p></div></div>
+  </div>
+
+  <div class="rulebox">
+    <h3>Zara's four rules of the blender</h3>
+    <ol>
+      <li><b>Load it in order.</b> Liquid, then soft food, then greens, then frozen, then powder on top. Load it backwards and you get a powder cement layer on the blades and a motor that whines at you.</li>
+      <li><b>Frozen fruit, not ice.</b> Ice waters the drink down as it melts. Frozen banana and frozen berries give you the same cold and thick without diluting the flavor.</li>
+      <li><b>Fat and fiber are the difference between a drink and a meal.</b> A tablespoon of nut butter or seeds, plus the actual fruit fiber, is what keeps you full past the next hour. Skip both and you have a milkshake with good PR.</li>
+      <li><b>Rinse it immediately.</b> Water, one drop of soap, run it for ten seconds. A smoothie you have to scrub after is a smoothie you stop making.</li>
+    </ol>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Zara_eyes_open.png" alt="Zara Cole" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Zara_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 7.9s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Zara Cole</h3>
+      <div class="cc-role">Smoothie Bar &middot; Your host</div>
+      <p class="cc-tag">Runs the blender and the socials. Keeps it fun, keeps it honest, and checks every ingredient before it goes in.</p>
+      <div class="cc-tags"><span class="cc-t">#smoothies</span><span class="cc-t">#gym</span><span class="cc-t">#socialmedia</span><span class="cc-t">#fuel</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">Dose / Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="crew">
+    <div class="crew-h">Who Zara checks with</div>
+    <ul>
+      <li><b>Nadia Hassan</b> &mdash; sports nutrition. Protein targets, timing, and whether a blend is a meal or a dessert. She is the authority on anything you actually eat.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Wyatt E. Cooper</b> &mdash; crosses over from the Dose for the zero-proof side. A mixologist who does not drink, which makes him very good at making water interesting. He runs <a href="/elixir-bar.html">The Elixir Bar</a> next door.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Dr. Sana Qureshi</b> &mdash; recovery and sleep. She rules on the tart cherry and magnesium questions, with the paper in hand.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Dr. Henry Chen, RPh</b> &mdash; supplement and interaction checks. Anything green-powder or caffeine-adjacent goes past him first.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Coach Dom Castellanos</b> &mdash; will tell you, unprompted, that the blend matters less than showing up Thursday.</li>
+      <li><b>Eli Adler</b> &mdash; runs the Stoplight, so every verdict on this page names a source.<span class="bp">&#127890; backpack</span></li>
+    </ul>
+  </div>
+
+  <div class="verify-box">
+    <h3>How the staff verify (so you don't have to take our word for it)</h3>
+    <p>Zara hosts the bar and builds the blends. She does not make the nutrition calls herself, and she will tell you that first. Every myth check on this page ran through The Gym <b>Stoplight</b>: Nadia on nutrition and protein, Dr. Sana on recovery and sleep, Dr. Henry on supplements and interactions, Eli on the citation.</p>
+    <p>Green means the evidence backs it. Amber means it depends, and here is on what. Red means a popular claim that is wrong. Each verdict names a source you can open yourself.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">USDA FoodData Central</span><span class="pill">NIH ODS</span><span class="pill">ISSN position stands</span><span class="pill">Stoplight verdict + citation</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical, and not personalized nutrition advice.</b> The macro numbers on this page are rounded estimates for a typical build, not a lab analysis, and they change the moment you change a portion. Dietary supplements, including protein and green powders, are not reviewed by the FDA for safety or effectiveness before they are sold. If you are pregnant, managing a kidney or liver condition, diabetic, taking prescription medication, or feeding a child, talk to your clinician or a registered dietitian before making any of these a routine.</p>
+</div>
+<script>
+const DB = {
+ "Post-Lift":[
+  {id:"the-standard",name:"The Standard (house post-lift)",pro:"~32 g protein",kcal:"~450 kcal",time:"90 sec",
+   sub:"The one Zara makes most. Boring on purpose, and it works.",
+   ing:["<b>1 cup</b> milk or soy milk","<b>1 scoop</b> whey or soy protein","<b>1</b> frozen banana","<b>1 tbsp</b> peanut butter","<b>1 tbsp</b> oats","<b>pinch</b> salt"],
+   script:["Milk in first. Always liquid first, or the powder cakes on the blades.","Banana, peanut butter, and oats next.","Protein powder on top, last, so it sits above the liquid line.","Blend 30 to 45 seconds until you cannot see flecks of oat. Salt is not optional, it is what makes it taste like a milkshake instead of a chore."],
+   macro:"Roughly 450 kcal, 32 g protein, 50 g carb, 14 g fat. That is a post-training meal, not a snack. If you are having it alongside dinner, cut the peanut butter and the oats.",
+   swap:"Swaps: soy or pea protein if you skip dairy, and the protein number holds. Cows milk to fairlife or skim if you want the same protein with fewer calories. No banana? Half a cup of frozen mango and a few ice cubes.",
+   myth:{verdict:"red",claim:"“You have thirty minutes after training to get protein in or you wasted the session.”",truth:"This is the anabolic window and it is much wider than thirty minutes, likely several hours on either side of the session. What actually drives the result is total daily protein, roughly 1.6 g per kg of bodyweight for most lifters, spread across the day. Drink it when it is convenient. Convenient is why Zara has one right there.",source:"ISSN Position Stand: Nutrient Timing; Schoenfeld & Aragon, JISSN"}},
+  {id:"choc-milk",name:"Chocolate Milk, Upgraded",pro:"~26 g protein",kcal:"~380 kcal",time:"60 sec",
+   sub:"The recovery drink that was in the fridge the whole time.",
+   ing:["<b>1.5 cups</b> chocolate milk","<b>1/2 scoop</b> chocolate protein","<b>1</b> frozen banana","<b>1 tsp</b> cocoa powder","<b>pinch</b> salt"],
+   script:["Chocolate milk in the jar first.","Banana and cocoa next.","Half a scoop of protein on top. Half, because the milk is already carrying protein.","Blend 30 seconds. This one is for the session that actually took something out of you."],
+   macro:"Roughly 380 kcal, 26 g protein, 52 g carb, 8 g fat. High carb on purpose, which is the point of a recovery drink after endurance work or a long, hard session.",
+   swap:"Swaps: any dairy or fortified soy chocolate milk works. Skip the extra protein scoop entirely and you still land near 18 g, which is plenty for most people.",
+   myth:{verdict:"green",claim:"“Chocolate milk is a legitimate recovery drink.”",truth:"True, and it is one of the rare cases where the internet is right. It lands close to the carbohydrate-to-protein ratio studied for post-endurance recovery, it replaces fluid and sodium, and it costs a fraction of a marketed recovery powder. It is not magic, it is just a well-shaped mix that was already in the cooler.",source:"Reviews on chocolate milk and post-exercise recovery, PubMed; ISSN Position Stand: Nutrient Timing"}},
+  {id:"plant-post",name:"Plant Post-Lift",pro:"~30 g protein",kcal:"~430 kcal",time:"90 sec",
+   sub:"No dairy, same job. Needs one adjustment, and here is why.",
+   ing:["<b>1 cup</b> soy milk","<b>1.25 scoops</b> pea or pea-rice blend protein","<b>1/2 cup</b> frozen berries","<b>1</b> frozen banana","<b>1 tbsp</b> almond butter","<b>pinch</b> salt"],
+   script:["Soy milk first. Soy specifically, because it carries real protein where almond milk carries almost none.","Berries, banana, almond butter.","Protein last, on top.","Blend 45 seconds. Pea protein is grittier than whey, so give it longer than you think."],
+   macro:"Roughly 430 kcal, 30 g protein, 52 g carb, 12 g fat. The extra quarter scoop is deliberate, see the myth check.",
+   swap:"Swaps: a pea-plus-rice blend beats pea alone on amino acid profile. Almond milk instead of soy costs you about 7 g of protein, so add the protein back with the powder if you make that swap.",
+   myth:{verdict:"amber",claim:"“Plant protein cannot build muscle the way whey does.”",truth:"It depends on the dose and the blend. Gram for gram, most single-source plant proteins carry less leucine, the amino acid that triggers the muscle-building signal, so an equal scoop does slightly less. Fix it by taking a modestly larger serving or using a blend such as pea plus rice, and the outcomes close up in the research. Soy holds up especially well on its own.",source:"ISSN Position Stand: Protein and Exercise; PubMed reviews on plant vs animal protein and muscle protein synthesis"}}
+ ],
+ "Pre-Workout":[
+  {id:"coffee-banana",name:"Coffee & Banana Pre-Lift",pro:"~12 g protein",kcal:"~260 kcal",time:"60 sec",
+   sub:"The pre-workout that is just the active ingredient, honestly labeled.",
+   ing:["<b>3/4 cup</b> cold brew or chilled coffee","<b>1/2 cup</b> milk","<b>1</b> frozen banana","<b>1 tbsp</b> oats","<b>1 tsp</b> honey (optional)","<b>pinch</b> salt"],
+   script:["Coffee and milk in first.","Banana and oats.","Blend 30 seconds. Drink it 45 to 60 minutes before you train, not five minutes before.","Do not make this one after about 2 pm if you care about your sleep, and Dr. Sana would like you to care about your sleep."],
+   macro:"Roughly 260 kcal, 12 g protein, 42 g carb, 5 g fat, plus about 100 to 150 mg caffeine depending on your coffee. Light enough to train on.",
+   swap:"Swaps: decaf if you just want the flavor and the carbs. Skip the honey, the banana is already the sugar.",
+   myth:{verdict:"red",claim:"“You need a pre-workout powder to train hard.”",truth:"No. In nearly every pre-workout on the shelf, the ingredient carrying the effect is caffeine, at roughly 3 to 6 mg per kg of bodyweight. Coffee delivers that for pennies with a dose you can actually read. Some other ingredients, notably creatine and beta-alanine, do have evidence, but they work from taking them daily, not from taking them thirty minutes before you lift. The tingle is beta-alanine, and the tingle is not the benefit.",source:"ISSN Position Stand: Caffeine and Exercise Performance; NIH ODS, Dietary Supplements for Exercise and Athletic Performance"}},
+  {id:"beet-berry",name:"Beet & Berry",pro:"~6 g protein",kcal:"~220 kcal",time:"60 sec",
+   sub:"The endurance one. Real mechanism, modest effect, specific timing.",
+   ing:["<b>1 cup</b> beet juice","<b>1/2 cup</b> frozen mixed berries","<b>1/2</b> frozen banana","<b>1/2 inch</b> fresh ginger","<b>squeeze</b> lemon"],
+   script:["Beet juice in first.","Berries, banana, ginger, lemon.","Blend 30 seconds.","Timing matters on this one. Two to three hours before the effort, not right before, because the nitrate needs time to convert."],
+   macro:"Roughly 220 kcal, 6 g protein, 48 g carb, 1 g fat. Carb-forward on purpose. And yes, it will turn things pink for a day. That is beeturia and it is harmless.",
+   swap:"Swaps: whole cooked beets plus water instead of juice, though you will get less nitrate per cup. Add half a scoop of protein and it stops being a pre-workout and becomes a snack.",
+   myth:{verdict:"amber",claim:"“Beet juice makes you faster.”",truth:"It depends on who you are and what you are doing. Dietary nitrate does have a real mechanism and shows small but genuine benefits for endurance efforts, mostly in recreational and moderately trained people, at meaningful doses taken two to three hours out. In highly trained athletes the effect shrinks or disappears. It is a couple of percent at best, not a gear change, and it does nothing measurable for lifting.",source:"NIH ODS, Dietary Supplements for Exercise and Athletic Performance; PubMed meta-analyses on nitrate supplementation"}}
+ ],
+ "Recovery & Sleep":[
+  {id:"tart-cherry",name:"Tart Cherry Night Cap",pro:"~8 g protein",kcal:"~280 kcal",time:"60 sec",
+   sub:"Dr. Sana's pick. She will also tell you it is the third most important thing in the cup.",
+   ing:["<b>1 cup</b> tart cherry juice","<b>1/2 cup</b> Greek yogurt","<b>1/2</b> frozen banana","<b>1 tbsp</b> chia seeds","<b>dash</b> cinnamon"],
+   script:["Cherry juice first, yogurt second.","Banana, chia, cinnamon.","Blend 30 seconds. Let it sit two minutes so the chia softens.","Drink it about an hour before bed if sleep is what you are after."],
+   macro:"Roughly 280 kcal, 8 g protein, 48 g carb, 5 g fat. Mostly the juice's own sugar, which is worth knowing if you are drinking it nightly.",
+   swap:"Swaps: cottage cheese instead of yogurt pushes protein toward 20 g, which is a genuinely good pre-sleep move. Unsweetened tart cherry concentrate plus water costs less per serving than the bottled juice.",
+   myth:{verdict:"amber",claim:"“Tart cherry juice fixes soreness and fixes your sleep.”",truth:"It depends on what you expected. There is real, repeated evidence for modest reductions in muscle soreness and small improvements in sleep duration, likely from the anthocyanins and a little natural melatonin. Modest is the operative word: it takes several days of consistent intake, and the effect is a nudge, not a fix. Sleeping eight hours beats every drink on this page, and Dr. Sana would like that in bold.",source:"PubMed reviews on tart cherry, exercise recovery, and sleep; NIH ODS"}},
+  {id:"golden-hour",name:"Golden Hour",pro:"~14 g protein",kcal:"~300 kcal",time:"60 sec",
+   sub:"The turmeric one. Delicious. Also the most oversold ingredient on the shelf.",
+   ing:["<b>1 cup</b> milk or oat milk","<b>1/2</b> frozen banana","<b>1/2 cup</b> frozen mango","<b>1 tsp</b> turmeric","<b>crack</b> black pepper","<b>1 tsp</b> almond butter","<b>dash</b> cinnamon"],
+   script:["Milk in first.","Banana, mango, turmeric, cinnamon, almond butter.","Black pepper genuinely matters here, see the myth check.","Blend 30 seconds. Rinse the jar right away or turmeric will stain it permanently, and Zara has lost two jars this way."],
+   macro:"Roughly 300 kcal, 14 g protein with dairy milk, 44 g carb, 8 g fat. With oat milk, protein drops to about 4 g.",
+   swap:"Swaps: half a scoop of vanilla protein makes this a real post-lift option. Fresh grated turmeric if you have it, though powdered works fine.",
+   myth:{verdict:"red",claim:"“Turmeric is a natural anti-inflammatory as strong as ibuprofen.”",truth:"Not supported. Curcumin does have measurable anti-inflammatory activity in a lab, but it is poorly absorbed by the human gut, which is why black pepper gets recommended alongside it. Clinical results in people are inconsistent and far weaker than the claim, and the trials showing the most benefit used concentrated extracts at doses you cannot reach with a teaspoon in a smoothie. It is a lovely spice with some promise, not a drug replacement. If you take blood thinners, ask a pharmacist before you take extracts.",source:"NIH NCCIH, Turmeric; NIH ODS; PubMed reviews on curcumin bioavailability"}}
+ ],
+ "Green & Everyday":[
+  {id:"actual-green",name:"The Actual Green One",pro:"~9 g protein",kcal:"~290 kcal",time:"60 sec",
+   sub:"Green because of the spinach, not because of a powder.",
+   ing:["<b>1 cup</b> water or coconut water","<b>2 large handfuls</b> spinach","<b>1</b> frozen banana","<b>1/2</b> green apple","<b>1 tbsp</b> hemp seeds","<b>squeeze</b> lemon","<b>1/2 inch</b> ginger"],
+   script:["Water in, then spinach, and blend those two alone for 15 seconds first. This is the trick to no leaf flecks.","Then banana, apple, hemp, lemon, ginger.","Blend another 30 seconds.","The lemon is doing more work than you think. Without it this tastes like a lawn."],
+   macro:"Roughly 290 kcal, 9 g protein, 48 g carb, 8 g fat, and a genuinely useful amount of fiber, potassium, vitamin K, and folate.",
+   swap:"Swaps: kale instead of spinach if you want it more bitter and more mineral. Frozen cauliflower rice, half a cup, makes it creamy and thick and you will not taste it.",
+   myth:{verdict:"red",claim:"“Blending destroys the fiber, so a smoothie is no better than juice.”",truth:"Wrong, and this is the one Zara corrects most. Juicing removes the pulp and with it most of the fiber. Blending keeps every bit of it, just in smaller pieces. Breaking the fiber down does speed how fast the sugars hit compared with chewing a whole apple, which is a real and much smaller point, but the fiber is still in the cup and still doing its job. A smoothie and a juice are not the same drink.",source:"USDA FoodData Central; PubMed studies comparing blended vs juiced fruit and glycemic response"}},
+  {id:"meal-in-glass",name:"Nadia's Meal in a Glass",pro:"~28 g protein",kcal:"~520 kcal",time:"90 sec",
+   sub:"Built to replace a meal, not sit next to one.",
+   ing:["<b>1 cup</b> milk or soy milk","<b>1/2 cup</b> Greek yogurt","<b>1/3 cup</b> rolled oats","<b>1</b> frozen banana","<b>1/2 cup</b> frozen berries","<b>1 tbsp</b> almond butter","<b>1 tbsp</b> ground flax","<b>pinch</b> salt"],
+   script:["Milk and yogurt first.","Oats, fruit, nut butter, flax.","Blend 60 seconds. Longer than the others, because the oats need it.","If it is too thick to drink through a straw, that is correct. Eat it with a spoon."],
+   macro:"Roughly 520 kcal, 28 g protein, 65 g carb, 17 g fat, high fiber. This is breakfast. Nadia built it to hold you four hours, and it does.",
+   swap:"Swaps: cottage cheese for the yogurt if you want more protein and do not mind the tang. Skip the oats and it drops to about 400 kcal and stops being a meal.",
+   myth:{verdict:"amber",claim:"“A smoothie is never as filling as real food, so it cannot be a meal.”",truth:"It depends entirely on what you put in it. Liquid calories do tend to satisfy less than the same food chewed, which is the honest core of this claim, and a fruit-and-juice blend will leave you hungry in an hour. But a blend built with protein, fat, and intact fiber, like this one, closes most of that gap. Build it like a meal and it behaves like one. Build it like a dessert and it behaves like that too, which is where Wyatt and Nadia argue.",source:"PubMed research on liquid vs solid calories and satiety; USDA FoodData Central"}},
+  {id:"detox-green",name:"The One People Call a Detox",pro:"~5 g protein",kcal:"~190 kcal",time:"60 sec",
+   sub:"Genuinely good for you. Not for the reason it is usually sold.",
+   ing:["<b>1 cup</b> water","<b>1</b> cucumber, chunked","<b>1 handful</b> spinach","<b>1/2</b> green apple","<b>squeeze</b> lime","<b>small handful</b> mint","<b>pinch</b> salt"],
+   script:["Water, cucumber, spinach in first.","Apple, lime, mint, salt.","Blend 30 seconds.","This one is genuinely refreshing and genuinely low calorie. Have it because it is nice, not because of what the label on a similar bottle told you."],
+   macro:"Roughly 190 kcal, 5 g protein, 42 g carb, 1 g fat. Hydrating, high in water volume, low in everything else.",
+   swap:"Swaps: coconut water instead of plain water if you have been sweating hard. Add half a scoop of protein and it becomes an actual light meal.",
+   myth:{verdict:"red",claim:"“A smoothie cleanse detoxes your liver and flushes out toxins.”",truth:"No. Your liver and kidneys perform detoxification continuously and are not waiting on a green drink to start. No smoothie, juice cleanse, or detox program has been shown to remove any specific toxin from the body, and the marketing almost never names the toxin, because there is not one to name. Vegetables are good for you on the merits. That is the whole and sufficient reason to drink this.",source:"NIH NCCIH, Detoxes and Cleanses; FTC actions on detox marketing claims"}}
+ ],
+ "Zero-Proof (from the Dose)":[
+  {id:"wyatt-cooler",name:"Wyatt's Zero-Proof Cooler",pro:"~2 g protein",kcal:"~150 kcal",time:"60 sec",
+   sub:"The mixologist's crossover. Built to be interesting, not to be a health claim.",
+   ing:["<b>3/4 cup</b> sparkling water","<b>1/2 cup</b> frozen watermelon","<b>1/4 cup</b> frozen strawberry","<b>squeeze</b> lime","<b>4 leaves</b> basil","<b>pinch</b> salt"],
+   script:["Blend everything except the sparkling water. Sparkling water in a blender is just sad flat water.","Blend 20 seconds into a slush.","Pour, then top with the sparkling water and stir once.","Basil, not mint. Wyatt is firm on this and he is right."],
+   macro:"Roughly 150 kcal, 2 g protein, 36 g carb, 0 g fat. Light. This is the one for a hot afternoon, not the one after deadlifts.",
+   swap:"Swaps: any frozen melon works. A splash of zero-proof aperitif if you have it, which is Wyatt's actual version.",
+   myth:{verdict:"amber",claim:"“Zero proof means it is the healthy option.”",truth:"It depends on the bottle. Skipping the alcohol is a real win and there is no argument there. But plenty of zero-proof mixers, mocktail syrups, and bottled smoothies carry as much sugar as a dessert, and some non-alcoholic beers and spirits still contain a trace of alcohol, up to about 0.5 percent, which matters if you are avoiding it entirely for medical or recovery reasons. Read the label. Zero proof is a statement about alcohol, not about sugar.",source:"USDA FoodData Central; TTB and FDA labeling rules on non-alcoholic beverages"}}
+ ]
+};
+
+const VERDICT = {green:"Green · Checks out", amber:"Amber · It depends", red:"Red · Myth"};
+const catSel=document.getElementById('cat'), blendSel=document.getElementById('blend');
+catSel.innerHTML = Object.keys(DB).map(c=>'<option value="'+c+'">'+c+'</option>').join('');
+function fillBlends(){
+  blendSel.innerHTML = DB[catSel.value].map((b,i)=>'<option value="'+i+'">'+b.name+'</option>').join('');
+  renderBlend();
+}
+function renderBlend(){
+  const b=DB[catSel.value][+blendSel.value];
+  document.getElementById('meta').innerHTML='<span class="chip pro">'+b.pro+'</span><span class="chip kcal">'+b.kcal+'</span><span class="chip time">'+b.time+'</span><span class="chip">'+catSel.value+'</span>';
+  document.getElementById('bname').textContent=b.name;
+  document.getElementById('bsub').textContent=b.sub;
+  document.getElementById('ing').innerHTML=b.ing.map(i=>'<li>'+i+'</li>').join('');
+  document.getElementById('script').innerHTML=b.script.map(s=>'<li>'+s+'</li>').join('');
+  document.getElementById('macro').innerHTML='<b>The honest number:</b> '+b.macro;
+  document.getElementById('swap').innerHTML='<b>Zara\'s swaps:</b> '+b.swap.replace(/^Swaps:\s*/,'');
+  const my=b.myth, box=document.getElementById('myth');
+  box.className='myth '+my.verdict;
+  document.getElementById('mythv').textContent=VERDICT[my.verdict];
+  document.getElementById('mythh').textContent='Myth Check';
+  document.getElementById('mythclaim').textContent=my.claim;
+  document.getElementById('mythtruth').innerHTML='<span>'+my.truth+'</span>';
+  document.getElementById('mythsrc').innerHTML='Checked against: <b>'+my.source+'</b>';
+  stopSpeak();
+}
+catSel.addEventListener('change',fillBlends);
+blendSel.addEventListener('change',renderBlend);
+
+/* ---- Zara reads the build (ElevenLabs via /.netlify/functions/gym-tts) ---- */
+let speaking=false, _gymAudio=null, _abortCtrl=null;
+const note=document.getElementById('note');
+async function elevenSay(text,charId){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();}
+  _abortCtrl=new AbortController();
+  let resp;
+  try{
+    resp=await fetch('/.netlify/functions/gym-tts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({characterId:charId,text}),signal:_abortCtrl.signal});
+  }catch(e){return false;}
+  if(!resp.ok)return false;
+  const blob=await resp.blob();
+  const url=URL.createObjectURL(blob);
+  _gymAudio=new Audio(url);
+  return new Promise(res=>{
+    _gymAudio.onended=()=>{URL.revokeObjectURL(url);_gymAudio=null;res(true);};
+    _gymAudio.onerror=()=>{URL.revokeObjectURL(url);_gymAudio=null;res(false);};
+    _gymAudio.play().catch(()=>res(false));
+  });
+}
+async function speakBuild(){
+  stopSpeak(); speaking=true;
+  document.getElementById('speak').textContent='⏸ Loading...';
+  note.textContent='Loading Zara...';
+  const b=DB[catSel.value][+blendSel.value];
+  const lines=[b.name+'. '+b.sub]
+    .concat(['In the cup. '+b.ing.map(i=>i.replace(/<[^>]+>/g,'')).join(', ')+'.'])
+    .concat(b.script);
+  const ok=await elevenSay(lines.join(' ... '),'zara');
+  if(speaking){stopSpeak();note.textContent = ok ? 'That is the build. Load it in that order.' : 'Audio is unavailable right now. The written build above is the same thing.';}
+}
+function stopSpeak(){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();_abortCtrl=null;}
+  speaking=false;
+  const b=document.getElementById('speak'); if(b)b.innerHTML='&#9654;&nbsp; Zara, talk me through it';
+}
+document.getElementById('speak').addEventListener('click',speakBuild);
+document.getElementById('stop').addEventListener('click',()=>{stopSpeak();note.textContent='Stopped.';});
+window.addEventListener('beforeunload',()=>stopSpeak());
+
+fillBlends();
+
+/* ================= BUILD YOUR OWN =================
+   Values are rounded per-serving estimates for one machine portion:
+   fruit and veg pouch about 1/2 cup puree, liquid 8 oz, protein 1 scoop.
+   k=kcal p=protein c=carb f=fat fib=fiber s=sugar caf=caffeine mg      */
+const ITEMS = {
+ fruit:[
+  {id:"apple",     n:"Apple",      k:60, p:0.3,c:16,f:0.2,fib:2.4,s:12},
+  {id:"acai",      n:"Açaí",       k:70, p:1.0,c:6, f:5.0,fib:3.0,s:2},
+  {id:"banana",    n:"Banana",     k:105,p:1.3,c:27,f:0.4,fib:3.1,s:14},
+  {id:"blueberry", n:"Blueberry",  k:60, p:0.8,c:15,f:0.3,fib:2.4,s:10},
+  {id:"coconut",   n:"Coconut",    k:140,p:1.3,c:6, f:13.0,fib:3.6,s:2.5},
+  {id:"date",      n:"Date",       k:120,p:1.0,c:32,f:0.1,fib:3.2,s:27},
+  {id:"grape",     n:"Grape",      k:60, p:0.6,c:16,f:0.2,fib:0.8,s:14},
+  {id:"kiwi",      n:"Kiwi",       k:55, p:1.0,c:13,f:0.5,fib:2.7,s:8},
+  {id:"mango",     n:"Mango",      k:70, p:1.0,c:17,f:0.3,fib:1.8,s:15},
+  {id:"papaya",    n:"Papaya",     k:55, p:0.6,c:14,f:0.2,fib:2.2,s:10},
+  {id:"pear",      n:"Pear",       k:65, p:0.4,c:17,f:0.2,fib:3.5,s:11},
+  {id:"pineapple", n:"Pineapple",  k:60, p:0.7,c:16,f:0.1,fib:1.7,s:12},
+  {id:"raspberry", n:"Raspberry",  k:40, p:0.9,c:9, f:0.5,fib:5.0,s:3.5},
+  {id:"strawberry",n:"Strawberry", k:40, p:0.8,c:9, f:0.4,fib:2.4,s:6},
+  {id:"watermelon",n:"Watermelon", k:40, p:0.8,c:10,f:0.2,fib:0.5,s:8}
+ ],
+ veg:[
+  {id:"carrot", n:"Carrot",  k:40,p:0.9,c:9,  f:0.2,fib:2.7,s:4},
+  {id:"kale",   n:"Kale",    k:20,p:2.0,c:3.5,f:0.3,fib:1.3,s:0},
+  {id:"pumpkin",n:"Pumpkin", k:40,p:1.4,c:10, f:0.2,fib:3.5,s:4},
+  {id:"spinach",n:"Spinach", k:20,p:2.6,c:3.4,f:0.2,fib:2.0,s:0}
+ ],
+ liq:[
+  {id:"almond", n:"Almond Milk", k:30, p:1.0,c:1, f:2.5,fib:0.5,s:0},
+  {id:"oat",    n:"Oat milk",    k:120,p:3.0,c:16,f:5.0,fib:1.9,s:7},
+  {id:"soy",    n:"Soy milk",    k:100,p:7.0,c:8, f:4.0,fib:1.0,s:6},
+  {id:"nonfat", n:"Nonfat Milk", k:85, p:8.0,c:12,f:0.2,fib:0,  s:12},
+  {id:"aj",     n:"Apple Juice", k:115,p:0.2,c:28,f:0.3,fib:0.5,s:24},
+  {id:"oj",     n:"Orange Juice",k:110,p:1.7,c:26,f:0.5,fib:0.5,s:21}
+ ],
+ pro:[
+  {id:"keto",  n:"Keto Protein Blend",       k:140,p:15,c:3,f:7.0,fib:1,s:1},
+  {id:"blend", n:"Protein Blend",            k:120,p:24,c:3,f:1.5,fib:1,s:1},
+  {id:"vegan", n:"Vegan Plant-Based Protein",k:120,p:21,c:5,f:2.0,fib:2,s:1},
+  {id:"whey",  n:"Whey Protein",             k:120,p:25,c:2,f:1.0,fib:0,s:1}
+ ],
+ ext:[
+  {id:"cocoa", n:"Cocoa",  k:12,p:1.0,c:3,f:0.7,fib:2.0,s:0},
+  {id:"ginger",n:"Ginger", k:2, p:0,  c:0.4,f:0,fib:0.1,s:0},
+  {id:"coffee",n:"Coffee", k:5, p:0.3,c:0,f:0,  fib:0,  s:0, caf:95},
+  {id:"xylitol",n:"Xylitol",k:10,p:0, c:4,f:0,  fib:0,  s:0},
+  {id:"stevia",n:"Stevia", k:0, p:0,  c:0,f:0,  fib:0,  s:0},
+  {id:"honey", n:"Honey",  k:64,p:0.1,c:17,f:0, fib:0,  s:17}
+ ],
+ ice:[{id:"ice",n:"Ice",k:0,p:0,c:0,f:0,fib:0,s:0}]
+};
+
+const PICK = {fruit:[],veg:null,liq:null,pro:null,ext:null,ice:null};
+const GRPCLS = {fruit:"s-fruit",veg:"s-veg",liq:"s-liq",pro:"s-pro",ext:"s-ext",ice:"s-ice"};
+
+function buildOptions(){
+  Object.keys(ITEMS).forEach(g=>{
+    const host=document.getElementById('opt-'+g);
+    host.innerHTML = ITEMS[g].map(it=>'<button type="button" class="opt" data-g="'+g+'" data-id="'+it.id+'">'+it.n+'</button>').join('');
+  });
+  document.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>toggle(b.dataset.g,b.dataset.id)));
+}
+function toggle(g,id){
+  if(g==='fruit'){
+    const i=PICK.fruit.indexOf(id);
+    if(i>-1) PICK.fruit.splice(i,1);
+    else { PICK.fruit.push(id); if(PICK.fruit.length>2) PICK.fruit.shift(); }
+  } else {
+    PICK[g] = (PICK[g]===id) ? null : id;
+  }
+  paint(); renderTicket();
+}
+function paint(){
+  document.querySelectorAll('.opt').forEach(b=>{
+    const g=b.dataset.g, id=b.dataset.id;
+    const on = g==='fruit' ? PICK.fruit.includes(id) : PICK[g]===id;
+    b.classList.toggle('on',on);
+  });
+  document.getElementById('fruit-count').textContent = PICK.fruit.length ? '('+PICK.fruit.length+' of 2 picked)' : '';
+}
+const get=(g,id)=>ITEMS[g].find(x=>x.id===id);
+function chosen(){
+  const out=[];
+  PICK.fruit.forEach(id=>out.push({g:'fruit',it:get('fruit',id)}));
+  ['veg','liq','pro','ext','ice'].forEach(g=>{ if(PICK[g]) out.push({g:g,it:get(g,PICK[g])}); });
+  return out;
+}
+
+/* ---- naming ---- */
+function nameIt(sel,tot){
+  const fr=PICK.fruit.map(id=>get('fruit',id).n);
+  const veg=PICK.veg?get('veg',PICK.veg).n:null;
+  const base = fr.length===2 ? fr[0]+'-'+fr[1] : fr.length===1 ? fr[0] : veg ? veg : null;
+  if(!base) return 'The Empty Cup';
+  let suffix='Everyday';
+  if(PICK.ext==='coffee') suffix='Wake-Up';
+  else if(tot.p>=25) suffix='Rebuild';
+  else if(tot.p>=15) suffix='Refuel';
+  else if(tot.k>=450) suffix='Full Meal';
+  else if(veg&&fr.length) suffix='Garden';
+  else if(tot.k<=180) suffix='Cooler';
+  return 'The '+base+' '+suffix;
+}
+function profileOf(tot){
+  if(tot.p>=25) return 'Post-lift build &middot; enough protein to do the job';
+  if(tot.k>=450) return 'Meal-sized &middot; this is food, not a snack';
+  if(tot.p>=15) return 'Solid refuel &middot; light meal territory';
+  if(tot.s>=45) return 'Dessert-leaning &middot; sweet, and honest about it';
+  if(tot.k<=180) return 'Light &middot; a drink, not a meal';
+  return 'Everyday blend &middot; snack-sized';
+}
+
+/* ---- Zara's read on the build ---- */
+function zaraLine(tot,sel){
+  const L=[];
+  if(!sel.length) return 'Nothing picked yet. Start with a fruit, or two, and go from there.';
+  if(!PICK.liq) L.push('No liquid means this comes out as a spoonable bowl, not a drink. That is a real menu item, just know it going in.');
+  if(PICK.pro && !PICK.liq) L.push('Protein powder with no liquid will not blend. Add a liquid or Zara is handing you a paste.');
+  if(tot.p<10 && PICK.pro===null && tot.k>250) L.push('Carbs and not much else. Fine before a session, thin after one. A protein would fix it.');
+  if(tot.p>=25) L.push('That is a genuine post-lift cup. Nadia signs off on this one.');
+  if(tot.fib>=7) L.push('High fiber build, which is the good kind of full. Drink it slowly the first time.');
+  if(tot.f>=12) L.push('Fat-forward, so it will hold you longer and hit slower. Not the one for right before you train.');
+  if(PICK.fruit.length===0 && PICK.veg) L.push('Veg with no fruit is a bold order. Add ginger or cocoa or it will taste like exactly what it is.');
+  if(PICK.ext==='coffee' && tot.p>=20) L.push('Coffee plus real protein is Zara\'s personal order, for the record.');
+  if(!L.length) L.push('Balanced, easy, nothing to argue about. Zara approves and moves on.');
+  return L.slice(0,2).join(' ');
+}
+
+/* ---- flags: honest notes, not verdicts ---- */
+function flagLine(tot){
+  const F=[];
+  if(tot.s>=45) F.push('This lands around '+Math.round(tot.s)+' g of sugar, most of it from the fruit and the liquid. That is dessert territory. Swapping a juice for a milk, or a date for a berry, cuts it fast.');
+  if(tot.k>=550) F.push('At roughly '+Math.round(tot.k)+' kcal this is a full meal. Have it instead of one, not alongside one.');
+  const caf=tot.caf; if(caf) F.push('Contains about '+caf+' mg of caffeine, roughly one cup of coffee. Skip it after about 2 pm if you want Dr. Sana off your back about your sleep.');
+  return F;
+}
+
+/* ---- myth checks, priority ordered, top two fire ---- */
+const RULES = [
+ {when:()=>PICK.ext==='xylitol', verdict:'amber',
+  claim:'“Xylitol is a free pass, it is natural and sugar free.”',
+  truth:'Mostly good news with two real catches. Xylitol is a sugar alcohol with about 40 percent fewer calories than sugar, it barely moves blood glucose, and it is genuinely good for your teeth, which is why it is in dental gum. The catches: more than a modest amount causes gas, bloating, and a laxative effect in a lot of people, and xylitol is severely toxic to dogs at tiny doses. Do not let the dog finish your cup.',
+  source:'FDA on sugar alcohols; NIH; FDA and ASPCA advisories on xylitol toxicity in dogs'},
+ {when:()=>PICK.pro==='keto', verdict:'red',
+  claim:'“A keto protein blend makes your body burn fat.”',
+  truth:'Not how it works. Keto blends are protein with added fat, usually MCT or coconut oil, so they carry more calories than a standard scoop for less protein. Ketosis is a fuel state, not a fat-burning switch, and head-to-head trials show low-carb diets do not beat other diets once calories and protein are matched. If you eat this way and like it, fine. It is not doing something extra to the fat on your body.',
+  source:'PubMed meta-analyses on low-carbohydrate vs isocaloric diets; NIH'},
+ {when:()=>PICK.fruit.includes('acai'), verdict:'red',
+  claim:'“Açaí is a superfood that burns fat and detoxes you.”',
+  truth:'The berry is genuinely good: high in antioxidants, high in fat and fiber, and unusually low in sugar for a fruit, which is why it is on this menu. The claims stapled to it are not. Açaí has never been shown to cause weight loss or remove anything from your body, and the FTC has taken action against companies selling it that way. Order it because it is excellent. Not because of the word superfood, which means nothing and is not a regulated term.',
+  source:'FTC enforcement actions on açaí weight-loss marketing; USDA FoodData Central; NIH NCCIH'},
+ {when:()=>PICK.fruit.includes('coconut'), verdict:'red',
+  claim:'“Coconut fat is metabolized differently so it does not really count.”',
+  truth:'This one comes from MCT oil research being quietly applied to coconut, and they are not the same thing. Coconut is mostly lauric acid, which behaves largely like a regular saturated fat, and it raises LDL cholesterol in controlled trials. It is a delicious, filling, perfectly fine ingredient. It is not a metabolic loophole, and coconut oil is not a health supplement.',
+  source:'American Heart Association advisory on dietary fats; PubMed trials on coconut oil and LDL'},
+ {when:()=>PICK.liq==='aj'||PICK.liq==='oj', verdict:'red',
+  claim:'“Juice counts as a serving of fruit.”',
+  truth:'Not really, and this is the biggest hidden sugar lever on the whole board. Juicing strips the fiber and leaves the sugar, so a cup of apple or orange juice delivers roughly the sugar of two to three whole fruits with almost none of the fullness. Your smoothie still keeps the fiber from everything else you picked, but the juice part is contributing sugar and not much else. Swapping to a milk usually drops the sugar by 15 to 20 g and adds protein.',
+  source:'USDA FoodData Central; Dietary Guidelines for Americans; PubMed on juice vs whole fruit'},
+ {when:()=>PICK.ext==='honey', verdict:'amber',
+  claim:'“Honey is a healthy natural sugar.”',
+  truth:'It depends how much you expected from it. Honey carries trace antioxidants and enzymes that table sugar does not, and it tastes better. But it is still about 17 g of sugar per tablespoon and your body handles it almost identically. Natural is a description of where it came from, not of what it does to your blood glucose. One separate hard rule: never give honey to an infant under 12 months, because of infant botulism.',
+  source:'USDA FoodData Central; CDC on infant botulism'},
+ {when:()=>PICK.pro==='whey', verdict:'red',
+  claim:'“You have thirty minutes after training to drink it or you wasted the session.”',
+  truth:'The anabolic window is far wider than thirty minutes, likely several hours either side of your session. What actually drives the result is total daily protein, around 1.6 g per kg of bodyweight for most lifters, spread across the day. Whey is a good, fast, cheap protein and there is nothing wrong with it. Just stop sprinting to the locker room.',
+  source:'ISSN Position Stand: Nutrient Timing; ISSN Position Stand: Protein and Exercise'},
+ {when:()=>PICK.pro==='vegan', verdict:'amber',
+  claim:'“Plant protein cannot build muscle the way whey does.”',
+  truth:'It depends on the dose and the blend. Most single-source plant proteins carry less leucine, the amino acid that triggers the muscle-building signal, so an identical scoop does slightly less work. The fix is unglamorous: take a modestly larger serving, or use a blend such as pea plus rice, and the research shows outcomes closing right up. Soy holds its own on its own.',
+  source:'ISSN Position Stand: Protein and Exercise; PubMed reviews on plant vs animal protein'},
+ {when:()=>PICK.ext==='stevia', verdict:'amber',
+  claim:'“Stevia is safe because it is natural.”',
+  truth:'The conclusion is right, the reasoning is not, and the distinction matters. Purified steviol glycosides are recognized as safe by the FDA at normal intakes and do not raise blood glucose, because they have been tested, not because the word natural means anything. Note the FDA has not approved whole stevia leaf or crude extracts as sweeteners, which is a different product from the packet.',
+  source:'FDA on high-intensity sweeteners; NIH'},
+ {when:()=>PICK.ext==='coffee', verdict:'green',
+  claim:'“Caffeine actually improves a workout.”',
+  truth:'True, and it is one of the few ergogenic aids with strong evidence behind it. Roughly 3 to 6 mg per kg of bodyweight taken about 60 minutes out improves endurance, and to a smaller degree strength and power output. A shot in your smoothie is about 95 mg, so a 70 kg person is on the low end of that range. Caffeine has a half life around 5 hours, so a late order costs you sleep, and sleep is worth more than the caffeine.',
+  source:'ISSN Position Stand: Caffeine and Exercise Performance; NIH ODS'},
+ {when:()=>PICK.fruit.includes('date'), verdict:'amber',
+  claim:'“Dates are natural sugar so they do not count like sugar.”',
+  truth:'Dates are genuinely nutritious, with real fiber, potassium, and magnesium, and the fiber does blunt the blood glucose response compared with the same sugar drunk plain. But a serving still brings around 27 g of sugar, the most of anything on this fruit board. They are a fine ingredient and a poor default. One date-flavored blend, not every blend.',
+  source:'USDA FoodData Central; PubMed on dates and glycemic response'},
+ {when:()=>PICK.veg==='spinach'||PICK.veg==='kale', verdict:'red',
+  claim:'“Blending destroys the fiber, so this is basically juice.”',
+  truth:'Wrong, and it is the correction Zara makes most. Juicing removes the pulp and the fiber with it. Blending keeps every bit of the fiber, just in smaller pieces. The smaller point that is true is that broken-down fiber lets sugars hit a little faster than chewing whole food, which is worth knowing and is not the same claim. One genuine note from Dr. Henry: leafy greens are high in vitamin K, so if you take warfarin, keep your green intake steady rather than suddenly daily, and tell whoever manages your dose.',
+  source:'USDA FoodData Central; PubMed on blended vs juiced fruit; NIH on vitamin K and warfarin'},
+ {when:()=>PICK.veg==='carrot'||PICK.veg==='pumpkin', verdict:'green',
+  claim:'“Orange vegetables are actually worth putting in a smoothie.”',
+  truth:'True. Carrot and pumpkin are loaded with beta-carotene, which your body converts to vitamin A, and both bring fiber and potassium for very few calories. They also blend sweeter than people expect. One harmless and genuinely fun side effect: eat a lot of them and your palms and nose can turn faintly orange. That is carotenemia, it is not dangerous, and it fades.',
+  source:'NIH ODS, Vitamin A; USDA FoodData Central'},
+ {when:()=>PICK.fruit.includes('pineapple'), verdict:'amber',
+  claim:'“The bromelain in pineapple fights inflammation and soreness.”',
+  truth:'Bromelain is a real enzyme with real activity, and it is studied as a concentrated supplement, mostly for swelling after surgery. The gap is dose and location: most bromelain sits in the stem, not the flesh you are drinking, and the fruit in your cup is nowhere near a studied dose. Pineapple is a great ingredient with a lot of vitamin C and manganese. Order it for the taste.',
+  source:'NIH NCCIH; PubMed reviews on bromelain'},
+ {when:()=>PICK.fruit.includes('watermelon'), verdict:'amber',
+  claim:'“Watermelon is nature’s sports drink.”',
+  truth:'It depends on how hard you sweated. Watermelon is over 90 percent water and brings potassium, so it rehydrates nicely after a normal session. What it does not have is meaningful sodium, and sodium is the electrolyte you actually lose in sweat. For a long, hot, genuinely sweaty effort, this plus a pinch of salt does the job better than this alone.',
+  source:'USDA FoodData Central; ACSM guidance on fluid and electrolyte replacement'},
+ {when:()=>PICK.fruit.includes('banana'), verdict:'amber',
+  claim:'“Eat a banana so you do not cramp.”',
+  truth:'Bananas are a great pre-workout carb with real potassium, and that part holds up. The cramping claim mostly does not. Exercise cramps appear to be driven more by muscle fatigue and neuromuscular overload than by low potassium, and a single banana would not shift your potassium status quickly anyway. Eat it because it fuels you and blends beautifully.',
+  source:'PubMed reviews on exercise-associated muscle cramps; USDA FoodData Central'},
+ {when:()=>PICK.liq==='almond', verdict:'amber',
+  claim:'“Almond milk is the healthy milk.”',
+  truth:'It depends what you wanted from it. Unsweetened almond milk is genuinely low calorie and usually fortified with calcium and vitamin D, which is a fine choice. What it is not is a protein source: about 1 g per cup against 8 g in dairy or soy. If this is your post-lift cup, the almond milk is contributing almost nothing to the protein number, so the scoop has to carry all of it.',
+  source:'USDA FoodData Central'},
+ {when:()=>PICK.fruit.includes('blueberry')||PICK.fruit.includes('raspberry')||PICK.fruit.includes('strawberry'), verdict:'green',
+  claim:'“Berries are the best fruit to put in a smoothie.”',
+  truth:'Defensible, and Zara will defend it. Berries carry the most fiber and the least sugar of anything on the fruit board, raspberries especially at around 5 g of fiber per serving, plus a real load of anthocyanins and vitamin C. Frozen is nutritionally equal to fresh and often better, because it is picked ripe. It is the cheapest upgrade on this menu.',
+  source:'USDA FoodData Central; PubMed reviews on berry polyphenols'},
+ {when:()=>PICK.pro==='blend', verdict:'green',
+  claim:'“Protein powder is just food in powder form.”',
+  truth:'Largely true, and worth saying plainly because powders get treated as either magic or poison. A protein blend is dried protein, usually whey plus casein or plant sources, and it is a convenient way to hit a daily target you could also hit with chicken, dairy, or beans. The one caveat is regulatory: supplements are not reviewed by the FDA for safety or effectiveness before sale, so buy third-party tested, NSF Certified for Sport or Informed Sport, especially if you get drug tested.',
+  source:'NIH ODS, Dietary Supplements for Exercise and Athletic Performance; FDA on dietary supplement regulation'}
+];
+const VERD={green:"Green · Checks out",amber:"Amber · It depends",red:"Red · Myth"};
+
+function renderTicket(){
+  const sel=chosen();
+  const tot={k:0,p:0,c:0,f:0,fib:0,s:0,caf:0};
+  sel.forEach(x=>{const i=x.it;tot.k+=i.k;tot.p+=i.p;tot.c+=i.c;tot.f+=i.f;tot.fib+=i.fib;tot.s+=i.s;tot.caf+=(i.caf||0);});
+
+  document.getElementById('t-name').textContent = sel.length ? nameIt(sel,tot) : 'Nothing in the jar yet';
+  document.getElementById('t-profile').innerHTML = sel.length ? profileOf(tot) : 'Tap a fruit to start building.';
+
+  document.getElementById('t-pipe').innerHTML = sel.length
+    ? sel.map(x=>'<span class="step '+GRPCLS[x.g]+'">'+x.it.n+'</span>').join('<span class="arw">&rarr;</span>')
+    : '<span class="empty">Fruit &rarr; Vegetable &rarr; Liquid &rarr; Protein &rarr; Extra &rarr; Ice</span>';
+
+  document.getElementById('t-nutri').innerHTML = sel.length ? [
+    [Math.round(tot.k),'kcal',tot.k>=450],
+    [Math.round(tot.p)+' g','protein',tot.p>=25],
+    [Math.round(tot.c)+' g','carbs',false],
+    [Math.round(tot.f)+' g','fat',false],
+    [Math.round(tot.fib)+' g','fiber',tot.fib>=7]
+  ].map(r=>'<div class="nut'+(r[2]?' hi':'')+'"><div class="v">'+r[0]+'</div><div class="k">'+r[1]+'</div></div>').join('') : '';
+
+  document.getElementById('t-zara').innerHTML = '<b>Zara:</b> '+zaraLine(tot,sel);
+
+  const flags=sel.length?flagLine(tot):[];
+  document.getElementById('t-flag').innerHTML = flags.map(f=>'<div class="flag"><b>Worth knowing:</b> '+f+'</div>').join('');
+
+  const fired = sel.length ? RULES.filter(r=>r.when()).slice(0,2) : [];
+  document.getElementById('t-myths').innerHTML = fired.map(r=>
+    '<div class="myth '+r.verdict+'" style="margin:0 0 1rem;">'+
+      '<div class="myth-top"><span class="v">'+VERD[r.verdict]+'</span><span>Myth Check</span></div>'+
+      '<div class="myth-body"><p class="claim">'+r.claim+'</p><div>'+r.truth+'</div>'+
+      '<p class="src">Checked against: <b>'+r.source+'</b></p></div>'+
+    '</div>').join('');
+}
+
+document.getElementById('clearall').addEventListener('click',()=>{
+  PICK.fruit=[];PICK.veg=PICK.liq=PICK.pro=PICK.ext=PICK.ice=null;paint();renderTicket();
+});
+document.getElementById('surprise').addEventListener('click',()=>{
+  const pk=a=>a[Math.floor(Math.random()*a.length)].id;
+  PICK.fruit=[];
+  const f=ITEMS.fruit.slice();
+  const n=1+Math.floor(Math.random()*2);
+  for(let i=0;i<n;i++){PICK.fruit.push(f.splice(Math.floor(Math.random()*f.length),1)[0].id);}
+  PICK.veg = Math.random()<0.55 ? pk(ITEMS.veg) : null;
+  PICK.liq = Math.random()<0.9  ? pk(ITEMS.liq) : null;
+  PICK.pro = Math.random()<0.7  ? pk(ITEMS.pro) : null;
+  PICK.ext = Math.random()<0.6  ? pk(ITEMS.ext) : null;
+  PICK.ice = Math.random()<0.7  ? 'ice' : null;
+  paint(); renderTicket();
+});
+
+buildOptions();
+PICK.fruit=['mango','strawberry']; PICK.veg='spinach'; PICK.liq='soy'; PICK.pro='blend'; PICK.ice='ice';
+paint(); renderTicket();
+</script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>

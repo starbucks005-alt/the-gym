@@ -98,6 +98,10 @@
   .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#1d2c38;color:#9fd9c9;}
   .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
   .modal-cues{margin:1rem 0 0;padding:1rem;border:1px dashed var(--line);border-radius:8px;background:#fbfdfc;display:none;} .modal-cues.shown{display:block;}
+  .videobox{margin:1.6rem 0;padding:1.2rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .videobox h3{font-family:'Fraunces',serif;font-size:1.3rem;margin:0 0 .2rem;}
+  .videobox p{font-size:.93rem;color:var(--muted);margin:.2rem 0 .9rem;}
+  .videobox .cap{font-size:.85rem;color:var(--soft);font-style:italic;margin:.75rem 0 0;}
   .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
   .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#5c6675,#3a4452);display:flex;align-items:center;justify-content:center;}
   .cc-mono{font-family:'Fraunces',serif;font-size:3.4rem;color:#fff;letter-spacing:.04em;}
@@ -126,6 +130,14 @@
     <p class="tag">Short and guided, no ego. Train one body part, or run a full session and let Coach Dom talk you through every rep and rest out loud.</p>
     <p class="mini">Like the breathing sessions over at The Dose, but for your whole body. Every move comes with a myth check, because the gym is where bad advice goes to get loud.</p>
   </div>
+
+  <div class="videobox">
+    <h3>Coach Dom, curling</h3>
+    <p>Watch the elbows. They stay pinned at his sides and the weight moves, not his body. No swing, no lean back, no heaving it up with the hips.</p>
+    <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1218327195?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Coach Dom bicep curls"></iframe></div>
+    <p class="cap">Coach Dom Castellanos. "If you have to throw it, it is too heavy. Drop ten pounds and earn it back."</p>
+  </div>
+
   <div class="tabs">
     <div class="tab active" data-view="single">Single Move</div>
     <div class="tab" data-view="full">Full Workout</div>
@@ -544,6 +556,7 @@ fillMoves();
 renderRoutine();
 if('speechSynthesis' in window){ speechSynthesis.onvoiceschanged=()=>{}; }
 </script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
   © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
 </footer>

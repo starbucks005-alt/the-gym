@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Elixir Bar, The Gym</title>
+<meta name="description" content="Wyatt's zero-proof elixir bar. Build your own drink, get the sugar, the caffeine, the electrolytes, and a straight answer on trace alcohol. Healthy alternatives to alcohol, checked. Verify before you believe.">
+<link rel="canonical" href="https://the-gym.net/elixir-bar.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/elixir-bar.html">
+<meta property="og:title" content="The Elixir Bar &middot; The Gym">
+<meta property="og:description" content="Wyatt's zero-proof elixir bar. Build your own, get the real numbers, and a straight answer on trace alcohol. Verify before you believe.">
+<meta property="og:image" content="https://the-gym.net/assets/Images/Wyatt1.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--accent-dk:#97285a;--warm:#d98a2b;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--wyatt:#8a5a1a;--wyatt-dk:#6d4713;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--accent-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:880px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:60ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:62ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1.4rem 0;}
+  .picker{display:grid;grid-template-columns:1fr;gap:1rem;}
+  @media(min-width:620px){.picker{grid-template-columns:1fr 1fr;}}
+  .field label{display:block;font-family:'Lora',serif;font-size:.78rem;color:var(--wyatt);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem;}
+  .field select{width:100%;padding:.7rem .75rem;font-family:'Inter';font-size:1rem;border:1px solid var(--line);background:#f9fbfa;border-radius:6px;color:var(--ink);}
+  .field select:focus{outline:2px solid var(--wyatt);outline-offset:1px;}
+  .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 0;}
+  .chip{font-size:.8rem;background:#eaf3f1;border:1px solid #cfe3de;color:#27675c;padding:.3rem .65rem;border-radius:999px;font-weight:600;}
+  .chip.glass{background:#f6efe3;border-color:#e6d5b8;color:var(--wyatt-dk);}
+  .chip.kcal{background:#fbe6f0;border-color:#f0c4da;color:var(--accent-dk);}
+  .chip.time{background:#eef3f2;border-color:var(--line);color:#37606e;}
+  .chip.dry{background:#e6f2e9;border-color:#c3e0cc;color:#20693a;}
+  .ex-head{font-family:'Fraunces',serif;font-size:1.7rem;margin:.2rem 0;}
+  .ex-sub{color:var(--muted);font-size:.95rem;margin:0 0 1rem;}
+  .blend-h{font-family:'Lora',serif;font-size:.78rem;color:var(--wyatt);text-transform:uppercase;letter-spacing:.07em;margin:1.1rem 0 .45rem;}
+  .ing{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:.3rem;}
+  @media(min-width:620px){.ing{grid-template-columns:1fr 1fr;}}
+  .ing li{font-size:.95rem;padding:.4rem .6rem;background:#faf8f4;border:1px solid #ece4d7;border-radius:6px;}
+  .ing li b{color:var(--wyatt);font-weight:600;}
+  .script{list-style:none;counter-reset:step;padding:0;margin:0;}
+  .script li{counter-increment:step;position:relative;padding:.55rem 0 .55rem 2.4rem;border-bottom:1px dashed #e7edec;}
+  .script li:last-child{border-bottom:none;}
+  .script li::before{content:counter(step);position:absolute;left:0;top:.5rem;width:1.7rem;height:1.7rem;background:var(--wyatt);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;}
+  .swap{margin:1.1rem 0 0;padding:.9rem 1rem;background:#f8f4ec;border:1px solid #e6d9c3;border-radius:8px;font-size:.95rem;} .swap b{color:var(--wyatt);}
+  .macro{margin:1rem 0 0;padding:.9rem 1rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;font-size:.95rem;} .macro b{color:var(--amber);}
+  .myth{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .myth-top{display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;font-weight:600;color:#fff;}
+  .myth-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;}
+  .myth.green .myth-top{background:var(--green);} .myth.amber .myth-top{background:var(--amber);} .myth.red .myth-top{background:var(--red);}
+  .myth-body{padding:.9rem 1rem;font-size:.95rem;}
+  .myth-body .claim{font-style:italic;color:var(--muted);margin:0 0 .5rem;}
+  .myth-body .src{margin:.6rem 0 0;font-size:.82rem;color:var(--soft);} .myth-body .src b{color:var(--accent-dk);}
+  .safety{margin:1.4rem 0;padding:1rem 1.1rem;background:#fdf3f5;border:1px solid #f1c9d3;border-radius:10px;font-size:.93rem;}
+  .safety b{color:var(--red);}
+  .abvbox{margin:1.4rem 0;padding:1.2rem 1.35rem;background:#fff8f9;border:2px solid #e8b8c4;border-radius:12px;}
+  .abvbox h3{font-family:'Fraunces',serif;font-size:1.25rem;margin:0 0 .45rem;color:var(--accent-dk);}
+  .abvbox p{font-size:.94rem;margin:.4rem 0;}
+  .abvbox ul{margin:.5rem 0 0;padding-left:1.15rem;font-size:.93rem;} .abvbox li{margin:.25rem 0;}
+  .abvbox .byline{font-size:.86rem;color:var(--muted);font-style:italic;margin-top:.6rem;}
+  .videobox{margin:1.6rem 0;padding:1.2rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .videobox h3{font-family:'Fraunces',serif;font-size:1.3rem;margin:0 0 .2rem;}
+  .videobox p{font-size:.93rem;color:var(--muted);margin:.2rem 0 .9rem;}
+  .videobox .cap{font-size:.85rem;color:var(--soft);font-style:italic;margin:.75rem 0 0;}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#2a1d28;color:#e7a9c6;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+  .counter{margin:1.4rem 0;padding:1.2rem 1.4rem;background:#faf5ec;border:1px solid #e8dcc4;border-radius:12px;}
+  .counter-h{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--wyatt-dk);margin:0 0 .4rem;}
+  .counter p{font-size:.95rem;color:var(--ink);margin:.3rem 0;}
+  .counter .byline{font-size:.86rem;color:var(--muted);font-style:italic;margin-top:.5rem;}
+  .uses{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0 .2rem;}
+  .use-chip{font-size:.82rem;background:#fff;border:1px solid #e6d5b8;color:var(--wyatt-dk);padding:.3rem .7rem;border-radius:999px;font-weight:600;}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#7a6448,#4a3c2a);display:flex;align-items:center;justify-content:center;}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;color:var(--ink);}
+  .cc-role{color:var(--wyatt);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;}
+  .cc-emp{background:#f4eee4;color:var(--wyatt-dk);}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .cc-hire:hover{background:#000;}
+  .crew{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#faf5ec;border:1px solid #e8dcc4;border-radius:12px;}
+  .crew-h{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--wyatt-dk);margin-bottom:.55rem;}
+  .crew ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .crew li{font-size:.92rem;color:var(--ink);}
+  .crew li b{color:var(--wyatt-dk);}
+  .crew .bp{font-size:.68rem;background:#d8f0e2;color:#1f7a45;padding:.08rem .45rem;border-radius:999px;margin-left:.3rem;white-space:nowrap;}
+  .rulebox{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .rulebox h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .6rem;}
+  .rulebox ol{margin:0;padding-left:1.2rem;font-size:.95rem;}
+  .rulebox li{margin:.4rem 0;}
+  .rulebox li b{color:var(--wyatt);}
+  .actions{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0 .2rem;}
+  .btn{padding:.7rem 1.3rem;border-radius:7px;font-family:'Inter';font-weight:600;font-size:.98rem;cursor:pointer;border:none;}
+  .btn-go{background:var(--wyatt);color:#fff;} .btn-go:hover{background:var(--wyatt-dk);}
+  .btn-ghost{background:#fff;color:var(--wyatt-dk);border:1px solid var(--wyatt);}
+  .speaking-note{font-size:.85rem;color:var(--soft);font-style:italic;margin-top:.5rem;min-height:1.2em;}
+  /* ---- Build your own ---- */
+  .builder{margin:1.6rem 0;padding:1.3rem 1.4rem;background:#fff;border:2px solid var(--wyatt);border-radius:14px;}
+  .builder h2{font-family:'Fraunces',serif;font-size:1.85rem;margin:0 0 .25rem;}
+  .builder .lede{color:var(--muted);font-size:.98rem;margin:0 0 .3rem;max-width:62ch;}
+  .builder .lede2{color:var(--soft);font-size:.88rem;font-style:italic;margin:0 0 1.1rem;max-width:62ch;}
+  .grp{margin:0 0 1.1rem;}
+  .grp-h{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin:0 0 .5rem;}
+  .grp-h .t{font-family:'Lora',serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;font-weight:600;}
+  .grp-h .c{font-size:.78rem;color:var(--soft);}
+  .opts{display:flex;flex-wrap:wrap;gap:.4rem;}
+  .opt{font-family:'Inter';font-size:.88rem;font-weight:600;padding:.42rem .8rem;border-radius:7px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;transition:all .12s;}
+  .opt:hover{border-color:#b09775;}
+  .opt.on{color:#fff;border-color:transparent;}
+  .opt .tr{font-size:.72rem;opacity:.75;margin-left:.25rem;}
+  .g-base .grp-h .t{color:#1d6478;} .g-base .opt.on{background:#22758c;}
+  .g-bot  .grp-h .t{color:#3f7a2e;} .g-bot  .opt.on{background:#4c9138;}
+  .g-fruit .grp-h .t{color:#a13a5f;} .g-fruit .opt.on{background:#c0356f;}
+  .g-fun  .grp-h .t{color:#8a5a1a;} .g-fun  .opt.on{background:#a86e20;}
+  .g-swt  .grp-h .t{color:#8a2d7a;} .g-swt  .opt.on{background:#a13a8f;}
+  .g-fin  .grp-h .t{color:#4a5560;} .g-fin  .opt.on{background:#5b6770;}
+  .g-ice  .grp-h .t{color:#5b6770;} .g-ice  .opt.on{background:#6d7a84;}
+  .builder-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin:.2rem 0 0;}
+  .bbtn{padding:.6rem 1.15rem;border-radius:7px;font-family:'Inter';font-weight:600;font-size:.92rem;cursor:pointer;border:1px solid var(--wyatt);background:#fff;color:var(--wyatt-dk);}
+  .bbtn.solid{background:var(--wyatt);color:#fff;border-color:var(--wyatt);} .bbtn.solid:hover{background:var(--wyatt-dk);}
+  .bbtn:hover{background:#faf5ec;}
+  .ticket{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfaf7;}
+  .ticket-top{background:var(--ink);color:#fff;padding:.9rem 1.1rem;}
+  .ticket-top .lbl{font-family:'Lora',serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#a8967c;}
+  .ticket-top .nm{font-family:'Fraunces',serif;font-size:1.5rem;line-height:1.15;margin:.15rem 0 0;}
+  .ticket-top .pf{font-size:.85rem;color:#c4cfd4;margin:.3rem 0 0;}
+  .ticket-body{padding:1.1rem;}
+  .pipe{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:0 0 1rem;}
+  .pipe .step{font-size:.82rem;font-weight:600;color:#fff;padding:.3rem .65rem;border-radius:6px;}
+  .pipe .arw{color:var(--soft);font-size:.8rem;}
+  .pipe .s-base{background:#22758c;} .pipe .s-bot{background:#4c9138;} .pipe .s-fruit{background:#c0356f;}
+  .pipe .s-fun{background:#a86e20;} .pipe .s-swt{background:#a13a8f;} .pipe .s-fin{background:#5b6770;} .pipe .s-ice{background:#6d7a84;}
+  .nutri{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin:0 0 1rem;}
+  @media(min-width:620px){.nutri{grid-template-columns:repeat(5,1fr);}}
+  .nut{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.6rem .7rem;text-align:center;}
+  .nut .v{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:var(--ink);line-height:1.1;}
+  .nut .k{font-size:.72rem;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem;}
+  .nut.hi .v{color:var(--accent-dk);}
+  .abv-tag{margin:0 0 1rem;padding:.8rem .95rem;border-radius:8px;font-size:.93rem;}
+  .abv-tag.clean{background:#eef7f1;border:1px solid #c3e0cc;} .abv-tag.clean b{color:#1f7a45;}
+  .abv-tag.trace{background:#fdf3f5;border:1px solid #f1c9d3;} .abv-tag.trace b{color:var(--red);}
+  .zline{font-size:.95rem;background:#f8f4ec;border:1px solid #e6d9c3;border-radius:8px;padding:.8rem .95rem;margin:0 0 1rem;}
+  .zline b{color:var(--wyatt);}
+  .flag{font-size:.92rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;padding:.75rem .95rem;margin:0 0 1rem;} .flag b{color:var(--amber);}
+  .empty{color:var(--soft);font-style:italic;font-size:.95rem;padding:.5rem 0;}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;We build the drink, and we tell you what is actually in it.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>The Elixir Bar</h1>
+    <p class="tag">Wyatt is a mixologist who does not drink, which turns out to be the perfect qualification for this job. Build a drink from the back bar and get the sugar, the caffeine, the electrolytes, and a straight answer about whether it contains alcohol.</p>
+    <p class="mini">The zero-proof aisle is where the wellness industry does its most creative math. Adaptogens, tonics, detox waters, elixirs. Wyatt makes them all, beautifully, and then tells you which part was the marketing.</p>
+  </div>
+
+  <div class="videobox">
+    <h3>Wyatt makes one</h3>
+    <p>Watch the build order. Aromatics get bruised, not shredded. Carbonation goes in last and never gets stirred hard.</p>
+    <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1218323323?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Wyatt making his mocktail"></iframe></div>
+    <p class="cap">Wyatt E. Cooper at the bar. "The glass matters. Not because it changes the drink, because it changes whether you feel like you got one."</p>
+  </div>
+
+  <div class="abvbox">
+    <h3>The thing nobody at a zero-proof bar tells you</h3>
+    <p>Several things sold as non-alcoholic are not actually zero. In the United States a product can be labeled non-alcoholic and still contain up to 0.5 percent alcohol by volume. That is a rounding error if you are just cutting back. It is not a rounding error if you are in recovery, pregnant, managing liver disease, or taking a medication such as metronidazole or disulfiram that reacts with alcohol.</p>
+    <p>Wyatt tracks this on every drink, because he is on the same side of the bar as you:</p>
+    <ul>
+      <li><b>Aromatic bitters</b> are typically 35 to 45 percent alcohol. A dash is a very small absolute amount, but it is not none.</li>
+      <li><b>Kombucha</b> ferments continuously and can drift above 0.5 percent, especially homebrewed or if it sat warm.</li>
+      <li><b>Non-alcoholic beer, wine, and spirits</b> are usually under 0.5 percent, not zero.</li>
+      <li><b>Vanilla and most flavor extracts</b> are alcohol-based.</li>
+    </ul>
+    <p class="byline">"I do not drink. I am not going to hand you something and let you find out later. Pick anything you want off this board, just pick it knowing." &mdash; Wyatt</p>
+  </div>
+
+  <div class="counter">
+    <div class="counter-h">Why this bar exists</div>
+    <p>Ordering a drink is a social act before it is a beverage. The reason a glass of water does not work at a party is not the water, it is standing there holding a glass of water while everyone else is holding something that took effort. So Wyatt makes something that took effort.</p>
+    <p>Every drink here is built from tea, fruit, herbs, sparkling water, and a short list of functional add-ins with real evidence behind at least some of their claims. Nothing on this bar requires a subscription, a starter kit, or a word that ends in -ceutical.</p>
+    <div class="uses"><span class="use-chip">Bright &amp; dry</span><span class="use-chip">The sub-in</span><span class="use-chip">Wind-down</span><span class="use-chip">Replenish</span><span class="use-chip">Digestive</span></div>
+    <p class="byline">Wyatt still maintains that sparkling water with lime and a pinch of salt is underrated, and he will make you one on request without any commentary.</p>
+  </div>
+
+  <div class="safety"><b>Read this first.</b> Two hard rules at this bar. One: <b>grapefruit interacts with a long list of common medications</b>, including many statins, some blood pressure drugs, and immunosuppressants, and the effect can be serious. If you take a daily prescription, check with a pharmacist before grapefruit becomes a habit. Two: supplements and botanicals are not reviewed by the FDA for safety or effectiveness before sale, and some, including ashwagandha and concentrated green tea extract, have documented reports of liver injury. Dose matters, and more is not better.</div>
+
+  <!-- ============ BUILD YOUR OWN ============ -->
+  <div class="builder">
+    <h2>Build your own</h2>
+    <p class="lede">Tap your way down the back bar. Wyatt builds it in order, hands you the ticket, and tells you what is in the glass, including the parts the wellness label rounds off.</p>
+    <p class="lede2">One base, up to two fruits, and then one of anything else you want. Items marked with a small mark contain trace alcohol, and the ticket will say so in plain language.</p>
+
+    <div class="grp g-base">
+      <div class="grp-h"><span class="t">1. Base</span><span class="c">choose 1 &middot; the body of the drink</span></div>
+      <div class="opts" id="opt-base"></div>
+    </div>
+    <div class="grp g-bot">
+      <div class="grp-h"><span class="t">2. Botanical</span><span class="c">choose 0 or 1 &middot; bruised, never shredded</span></div>
+      <div class="opts" id="opt-bot"></div>
+    </div>
+    <div class="grp g-fruit">
+      <div class="grp-h"><span class="t">3. Fruit &amp; citrus</span><span class="c">choose 0, 1, or 2</span><span class="c" id="fruit-count"></span></div>
+      <div class="opts" id="opt-fruit"></div>
+    </div>
+    <div class="grp g-fun">
+      <div class="grp-h"><span class="t">4. Functional</span><span class="c">choose 0 or 1 &middot; the part with claims attached</span></div>
+      <div class="opts" id="opt-fun"></div>
+    </div>
+    <div class="grp g-swt">
+      <div class="grp-h"><span class="t">5. Sweetener</span><span class="c">choose 0 or 1</span></div>
+      <div class="opts" id="opt-swt"></div>
+    </div>
+    <div class="grp g-fin">
+      <div class="grp-h"><span class="t">6. Finish</span><span class="c">choose 0 or 1 &middot; rim, dash, or garnish</span></div>
+      <div class="opts" id="opt-fin"></div>
+    </div>
+    <div class="grp g-ice">
+      <div class="grp-h"><span class="t">7. Ice</span><span class="c">optional</span></div>
+      <div class="opts" id="opt-ice"></div>
+    </div>
+
+    <div class="builder-actions">
+      <button class="bbtn solid" id="surprise">&#127864;&nbsp; Bartender's choice</button>
+      <button class="bbtn" id="clearall">Start over</button>
+    </div>
+
+    <div class="ticket" id="ticket">
+      <div class="ticket-top">
+        <div class="lbl">Order ticket &middot; The Elixir Bar</div>
+        <div class="nm" id="t-name">Nothing on the rail yet</div>
+        <div class="pf" id="t-profile">Pick a base to start building.</div>
+      </div>
+      <div class="ticket-body">
+        <div class="pipe" id="t-pipe"></div>
+        <div class="nutri" id="t-nutri"></div>
+        <div id="t-abv"></div>
+        <div class="zline" id="t-wyatt"></div>
+        <div id="t-flag"></div>
+        <div id="t-myths"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rulebox">
+    <h3>Wyatt's four rules of the zero-proof glass</h3>
+    <ol>
+      <li><b>Acid is what you are actually missing.</b> Alcohol brings bite. Take it out and the drink goes flat and sweet, every time. Citrus, vinegar in small amounts, tart cherry, hibiscus, or a splash of brine put the edge back. If a mocktail tastes like juice, it needed acid, not more syrup.</li>
+      <li><b>Bruise the herbs, do not shred them.</b> One firm press with the back of a spoon releases the oils. Pulverizing releases chlorophyll, and chlorophyll tastes like a lawn. This is the single most common mistake.</li>
+      <li><b>Carbonation goes in last, and you stir once.</b> Every extra stir is bubbles you paid for and threw away. Build everything else, add the fizz, one gentle turn, done.</li>
+      <li><b>Use the real glass.</b> A coupe, a rocks glass, a decent highball. This sounds like theater and it is the most functional rule on the list, because the entire point is that you are holding a drink, not holding an apology.</li>
+    </ol>
+  </div>
+
+  <!-- ============ WYATT'S HOUSE ELIXIRS ============ -->
+  <div class="hero" style="padding-top:2.2rem;">
+    <h1 style="font-size:1.9rem;">Or order off the menu</h1>
+    <p class="tag">Twelve Wyatt has already built, already balanced, and already argued about with Nadia. Pick the moment you are in and the whole spec comes with it.</p>
+  </div>
+
+  <div class="panel">
+    <div class="picker">
+      <div class="field"><label for="cat">1. What is the moment</label><select id="cat"></select></div>
+      <div class="field"><label for="drink">2. Pick your drink</label><select id="drink"></select></div>
+    </div>
+    <div class="meta" id="meta"></div>
+  </div>
+
+  <div class="panel" id="card">
+    <h2 class="ex-head" id="dname"></h2>
+    <p class="ex-sub" id="dsub"></p>
+    <div class="blend-h">In the glass</div>
+    <ul class="ing" id="ing"></ul>
+    <div class="blend-h">How Wyatt builds it</div>
+    <ol class="script" id="script"></ol>
+    <div class="actions">
+      <button class="btn btn-go" id="speak">&#9654;&nbsp; Wyatt, walk me through it</button>
+      <button class="btn btn-ghost" id="stop">&#9632;&nbsp; Stop</button>
+    </div>
+    <p class="speaking-note" id="note">Turn your sound on. Wyatt reads the spec the way he'd call it across the bar.</p>
+    <div class="macro" id="macro"></div>
+    <div class="swap" id="swap"></div>
+    <div class="myth" id="myth"><div class="myth-top"><span class="v" id="mythv"></span><span id="mythh"></span></div>
+      <div class="myth-body"><p class="claim" id="mythclaim"></p><div id="mythtruth"></div><p class="src" id="mythsrc"></p></div></div>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Wyatt_eyes_open.png" alt="Wyatt E. Cooper" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Wyatt_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.7s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Wyatt E. Cooper</h3>
+      <div class="cc-role">Elixir Bar &middot; Your host</div>
+      <p class="cc-tag">A mixologist who does not drink. Builds the drink you actually wanted, then tells you what is in it.</p>
+      <div class="cc-tags"><span class="cc-t">#zeroproof</span><span class="cc-t">#mocktails</span><span class="cc-t">#recovery</span><span class="cc-t">#hospitality</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">Dose / Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="crew">
+    <div class="crew-h">Who Wyatt checks with</div>
+    <ul>
+      <li><b>Dr. Henry Chen, RPh</b> &mdash; the pharmacist. Every interaction call on this page is his, and the grapefruit rule is the one he will not bend on.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Nadia Hassan</b> &mdash; sports nutrition. She and Wyatt have an ongoing argument about whether a drink can be a meal. She is winning.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Amara</b> &mdash; adaptogens and botanicals, checked. Ashwagandha, elderberry, and every root with a claim stapled to it.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Dr. Sana Qureshi</b> &mdash; sleep and recovery. She rules on the wind-down menu and on whether a nightcap is helping or just a habit.<span class="bp">&#127890; backpack</span></li>
+      <li><b>Zara Cole</b> &mdash; runs <a href="/smoothie-bar.html">The Smoothie Bar</a> next door. She and Wyatt share a blender and a strong difference of opinion about garnish.</li>
+      <li><b>Eli Adler</b> &mdash; runs the Stoplight, so every verdict here names a source you can open.<span class="bp">&#127890; backpack</span></li>
+    </ul>
+  </div>
+
+  <div class="verify-box">
+    <h3>How the staff verify (so you don't have to take our word for it)</h3>
+    <p>Wyatt builds the drinks. He does not make the medical calls and he says so first. Every verdict on this page ran through The Gym <b>Stoplight</b>: Dr. Henry on interactions and supplement safety, Amara on botanicals and adaptogens, Nadia on nutrition, Dr. Sana on sleep and recovery, Eli on the citation.</p>
+    <p>Green means the evidence backs it. Amber means it depends, and here is on what. Red means a popular claim that is wrong, sometimes in a way that matters. Each verdict names a source you can open yourself.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">NIH ODS &middot; NCCIH</span><span class="pill">FDA &middot; openFDA</span><span class="pill">USDA FoodData Central</span><span class="pill">Stoplight verdict + citation</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical advice, and not treatment for alcohol use disorder.</b> The numbers on this page are rounded estimates for a typical build and shift with your pour. Nothing here is a substitute for care: if you are working on your relationship with alcohol, that deserves a real clinician, and support is available through SAMHSA's National Helpline at 1-800-662-4357, free and confidential, 24 hours a day. Botanicals and supplements can interact with prescription medication. If you are pregnant or breastfeeding, managing liver or kidney disease, or taking any daily prescription, talk to your clinician or pharmacist before making any functional ingredient on this page a routine.</p>
+</div>
+<script>
+/* ================= WYATT'S HOUSE ELIXIRS ================= */
+const DB = {
+ "Bright & Dry":[
+  {id:"underrated",name:"The Underrated",glass:"Highball",kcal:"~5 kcal",dry:"Zero sugar",time:"60 sec",
+   sub:"Sparkling water, lime, salt. Wyatt's actual answer, made properly.",
+   ing:["<b>6 oz</b> sparkling water","<b>1/2</b> lime, juiced","<b>1</b> lime wheel","<b>pinch</b> flaky salt","<b>ice</b>, to the top"],
+   script:["Fill the glass with ice first. A cold glass keeps carbonation.","Squeeze the lime directly in, then drop the spent half in too. The oil in the peel is half the drink.","Pinch of salt. This is the part people skip and it is the part that makes it taste like something.","Sparkling water last. One gentle stir. Lime wheel on the rim."],
+   macro:"About 5 kcal, no sugar, no caffeine, trace sodium. This is the drink you can have four of.",
+   swap:"Swaps: grapefruit instead of lime, if you are not on a medication that interacts with it. A dash of bitters if you want the bite, though that adds trace alcohol.",
+   myth:{verdict:"amber",claim:"“Sparkling water is bad for your teeth and leaches calcium from your bones.”",truth:"Mostly overblown, with one small real part. Plain carbonated water is mildly acidic and is far less erosive to enamel than soda or citrus juice, and it has no effect on bone density. That was a myth traced to cola specifically, where the phosphoric acid and the sugar were doing the work. The genuine caveat: adding a lot of citrus raises the acidity, so if you drink these all day, use a straw and rinse with plain water.",source:"PubMed research on carbonated water and enamel erosion; studies on cola and bone mineral density"}},
+  {id:"cucumber-mint",name:"Cucumber Mint Cooler",glass:"Collins",kcal:"~25 kcal",dry:"Low sugar",time:"2 min",
+   sub:"The one that disappears fastest at a summer party.",
+   ing:["<b>4</b> cucumber ribbons","<b>8</b> mint leaves","<b>1/2</b> lime, juiced","<b>5 oz</b> sparkling water","<b>pinch</b> salt","<b>ice</b>"],
+   script:["Put mint in the glass and press once with the back of a spoon. Once. Wyatt is watching.","Add cucumber ribbons and lime juice, then ice.","Sparkling water, one stir.","Cucumber ribbon down the inside of the glass as garnish. This is thirty seconds and it changes the whole drink."],
+   macro:"About 25 kcal, 3 g sugar, no caffeine. Genuinely hydrating and genuinely low in everything else.",
+   swap:"Swaps: basil instead of mint for something more savory. Coconut water instead of sparkling if you have been sweating and want the potassium.",
+   myth:{verdict:"red",claim:"“Cucumber water flushes toxins and reduces bloating.”",truth:"No. Cucumber water is water with cucumber in it, and that is a genuinely good thing. Your kidneys and liver handle detoxification continuously and are not waiting on a garnish. The anti-bloat claim is backwards in an amusing way: the most reliable thing in this glass for bloating is the water itself, plus the fact that you are drinking it instead of something carbonated and sugary. Drink it because it is delicious.",source:"NIH NCCIH, Detoxes and Cleanses; USDA FoodData Central"}},
+  {id:"hibiscus-spritz",name:"Hibiscus Rosemary Spritz",glass:"Wine glass",kcal:"~35 kcal",dry:"Low sugar",time:"3 min",
+   sub:"Deep red, properly bitter, looks exactly like a glass of wine.",
+   ing:["<b>3 oz</b> chilled hibiscus tea, strong","<b>1</b> rosemary sprig","<b>1/2 oz</b> lemon juice","<b>3 oz</b> sparkling water","<b>1 tsp</b> honey (optional)","<b>ice</b>"],
+   script:["Steep hibiscus double strength and chill it. Weak hibiscus is pink water, strong hibiscus is a drink.","Slap the rosemary sprig against your palm once to wake it up, then drop it in.","Lemon, honey if using, ice.","Sparkling water, one stir. Serve in a wine glass, because that is the entire point of this one."],
+   macro:"About 35 kcal, 8 g sugar with the honey, 5 g without, no caffeine. Hibiscus is naturally caffeine free.",
+   swap:"Swaps: skip the honey entirely once you are used to the tartness, and most people do. Pomegranate juice for an ounce of the sparkling water makes it richer.",
+   myth:{verdict:"amber",claim:"“Hibiscus tea lowers your blood pressure.”",truth:"There is real evidence here, which makes this one of the more legitimate items on the bar, but keep the scale honest. Controlled trials of hibiscus tea show small average reductions in blood pressure, meaningful at a population level and modest for any one person. It is not a substitute for medication, and that is the important part: hibiscus may also interact with some blood pressure and diuretic drugs, so if you are on either, this is a conversation with your pharmacist, not a swap you make yourself.",source:"PubMed meta-analyses on Hibiscus sabdariffa and blood pressure; NIH NCCIH"}}
+ ],
+ "The Sub-In":[
+  {id:"na-gt",name:"The Zero-Proof G&T",glass:"Copa or rocks",kcal:"~90 kcal",dry:"Contains sugar",time:"90 sec",
+   sub:"The most requested drink at any party, made honestly.",
+   ing:["<b>4 oz</b> tonic water","<b>2 oz</b> sparkling water","<b>1</b> juniper sprig or 3 juniper berries","<b>1</b> lime wedge","<b>1</b> grapefruit peel (see the check)","<b>ice</b>, plenty"],
+   script:["Big ice, filled to the top. Small ice melts and this drink dies watery.","Press the juniper berries once, or slap the sprig, and drop them in.","Tonic and sparkling water together, so it is not as sweet as straight tonic. One stir.","Express the citrus peel over the glass by squeezing it skin-out, then run it around the rim. That is the aroma that makes it read as gin."],
+   macro:"About 90 kcal and 21 g sugar, essentially all from the tonic. Cutting the tonic with sparkling water, as here, is what keeps it from being a soda.",
+   swap:"Swaps: diet or light tonic drops this to near zero sugar and Wyatt does not object. Lime peel instead of grapefruit if you take any daily medication.",
+   myth:{verdict:"red",claim:"“Tonic water is basically fizzy water, and the quinine helps leg cramps.”",truth:"Both halves are wrong. Tonic water is a soft drink: a standard serving carries around 21 to 23 g of sugar, close to a cola, which surprises almost everyone ordering it as the healthy option. And the quinine, once genuinely used for cramps, is present in tiny amounts here anyway. The FDA has warned against using quinine for leg cramps at all, because of serious blood and heart side effects. Order tonic because you like it, and know it is a sugared mixer.",source:"USDA FoodData Central; FDA warnings on quinine for nocturnal leg cramps"}},
+  {id:"faux-old-fashioned",name:"The Faux Old Fashioned",glass:"Rocks",kcal:"~60 kcal",dry:"Trace alcohol",time:"3 min",
+   sub:"Slow, brown, bitter, sipped. The one that stops people asking.",
+   ing:["<b>2 oz</b> strong cold-brewed black tea","<b>1 oz</b> NA whiskey alternative","<b>1 tsp</b> maple syrup","<b>2 dashes</b> aromatic bitters","<b>1</b> orange peel","<b>1</b> large ice cube"],
+   script:["Tea, NA spirit, maple, and bitters in the glass. Stir 20 seconds, which dilutes it exactly right.","One big cube. Not several small ones, this drink is meant to warm slowly.","Express the orange peel over the top, skin-out, then drop it in.","Sip it. This is not a drink you finish quickly, and that is the design."],
+   macro:"About 60 kcal, 5 g sugar. Contains trace alcohol from both the NA spirit and the bitters. See the check.",
+   swap:"Swaps: skip the bitters and the NA spirit entirely and steep the tea with a cinnamon stick and a clove instead. Same ritual, genuinely zero alcohol.",
+   myth:{verdict:"amber",claim:"“Non-alcoholic spirits and bitters are alcohol free.”",truth:"Not quite, and if you are in recovery this is the detail that matters most on the whole bar. In the United States a drink can be labeled non-alcoholic and still contain up to 0.5 percent alcohol by volume, and aromatic bitters are typically 35 to 45 percent alcohol, though a dash is a very small absolute amount. For most people cutting back, this is negligible. For anyone avoiding alcohol completely, for recovery, pregnancy, liver disease, or a medication that reacts with it, it is a real distinction and you deserve to be told. There is a separate, non-chemical question worth asking too: whether the ritual and the taste help you or pull at you. Only you can answer that one.",source:"TTB and FDA labeling rules on non-alcoholic beverages; SAMHSA guidance on recovery"}},
+  {id:"smoked-sour",name:"The Smoked Rosemary Sour",glass:"Coupe",kcal:"~70 kcal",dry:"Contains sugar",time:"4 min",
+   sub:"Foam, smoke, theater. The drink that ends the conversation about your drink.",
+   ing:["<b>2 oz</b> strong green tea, chilled","<b>3/4 oz</b> lemon juice","<b>1/2 oz</b> maple syrup","<b>1 oz</b> aquafaba (chickpea liquid)","<b>1</b> rosemary sprig, lightly torched","<b>ice</b>, for shaking"],
+   script:["Dry shake first: tea, lemon, maple, and aquafaba with no ice, hard, for 15 seconds. This builds the foam.","Add ice and shake again, 15 seconds. Double shaking is the whole trick to a stable foam.","Double strain into a chilled coupe so no ice chips break the surface.","Light the rosemary sprig, blow it out immediately, and lay it across the glass. The smoke does more than the taste."],
+   macro:"About 70 kcal, 9 g sugar, roughly 25 mg caffeine from the green tea. Aquafaba adds no meaningful calories.",
+   swap:"Swaps: aquafaba is the vegan egg-white substitute and it works perfectly, but pasteurized egg white foams a little tighter if you prefer. Decaf green tea for an evening version.",
+   myth:{verdict:"green",claim:"“Aquafaba really does work as an egg white replacement.”",truth:"True, and it is one of the genuinely great discoveries of modern bartending. The proteins and starches left in chickpea cooking liquid foam and stabilize very much like egg white, which gives you the silky top on a sour with no raw egg, no allergen for most people, and no cost, since it is the liquid you were pouring down the drain. It is a rare case where the substitute is not a compromise.",source:"Food science literature on aquafaba foaming proteins; USDA FoodData Central"}}
+ ],
+ "Wind-Down":[
+  {id:"cherry-nightcap",name:"The Tart Cherry Nightcap",glass:"Rocks",kcal:"~140 kcal",dry:"Contains sugar",time:"90 sec",
+   sub:"Dr. Sana's pick, with Dr. Sana's caveat attached.",
+   ing:["<b>4 oz</b> tart cherry juice","<b>2 oz</b> sparkling water","<b>1</b> chamomile tea bag, steeped and cooled","<b>squeeze</b> lemon","<b>ice</b>"],
+   script:["Steep the chamomile strong and let it cool. Hot tea in a cold drink is a sad drink.","Cherry juice, chamomile, lemon over ice.","Sparkling water, one stir.","About an hour before bed. Not right at bedtime, or you will be up for a different reason."],
+   macro:"About 140 kcal and 30 g sugar, essentially all from the cherry juice. That is a lot for a nightly habit, which is the honest catch.",
+   swap:"Swaps: unsweetened tart cherry concentrate, a tablespoon in sparkling water, gives you the same compounds for about a quarter of the sugar. Wyatt now makes it this way by default.",
+   myth:{verdict:"amber",claim:"“Tart cherry juice is a natural sleep aid.”",truth:"There is real evidence, and it is smaller than the internet suggests. Trials show modest improvements in sleep duration and efficiency, likely from the natural melatonin and the anthocyanins, and it takes consistent intake over about a week rather than one glass. Modest is the word: we are talking tens of minutes, not a transformation. Dr. Sana's line is that a consistent bedtime beats every drink ever invented, and she would like that noted before you buy the juice.",source:"PubMed trials on tart cherry, melatonin, and sleep quality; NIH ODS"}},
+  {id:"lavender-fizz",name:"Lavender Lemon Fizz",glass:"Collins",kcal:"~45 kcal",dry:"Low sugar",time:"3 min",
+   sub:"Floral without tasting like soap, which takes restraint.",
+   ing:["<b>1/2 oz</b> lavender syrup, light","<b>3/4 oz</b> lemon juice","<b>5 oz</b> sparkling water","<b>1</b> lemon peel","<b>2</b> lavender buds, garnish only","<b>ice</b>"],
+   script:["Make the syrup weak. Culinary lavender, steeped briefly, then strained. Over-steeped lavender tastes like perfume and there is no saving it.","Syrup and lemon over ice.","Sparkling water, one stir.","Lemon peel expressed over the top. Two buds floating, and no more than two."],
+   macro:"About 45 kcal, 10 g sugar from the syrup, no caffeine. Halve the syrup and it still works.",
+   swap:"Swaps: chamomile syrup instead of lavender if florals are not your thing. Monk fruit sweetened lavender syrup drops the sugar to near zero.",
+   myth:{verdict:"amber",claim:"“Lavender calms anxiety.”",truth:"It depends on the form, and this is a case where the delivery method matters more than the plant. The better evidence is for lavender aromatherapy and for a specific standardized oral preparation studied for anxiety, both showing modest effects. A splash of lavender syrup in a drink is not either of those things and has not been studied. What it does do is smell lovely and mark the end of your evening, and a deliberate wind-down ritual has real value on its own terms. Just credit the ritual honestly.",source:"NIH NCCIH, Lavender; PubMed reviews on lavender aromatherapy and anxiety"}}
+ ],
+ "Replenish":[
+  {id:"real-electrolyte",name:"The Real Electrolyte",glass:"Highball",kcal:"~60 kcal",dry:"Low sugar",time:"60 sec",
+   sub:"What the sachet is, made from things you already own.",
+   ing:["<b>8 oz</b> coconut water","<b>1/2</b> lime, juiced","<b>1/4 tsp</b> salt","<b>1 tsp</b> maple syrup (optional)","<b>ice</b>"],
+   script:["Coconut water as the base. It brings the potassium already.","Lime and salt. The salt is the active ingredient and the one people leave out.","Maple only if the session was long. For a normal workout you do not need the carbs.","Stir until the salt fully dissolves. Undissolved salt at the bottom helps nobody."],
+   macro:"About 60 kcal, 11 g sugar, roughly 600 mg potassium and 600 mg sodium. That sodium number is the entire point and it is what most homemade versions get wrong.",
+   swap:"Swaps: plain water plus a quarter teaspoon of salt and a splash of juice does nearly the same job for pennies. Skip the maple for anything under 60 minutes.",
+   myth:{verdict:"amber",claim:"“Coconut water is nature's sports drink.”",truth:"Half right, and the half it gets wrong is the important one. Coconut water is genuinely excellent for potassium and it rehydrates well after a normal session. What it is low in is sodium, and sodium is the electrolyte you actually lose in meaningful quantities in sweat. For long, hot, genuinely sweaty efforts, coconut water alone under-replaces the thing that matters most, which is exactly why Wyatt adds the salt. With the salt, it is a legitimately good sports drink. Without it, it is a nice potassium drink.",source:"USDA FoodData Central; ACSM position stand on exercise and fluid replacement"}},
+  {id:"watermelon-salt",name:"Watermelon Salt Cooler",glass:"Collins",kcal:"~70 kcal",dry:"Low sugar",time:"2 min",
+   sub:"The hot-day drink. Basil, not mint, and Wyatt is firm about it.",
+   ing:["<b>5 oz</b> fresh watermelon juice","<b>1/2</b> lime, juiced","<b>4 leaves</b> basil","<b>pinch</b> flaky salt","<b>2 oz</b> sparkling water","<b>ice</b>"],
+   script:["Blend watermelon and strain it, or press it through a sieve. Pulp makes this heavy.","Press the basil once in the glass, then add watermelon, lime, and salt.","Ice, then sparkling water, one stir.","The salt against the sweet watermelon is the whole drink. Do not skip it."],
+   macro:"About 70 kcal, 14 g sugar, decent potassium, meaningful sodium from the pinch of salt. Very high water content.",
+   swap:"Swaps: mint works, Wyatt just thinks basil is better here and he will make it either way. A splash of hibiscus adds tartness and color.",
+   myth:{verdict:"amber",claim:"“The citrulline in watermelon improves blood flow and workout performance.”",truth:"There is a real mechanism and a real gap between it and the glass. Citrulline is genuinely converted to arginine and then nitric oxide, and concentrated citrulline malate supplements do show modest performance effects in some studies. The problem is dose: studied amounts are grams, and you would need a very large volume of watermelon to approach them. This is a wonderfully hydrating drink with real potassium. Order it for that.",source:"NIH ODS, Dietary Supplements for Exercise and Athletic Performance; PubMed reviews on citrulline"}}
+ ],
+ "Digestive & Warm":[
+  {id:"ginger-fire",name:"Ginger Lime Fire",glass:"Rocks",kcal:"~50 kcal",dry:"Low sugar",time:"2 min",
+   sub:"The one with the best evidence behind it, and it also happens to taste the best.",
+   ing:["<b>1 oz</b> fresh ginger juice or strong ginger tea","<b>3/4 oz</b> lime juice","<b>1 tsp</b> honey","<b>4 oz</b> sparkling water","<b>pinch</b> cayenne (optional)","<b>ice</b>"],
+   script:["Grate fresh ginger and press it through a fine sieve, or steep it very strong. Powdered ginger will not do this.","Ginger, lime, and honey in the glass. Stir until the honey dissolves before the ice goes in, or it sits at the bottom forever.","Ice, then sparkling water, one stir.","Cayenne on top if you want the heat to carry. A pinch. It builds."],
+   macro:"About 50 kcal, 8 g sugar mostly from the honey, no caffeine. Very low calorie for how much flavor is in the glass.",
+   swap:"Swaps: monk fruit instead of honey drops it to near zero sugar. Add 2 oz of hot water instead of sparkling and it becomes an excellent winter version.",
+   myth:{verdict:"green",claim:"“Ginger actually settles your stomach.”",truth:"True, and it is one of the best-supported botanicals on this entire bar. Ginger has repeatedly shown genuine benefit for nausea, including morning sickness in pregnancy, motion sickness, and post-operative nausea, with a plausible mechanism in the gut and reasonably consistent trials. Two honest limits: it is nausea specifically, not indigestion or bloating in general, and at high supplemental doses it may interact with blood thinners. In a drink, at this amount, it is both effective and unremarkable in the best way.",source:"NIH NCCIH, Ginger; Cochrane and PubMed reviews on ginger for nausea"}},
+  {id:"golden-fizz",name:"Turmeric Golden Fizz",glass:"Collins",kcal:"~55 kcal",dry:"Low sugar",time:"2 min",
+   sub:"Beautiful, delicious, and carrying the most oversold claim in the wellness aisle.",
+   ing:["<b>1/2 tsp</b> turmeric","<b>crack</b> black pepper","<b>1 oz</b> orange juice","<b>3/4 oz</b> lemon juice","<b>1 tsp</b> honey","<b>4 oz</b> sparkling water","<b>ice</b>"],
+   script:["Whisk turmeric, pepper, honey, and the citrus juices into a paste first. Turmeric will not disperse into a cold liquid otherwise, it just clumps and sinks.","Once smooth, add ice.","Sparkling water last, one stir.","Rinse the glass and your shaker immediately. Turmeric stains permanently and Wyatt has lost equipment learning this."],
+   macro:"About 55 kcal, 11 g sugar, no caffeine. The pepper is functional here, not decorative, though see the check for what it does and does not achieve.",
+   swap:"Swaps: fresh grated turmeric is better if you can get it. Coconut water instead of sparkling makes a richer, more filling version.",
+   myth:{verdict:"red",claim:"“Turmeric is a powerful natural anti-inflammatory.”",truth:"Not at this dose, and the claim is far ahead of the evidence generally. Curcumin has measurable anti-inflammatory activity in a laboratory, but it is very poorly absorbed by the human gut, which is why black pepper is always recommended alongside it. Piperine does meaningfully increase absorption, so the pepper is doing real work, and it is still nowhere near the concentrated extract doses used in the trials, which themselves produce inconsistent results in people. It is a wonderful spice with some genuine promise. It is not a drug, and if you take blood thinners, ask a pharmacist before you take concentrated extracts.",source:"NIH NCCIH, Turmeric; PubMed reviews on curcumin bioavailability and piperine"}}
+ ]
+};
+
+const VERDICT = {green:"Green · Checks out", amber:"Amber · It depends", red:"Red · Myth"};
+const catSel=document.getElementById('cat'), drinkSel=document.getElementById('drink');
+catSel.innerHTML = Object.keys(DB).map(c=>'<option value="'+c+'">'+c+'</option>').join('');
+function fillDrinks(){
+  drinkSel.innerHTML = DB[catSel.value].map((d,i)=>'<option value="'+i+'">'+d.name+'</option>').join('');
+  renderDrink();
+}
+function renderDrink(){
+  const d=DB[catSel.value][+drinkSel.value];
+  document.getElementById('meta').innerHTML='<span class="chip glass">'+d.glass+'</span><span class="chip kcal">'+d.kcal+'</span><span class="chip dry">'+d.dry+'</span><span class="chip time">'+d.time+'</span>';
+  document.getElementById('dname').textContent=d.name;
+  document.getElementById('dsub').textContent=d.sub;
+  document.getElementById('ing').innerHTML=d.ing.map(i=>'<li>'+i+'</li>').join('');
+  document.getElementById('script').innerHTML=d.script.map(s=>'<li>'+s+'</li>').join('');
+  document.getElementById('macro').innerHTML='<b>The honest number:</b> '+d.macro;
+  document.getElementById('swap').innerHTML='<b>Wyatt’s swaps:</b> '+d.swap.replace(/^Swaps:\s*/,'');
+  const my=d.myth, box=document.getElementById('myth');
+  box.className='myth '+my.verdict;
+  document.getElementById('mythv').textContent=VERDICT[my.verdict];
+  document.getElementById('mythh').textContent='Myth Check';
+  document.getElementById('mythclaim').textContent=my.claim;
+  document.getElementById('mythtruth').innerHTML='<span>'+my.truth+'</span>';
+  document.getElementById('mythsrc').innerHTML='Checked against: <b>'+my.source+'</b>';
+  stopSpeak();
+}
+catSel.addEventListener('change',fillDrinks);
+drinkSel.addEventListener('change',renderDrink);
+
+/* ---- Wyatt reads the spec (ElevenLabs via /.netlify/functions/gym-tts) ---- */
+let speaking=false, _gymAudio=null, _abortCtrl=null;
+const note=document.getElementById('note');
+async function elevenSay(text,charId){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();}
+  _abortCtrl=new AbortController();
+  let resp;
+  try{
+    resp=await fetch('/.netlify/functions/gym-tts',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({characterId:charId,text}),signal:_abortCtrl.signal});
+  }catch(e){return false;}
+  if(!resp.ok)return false;
+  const blob=await resp.blob();
+  const url=URL.createObjectURL(blob);
+  _gymAudio=new Audio(url);
+  return new Promise(res=>{
+    _gymAudio.onended=()=>{URL.revokeObjectURL(url);_gymAudio=null;res(true);};
+    _gymAudio.onerror=()=>{URL.revokeObjectURL(url);_gymAudio=null;res(false);};
+    _gymAudio.play().catch(()=>res(false));
+  });
+}
+async function speakSpec(){
+  stopSpeak(); speaking=true;
+  document.getElementById('speak').textContent='⏸ Loading...';
+  note.textContent='Loading Wyatt...';
+  const d=DB[catSel.value][+drinkSel.value];
+  const lines=[d.name+'. '+d.sub]
+    .concat(['In the glass. '+d.ing.map(i=>i.replace(/<[^>]+>/g,'')).join(', ')+'.'])
+    .concat(d.script);
+  const ok=await elevenSay(lines.join(' ... '),'wyatt');
+  if(speaking){stopSpeak();note.textContent = ok ? 'That is the spec. Build it in that order.' : 'Audio is unavailable right now. The written spec above is the same thing.';}
+}
+function stopSpeak(){
+  if(_gymAudio){_gymAudio.pause();_gymAudio=null;}
+  if(_abortCtrl){_abortCtrl.abort();_abortCtrl=null;}
+  speaking=false;
+  const b=document.getElementById('speak'); if(b)b.innerHTML='&#9654;&nbsp; Wyatt, walk me through it';
+}
+document.getElementById('speak').addEventListener('click',speakSpec);
+document.getElementById('stop').addEventListener('click',()=>{stopSpeak();note.textContent='Stopped.';});
+window.addEventListener('beforeunload',()=>stopSpeak());
+
+fillDrinks();
+
+/* ================= BUILD YOUR OWN =================
+   Rounded per-serving estimates for one bar pour:
+   base 6 oz, fruit/citrus a half or a small pour, functional one shot or tsp.
+   k=kcal s=sugar g  caf=caffeine mg  na=sodium mg  po=potassium mg  alc=trace alcohol */
+const ITEMS = {
+ base:[
+  {id:"sparkling", n:"Sparkling Water",  k:0,  s:0,  caf:0, na:5,  po:0},
+  {id:"tonic",     n:"Tonic Water",      k:83, s:21, caf:0, na:40, po:0},
+  {id:"coconut",   n:"Coconut Water",    k:45, s:9,  caf:0, na:25, po:470},
+  {id:"kombucha",  n:"Kombucha",         k:30, s:6,  caf:8, na:10, po:60, alc:true},
+  {id:"greentea",  n:"Green Tea",        k:2,  s:0,  caf:28,na:2,  po:20},
+  {id:"hibiscus",  n:"Hibiscus Tea",     k:5,  s:0,  caf:0, na:5,  po:20},
+  {id:"cherry",    n:"Tart Cherry Juice",k:130,s:30, caf:0, na:10, po:320},
+  {id:"gingerbeer",n:"Ginger Beer (NA)", k:95, s:23, caf:0, na:15, po:15}
+ ],
+ bot:[
+  {id:"mint",     n:"Mint",     k:1,s:0,caf:0,na:0,po:5},
+  {id:"basil",    n:"Basil",    k:1,s:0,caf:0,na:0,po:5},
+  {id:"rosemary", n:"Rosemary", k:1,s:0,caf:0,na:0,po:3},
+  {id:"lavender", n:"Lavender", k:1,s:0,caf:0,na:0,po:1},
+  {id:"thyme",    n:"Thyme",    k:1,s:0,caf:0,na:0,po:3},
+  {id:"sage",     n:"Sage",     k:1,s:0,caf:0,na:0,po:3}
+ ],
+ fruit:[
+  {id:"lime",       n:"Lime",       k:10,s:1, caf:0,na:0,po:35},
+  {id:"lemon",      n:"Lemon",      k:11,s:1, caf:0,na:0,po:40},
+  {id:"grapefruit", n:"Grapefruit", k:26,s:6, caf:0,na:0,po:180},
+  {id:"orange",     n:"Orange",     k:28,s:6, caf:0,na:0,po:120},
+  {id:"cucumber",   n:"Cucumber",   k:8, s:1, caf:0,na:1,po:75},
+  {id:"pomegranate",n:"Pomegranate",k:40,s:9, caf:0,na:5,po:100},
+  {id:"blackberry", n:"Blackberry", k:15,s:2, caf:0,na:0,po:60},
+  {id:"peach",      n:"Peach",      k:25,s:6, caf:0,na:0,po:100},
+  {id:"pineapple",  n:"Pineapple",  k:30,s:7, caf:0,na:1,po:65},
+  {id:"watermelon", n:"Watermelon", k:23,s:5, caf:0,na:1,po:85}
+ ],
+ fun:[
+  {id:"ginger",   n:"Ginger Shot",       k:15,s:2,caf:0,na:2,po:40},
+  {id:"turmeric", n:"Turmeric",          k:8, s:0,caf:0,na:1,po:25},
+  {id:"acv",      n:"Apple Cider Vinegar",k:3,s:0,caf:0,na:1,po:11},
+  {id:"elderberry",n:"Elderberry",       k:25,s:5,caf:0,na:2,po:40},
+  {id:"ashwagandha",n:"Ashwagandha",     k:5, s:0,caf:0,na:1,po:5},
+  {id:"aloe",     n:"Aloe Vera",         k:8, s:1,caf:0,na:8,po:15},
+  {id:"magnesium",n:"Magnesium",         k:0, s:0,caf:0,na:0,po:0},
+  {id:"electrolyte",n:"Electrolyte Mix", k:5, s:1,caf:0,na:400,po:200},
+  {id:"beet",     n:"Beet Juice",        k:40,s:8,caf:0,na:65,po:275}
+ ],
+ swt:[
+  {id:"honey",  n:"Honey",       k:64,s:17,caf:0,na:0,po:11},
+  {id:"agave",  n:"Agave",       k:60,s:16,caf:0,na:0,po:1},
+  {id:"maple",  n:"Maple Syrup", k:52,s:12,caf:0,na:2,po:42},
+  {id:"monk",   n:"Monk Fruit",  k:0, s:0, caf:0,na:0,po:0},
+  {id:"stevia", n:"Stevia",      k:0, s:0, caf:0,na:0,po:0},
+  {id:"simple", n:"Simple Syrup",k:50,s:13,caf:0,na:0,po:0}
+ ],
+ fin:[
+  {id:"bitters",  n:"Aromatic Bitters", k:3, s:0,caf:0,na:0,  po:0, alc:true},
+  {id:"naspirit", n:"NA Spirit",        k:12,s:1,caf:0,na:2,  po:2, alc:true},
+  {id:"saltrim",  n:"Sea Salt Rim",     k:0, s:0,caf:0,na:250,po:2},
+  {id:"chilirim", n:"Chili-Lime Rim",   k:5, s:0,caf:0,na:210,po:10},
+  {id:"charcoal", n:"Activated Charcoal",k:0,s:0,caf:0,na:0,  po:0},
+  {id:"smoke",    n:"Smoked Rosemary",  k:1, s:0,caf:0,na:0,  po:2}
+ ],
+ ice:[{id:"ice",n:"Ice",k:0,s:0,caf:0,na:0,po:0}]
+};
+
+const PICK = {base:null,bot:null,fruit:[],fun:null,swt:null,fin:null,ice:null};
+const GRPCLS = {base:"s-base",bot:"s-bot",fruit:"s-fruit",fun:"s-fun",swt:"s-swt",fin:"s-fin",ice:"s-ice"};
+
+function buildOptions(){
+  Object.keys(ITEMS).forEach(g=>{
+    document.getElementById('opt-'+g).innerHTML = ITEMS[g].map(it=>
+      '<button type="button" class="opt" data-g="'+g+'" data-id="'+it.id+'">'+it.n+
+      (it.alc?'<span class="tr" title="contains trace alcohol">&#9679;</span>':'')+'</button>').join('');
+  });
+  document.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>toggle(b.dataset.g,b.dataset.id)));
+}
+function toggle(g,id){
+  if(g==='fruit'){
+    const i=PICK.fruit.indexOf(id);
+    if(i>-1) PICK.fruit.splice(i,1);
+    else { PICK.fruit.push(id); if(PICK.fruit.length>2) PICK.fruit.shift(); }
+  } else {
+    PICK[g] = (PICK[g]===id) ? null : id;
+  }
+  paint(); renderTicket();
+}
+function paint(){
+  document.querySelectorAll('.opt').forEach(b=>{
+    const g=b.dataset.g, id=b.dataset.id;
+    b.classList.toggle('on', g==='fruit' ? PICK.fruit.includes(id) : PICK[g]===id);
+  });
+  document.getElementById('fruit-count').textContent = PICK.fruit.length ? '('+PICK.fruit.length+' of 2 picked)' : '';
+}
+const get=(g,id)=>ITEMS[g].find(x=>x.id===id);
+function chosen(){
+  const out=[];
+  if(PICK.base) out.push({g:'base',it:get('base',PICK.base)});
+  if(PICK.bot)  out.push({g:'bot', it:get('bot',PICK.bot)});
+  PICK.fruit.forEach(id=>out.push({g:'fruit',it:get('fruit',id)}));
+  ['fun','swt','fin','ice'].forEach(g=>{ if(PICK[g]) out.push({g:g,it:get(g,PICK[g])}); });
+  return out;
+}
+
+function nameIt(){
+  const fr=PICK.fruit.map(id=>get('fruit',id).n);
+  const bot=PICK.bot?get('bot',PICK.bot).n:null;
+  const base=PICK.base?get('base',PICK.base).n:null;
+  const lead = fr.length===2 ? fr[0]+'-'+fr[1] : fr.length===1 ? fr[0] : bot ? bot : base;
+  if(!lead) return 'An Empty Glass';
+  let suffix='Cooler';
+  if(PICK.fin==='smoke') suffix='Smoke';
+  else if(PICK.fin==='bitters'||PICK.fin==='naspirit') suffix='Sub-In';
+  else if(PICK.base==='tonic'||PICK.base==='gingerbeer') suffix='Highball';
+  else if(PICK.fun==='electrolyte'||PICK.base==='coconut') suffix='Replenisher';
+  else if(PICK.base==='cherry'||PICK.bot==='lavender') suffix='Nightcap';
+  else if(PICK.base==='sparkling'&&!PICK.swt) suffix='Spritz';
+  else if(bot&&fr.length) suffix='Fizz';
+  return 'The '+lead+' '+suffix;
+}
+function profileOf(tot){
+  if(tot.alc.length) return 'Contains trace alcohol &middot; read the note below';
+  if(tot.na>=350) return 'Replenisher &middot; real sodium, built for after';
+  if(tot.s>=25) return 'Sweet &middot; this is a soft drink, and that is fine';
+  if(tot.caf>=25) return 'Lifted &middot; there is caffeine in this one';
+  if(tot.s<=3) return 'Bone dry &middot; essentially no sugar';
+  return 'Balanced &middot; light, bright, easy';
+}
+function wyattLine(tot,sel){
+  const L=[];
+  if(!sel.length) return 'Nothing on the rail yet. Start with a base and work down the bar.';
+  if(!PICK.base) L.push('No base means you have garnish in a glass. Pick something to pour, even if it is just sparkling water.');
+  const acid = PICK.fruit.some(f=>['lime','lemon','grapefruit','orange','pomegranate'].includes(f)) || PICK.fun==='acv' || PICK.base==='hibiscus' || PICK.base==='cherry';
+  if(PICK.base && !acid) L.push('There is no acid in this. It will taste flat and vaguely sweet. Add a citrus, or hibiscus, and it becomes a drink.');
+  if(tot.s>=25 && !acid) L.push('Sweet with nothing cutting it. A squeeze of lime would fix this in one move.');
+  if(PICK.fin==='saltrim'||PICK.fin==='chilirim') L.push('Rim only half the glass. Then you choose sip by sip whether you want the salt, which is the trick every good bar uses.');
+  if(PICK.bot&&!PICK.fruit.length) L.push('Herb with no fruit is a subtle drink. Press the botanical once and let it sit a minute before you top it.');
+  if(PICK.base==='sparkling'&&PICK.fruit.includes('lime')&&PICK.fin==='saltrim') L.push('You have independently arrived at Wyatt’s house drink. He is quietly pleased.');
+  if(tot.caf>=25&&(PICK.base==='cherry'||PICK.bot==='lavender')) L.push('This is caffeinated and built like a wind-down. Pick a lane, or Dr. Sana will pick one for you.');
+  if(tot.s>=30) L.push('That is a sweet one. It will taste very good and it is a soft drink, so treat it like one rather than like a health drink.');
+  if(!L.length) L.push('Balanced, bright, and it will look good in the glass. Wyatt approves and moves down the bar.');
+  return L.slice(0,2).join(' ');
+}
+function flagLine(tot){
+  const F=[];
+  if(tot.s>=30) F.push('This lands around '+Math.round(tot.s)+' g of sugar, which is soft-drink territory and usually comes from the base. Tonic, ginger beer, and tart cherry are the three that carry it. Sparkling water plus fruit gets you most of the flavor for almost none of the sugar.');
+  if(tot.caf>=25) F.push('Contains roughly '+Math.round(tot.caf)+' mg of caffeine. Caffeine has a half life around 5 hours, so an evening order costs you sleep quality even if you fall asleep fine.');
+  if(tot.na>=500) F.push('Around '+Math.round(tot.na)+' mg of sodium in one glass. Excellent after a long sweaty session, unnecessary on a rest day, and worth knowing if you are watching sodium for blood pressure.');
+  return F;
+}
+
+const RULES = [
+ {when:()=>PICK.fruit.includes('grapefruit'), verdict:'red',
+  claim:'“Grapefruit is just a citrus, it is healthy.”',
+  truth:'The fruit is genuinely healthy. The problem is that it is also pharmacologically active. Compounds in grapefruit block an enzyme called CYP3A4 in your gut, which many medications rely on to be broken down, so the drug can build up to higher levels than intended. The list is long and includes several statins, some blood pressure medications, certain anti-anxiety drugs, and immunosuppressants, and the effect can last more than 24 hours, so timing it away from your dose does not solve it. This is Dr. Henry’s hard rule: if you take a daily prescription, ask a pharmacist before grapefruit becomes a habit. If you do not, enjoy it.',
+  source:'FDA, Grapefruit Juice and Some Drugs Do Not Mix; NIH on CYP3A4 interactions'},
+ {when:()=>PICK.fin==='charcoal', verdict:'red',
+  claim:'“Activated charcoal detoxes your body.”',
+  truth:'No, and this one can actively cause harm. Activated charcoal is a real medical treatment, used in emergency rooms for certain poisonings, and it works precisely because it binds things in your gut indiscriminately. That is the problem in a drink: it does not distinguish toxins from your medication. It can reduce absorption of prescriptions taken around the same time, including oral contraceptives, and it has no evidence of removing anything your liver and kidneys were not already handling. It is a black drink with a dramatic story and a genuine interaction risk. Wyatt keeps it on the board so he can tell you this.',
+  source:'NIH NCCIH; FDA; poison control guidance on activated charcoal'},
+ {when:()=>PICK.fin==='bitters'||PICK.fin==='naspirit'||PICK.base==='kombucha', verdict:'amber',
+  claim:'“If it is on the zero-proof menu, it contains no alcohol.”',
+  truth:'Not always, and you deserve the real number. In the United States a beverage can be labeled non-alcoholic and still contain up to 0.5 percent alcohol by volume. Aromatic bitters are typically 35 to 45 percent alcohol, though a dash is a very small absolute amount. Kombucha ferments continuously and can drift past 0.5 percent, particularly homebrewed or stored warm. For most people cutting back this is negligible. For anyone avoiding alcohol entirely, whether for recovery, pregnancy, liver disease, or a medication such as metronidazole or disulfiram that reacts with it, this is a real distinction, and no bar should let you find out by accident.',
+  source:'TTB and FDA labeling standards for non-alcoholic beverages; FDA guidance on kombucha alcohol content'},
+ {when:()=>PICK.fun==='acv', verdict:'red',
+  claim:'“Apple cider vinegar burns fat and resets your metabolism.”',
+  truth:'The big claims do not hold. Small studies suggest vinegar may slightly blunt the blood glucose rise after a carb-heavy meal, which is a modest and genuinely interesting effect, and there is no good evidence it causes meaningful fat loss, resets metabolism, or detoxes anything. There is a real downside people ignore: undiluted vinegar erodes tooth enamel and can irritate the throat and esophagus. If you use it, always dilute it well, as it is here, and drink it through a straw. It is a nice sharp ingredient in a drink. That is the honest ceiling.',
+  source:'NIH NCCIH; PubMed trials on vinegar and postprandial glycemia; dental research on enamel erosion'},
+ {when:()=>PICK.base==='tonic'||PICK.base==='gingerbeer', verdict:'red',
+  claim:'“Tonic and ginger beer are the healthy mixers.”',
+  truth:'They are soft drinks, and this catches people constantly because both sound botanical and adult. A serving of tonic water carries roughly 21 to 23 g of sugar and ginger beer often more, putting either in the same range as a cola. Tonic’s quinine is present in tiny amounts, and separately, the FDA has warned against using quinine for leg cramps because of serious side effects, so there is no health angle there either. Order them because you like them, and cut them with sparkling water the way Wyatt does, which halves the sugar and barely changes the taste.',
+  source:'USDA FoodData Central; FDA warnings on quinine'},
+ {when:()=>PICK.fun==='ashwagandha', verdict:'amber',
+  claim:'“Ashwagandha is a safe natural way to lower stress.”',
+  truth:'The evidence is real but early, and the safety caveat is the part that gets left off. Several small trials show modest reductions in self-reported stress and anxiety, which is genuinely promising and far from settled, with short study durations and inconsistent preparations. The important part: there are documented case reports of liver injury associated with ashwagandha supplements, it is not recommended in pregnancy, and it may interact with thyroid medication, sedatives, and immunosuppressants. Amara’s position is that this is a real botanical worth studying, not a casual daily add-in.',
+  source:'NIH NCCIH, Ashwagandha; LiverTox, NIH; PubMed trials on ashwagandha and stress'},
+ {when:()=>PICK.fun==='elderberry', verdict:'amber',
+  claim:'“Elderberry boosts your immune system and stops a cold.”',
+  truth:'It depends on what you are asking of it. Some trials suggest elderberry extract may modestly shorten cold and flu symptom duration, and the evidence is mixed, the studies are small, and several were industry funded. It does not prevent infection, and boosting your immune system is not really a thing a functioning immune system needs or benefits from. Two safety notes that matter: raw or unripe elderberries, leaves, and stems are toxic and must be cooked, and commercial preparations vary enormously in strength.',
+  source:'NIH NCCIH, Elderberry; PubMed reviews on Sambucus nigra and upper respiratory infection'},
+ {when:()=>PICK.fun==='aloe', verdict:'amber',
+  claim:'“Aloe vera juice soothes your gut and cleanses your colon.”',
+  truth:'It depends entirely on which part of the plant is in the bottle, and the labels are not always clear. Aloe latex, the bitter yellow layer, is a strong stimulant laxative, and the FDA removed it from over-the-counter laxative products in 2002 because manufacturers did not provide the safety data required. Decolorized, purified inner-leaf gel is a different product and is what belongs in a drink. Evidence for gut soothing is thin either way, and the colon cleansing framing is not supported. Buy purified inner leaf, and skip it in pregnancy.',
+  source:'NIH NCCIH, Aloe Vera; FDA final rule on aloe laxative ingredients'},
+ {when:()=>PICK.swt==='agave', verdict:'red',
+  claim:'“Agave is a healthy low-glycemic sweetener.”',
+  truth:'This is one of the better marketing jobs in the sweetener aisle. Agave does have a low glycemic index, and the reason is not flattering: it is roughly 75 to 85 percent fructose, higher than table sugar and higher than high-fructose corn syrup. Fructose does not raise blood glucose much because it is processed in the liver instead, and high fructose intake is associated with less favorable effects on liver fat and blood lipids. Low glycemic here is a description of the mechanism, not a health benefit. Nutritionally it is sugar, at about the same calories.',
+  source:'USDA FoodData Central; PubMed reviews on fructose metabolism and metabolic outcomes'},
+ {when:()=>PICK.fun==='magnesium', verdict:'amber',
+  claim:'“Magnesium helps you relax and sleep.”',
+  truth:'It depends on whether you are actually short of it, and the form matters more than the marketing. Magnesium is genuinely essential for muscle and nerve function, and many people do fall below recommended intake, so a supplement can help those people. Evidence that extra magnesium improves sleep in people who are not deficient is weak. On form: magnesium oxide is cheap and poorly absorbed and is mostly a laxative, while glycinate and citrate absorb better. High doses cause diarrhea, and people with kidney disease should not supplement without medical advice.',
+  source:'NIH ODS, Magnesium Fact Sheet; PubMed reviews on magnesium and sleep'},
+ {when:()=>PICK.fun==='electrolyte'||PICK.fin==='saltrim'||PICK.fin==='chilirim', verdict:'amber',
+  claim:'“Everyone needs electrolytes every day.”',
+  truth:'It depends on how much you sweat, and for most people on most days the answer is no. Sodium is the electrolyte you lose in meaningful amounts in sweat, and a normal diet replaces it easily. Electrolyte drinks earn their place for long or hot sessions, generally beyond about an hour, for heavy sweaters, and during illness with fluid loss. Two honest notes: sea salt and table salt are nutritionally near identical, since the trace minerals in sea salt are negligible, and table salt is usually iodized, which sea salt is not. If you are watching sodium for blood pressure, count this glass.',
+  source:'ACSM position stand on exercise and fluid replacement; NIH ODS; FDA on sodium'},
+ {when:()=>PICK.base==='greentea', verdict:'amber',
+  claim:'“Green tea boosts your metabolism and burns fat.”',
+  truth:'It depends which claim you mean. Green tea does contain caffeine and L-theanine, and that combination has decent evidence for calm alertness, which is a real and pleasant effect. The metabolism and fat-burning claims come from EGCG studies, and the effects in people are very small and not clinically meaningful for weight. The caveat worth knowing: concentrated green tea extract supplements, not brewed tea, have been associated with rare liver injury. Brewed tea, as here, is a safe and lovely drink.',
+  source:'NIH NCCIH, Green Tea; LiverTox, NIH; PubMed reviews on EGCG and energy expenditure'},
+ {when:()=>PICK.fun==='turmeric', verdict:'red',
+  claim:'“Turmeric is a powerful natural anti-inflammatory.”',
+  truth:'Not at the dose in a drink. Curcumin has genuine anti-inflammatory activity in a laboratory but is very poorly absorbed by the human gut, which is why black pepper is always recommended alongside it. Piperine does meaningfully improve absorption, so the pepper is doing real work, and it is still far below the concentrated extract doses used in trials, which produce inconsistent results in people anyway. Lovely spice, real promise, oversold conclusion. If you take blood thinners, ask a pharmacist before concentrated extracts.',
+  source:'NIH NCCIH, Turmeric; PubMed reviews on curcumin bioavailability'},
+ {when:()=>PICK.base==='kombucha', verdict:'amber',
+  claim:'“Kombucha is a probiotic that heals your gut.”',
+  truth:'Plausible in theory, thin in evidence. Kombucha does contain live bacteria and yeast from fermentation, and that is genuinely interesting, but probiotic benefits are strain-specific and dose-specific, and the strains in a given bottle are usually neither identified nor standardized. Almost all the health claims come from lab or animal work rather than human trials. Two real cautions: it is acidic and can upset some stomachs, and homebrewed kombucha carries contamination risk and unpredictable alcohol content. Commercially made, it is a pleasant fermented drink.',
+  source:'NIH NCCIH; PubMed reviews on kombucha and human health outcomes'},
+ {when:()=>PICK.base==='cherry', verdict:'amber',
+  claim:'“Tart cherry juice helps you sleep and recover.”',
+  truth:'Real evidence, modest size. Trials show small improvements in sleep duration and efficiency and modest reductions in muscle soreness, credited to the natural melatonin and the anthocyanins, and it takes about a week of consistent intake rather than one glass. The catch Wyatt flags: a serving carries around 30 g of sugar, which is a lot for a nightly habit. Unsweetened concentrate diluted in sparkling water gives you the same compounds for a fraction of it. Dr. Sana adds that a consistent bedtime outperforms every drink ever invented.',
+  source:'PubMed trials on tart cherry, sleep, and exercise recovery; NIH ODS'},
+ {when:()=>PICK.fun==='beet', verdict:'amber',
+  claim:'“Beet juice improves your endurance.”',
+  truth:'Real mechanism, modest and specific effect. Dietary nitrate converts to nitric oxide and shows small but genuine endurance benefits, mostly in recreational and moderately trained people, at meaningful doses taken two to three hours before the effort. In highly trained athletes the benefit shrinks or vanishes. A splash in a cocktail is well below a studied dose and the timing here is social, not strategic. Also, harmlessly, it may turn your urine pink. That is beeturia and it alarms people needlessly.',
+  source:'NIH ODS, Dietary Supplements for Exercise and Athletic Performance; PubMed meta-analyses on nitrate'},
+ {when:()=>PICK.swt==='honey', verdict:'amber',
+  claim:'“Honey is a healthy natural sugar.”',
+  truth:'It depends how much you expected. Honey carries trace antioxidants and enzymes that table sugar does not, and it tastes far better in a drink like this. It is still about 17 g of sugar per tablespoon and your body handles it very similarly. Natural describes where it came from, not what it does to your blood glucose. One separate hard rule: never give honey to an infant under 12 months, because of the risk of infant botulism.',
+  source:'USDA FoodData Central; CDC on infant botulism'},
+ {when:()=>PICK.swt==='monk'||PICK.swt==='stevia', verdict:'green',
+  claim:'“Monk fruit and stevia are safe zero-calorie sweeteners.”',
+  truth:'Supported, with the reasoning worth getting right. Purified monk fruit extract and steviol glycosides are both recognized as safe by the FDA at normal intakes and neither raises blood glucose, which makes them a genuinely useful tool for cutting sugar in a drink. That conclusion rests on safety testing, not on either being natural, which is a marketing word and not a safety category. Note the FDA has not approved whole stevia leaf or crude extracts as sweeteners, which are different products from the purified packet.',
+  source:'FDA on high-intensity sweeteners; NIH'},
+ {when:()=>PICK.fun==='ginger', verdict:'green',
+  claim:'“Ginger genuinely settles your stomach.”',
+  truth:'True, and it is the best-supported functional ingredient on this bar. Ginger has shown real benefit for nausea across several contexts, including pregnancy-related nausea, motion sickness, and post-operative nausea, with a plausible mechanism and reasonably consistent trials. Two honest limits: the evidence is for nausea specifically, not indigestion or bloating generally, and at high supplemental doses it may interact with blood thinners. At drink strength it is both effective and unremarkable, in the best way.',
+  source:'NIH NCCIH, Ginger; Cochrane and PubMed reviews on ginger for nausea'},
+ {when:()=>PICK.base==='hibiscus', verdict:'amber',
+  claim:'“Hibiscus tea lowers blood pressure.”',
+  truth:'Genuinely supported, and worth keeping in scale. Controlled trials show small average reductions in blood pressure from regular hibiscus tea, which is meaningful across a population and modest for one person. It is not a replacement for medication. The part that matters more: hibiscus may interact with some blood pressure medications and diuretics, so if you take either, this is a pharmacist conversation rather than a swap you make on your own.',
+  source:'PubMed meta-analyses on Hibiscus sabdariffa and blood pressure; NIH NCCIH'},
+ {when:()=>PICK.base==='coconut', verdict:'amber',
+  claim:'“Coconut water is nature’s sports drink.”',
+  truth:'Half right, and the half it misses matters. Coconut water is genuinely rich in potassium and rehydrates well after an ordinary session. What it lacks is sodium, and sodium is the electrolyte you actually lose in quantity through sweat. For a long, hot, properly sweaty effort, coconut water alone under-replaces the one that counts. A pinch of salt fixes it completely, which is why Wyatt adds one and why the sachet you were about to buy is mostly salt.',
+  source:'USDA FoodData Central; ACSM position stand on exercise and fluid replacement'},
+ {when:()=>PICK.bot==='lavender', verdict:'amber',
+  claim:'“Lavender calms anxiety.”',
+  truth:'It depends on the form, and a drink is not the studied one. The better evidence covers lavender aromatherapy and a specific standardized oral preparation, both showing modest effects on anxiety. A splash of lavender in a glass is neither and has not been tested. What it does deliver is aroma and a deliberate marker that the evening has shifted, and a wind-down ritual has genuine value. Credit the ritual, which is real, rather than the botanical, which at this dose is mostly perfume.',
+  source:'NIH NCCIH, Lavender; PubMed reviews on lavender and anxiety'}
+];
+const VERD={green:"Green · Checks out",amber:"Amber · It depends",red:"Red · Myth"};
+
+function renderTicket(){
+  const sel=chosen();
+  const tot={k:0,s:0,caf:0,na:0,po:0,alc:[]};
+  sel.forEach(x=>{const i=x.it;tot.k+=i.k;tot.s+=i.s;tot.caf+=i.caf;tot.na+=i.na;tot.po+=i.po;if(i.alc)tot.alc.push(i.n);});
+
+  document.getElementById('t-name').textContent = sel.length ? nameIt() : 'Nothing on the rail yet';
+  document.getElementById('t-profile').innerHTML = sel.length ? profileOf(tot) : 'Pick a base to start building.';
+
+  document.getElementById('t-pipe').innerHTML = sel.length
+    ? sel.map(x=>'<span class="step '+GRPCLS[x.g]+'">'+x.it.n+'</span>').join('<span class="arw">&rarr;</span>')
+    : '<span class="empty">Base &rarr; Botanical &rarr; Fruit &rarr; Functional &rarr; Sweetener &rarr; Finish &rarr; Ice</span>';
+
+  document.getElementById('t-nutri').innerHTML = sel.length ? [
+    [Math.round(tot.k),'kcal',tot.k>=150],
+    [Math.round(tot.s)+' g','sugar',tot.s>=25],
+    [Math.round(tot.caf)+' mg','caffeine',tot.caf>=25],
+    [Math.round(tot.na)+' mg','sodium',tot.na>=350],
+    [Math.round(tot.po)+' mg','potassium',tot.po>=400]
+  ].map(r=>'<div class="nut'+(r[2]?' hi':'')+'"><div class="v">'+r[0]+'</div><div class="k">'+r[1]+'</div></div>').join('') : '';
+
+  document.getElementById('t-abv').innerHTML = !sel.length ? '' : (tot.alc.length
+    ? '<div class="abv-tag trace"><b>Contains trace alcohol.</b> From '+tot.alc.join(' and ')+'. Non-alcoholic labeling permits up to 0.5 percent alcohol by volume, and bitters are 35 to 45 percent, though a dash is a very small amount. Negligible if you are cutting back. Not negligible if you are avoiding alcohol entirely, and you should be the one deciding that.</div>'
+    : '<div class="abv-tag clean"><b>Genuinely alcohol free.</b> Nothing on this ticket contains alcohol, not even a trace.</div>');
+
+  document.getElementById('t-wyatt').innerHTML = '<b>Wyatt:</b> '+wyattLine(tot,sel);
+
+  const flags = sel.length ? flagLine(tot) : [];
+  document.getElementById('t-flag').innerHTML = flags.map(f=>'<div class="flag"><b>Worth knowing:</b> '+f+'</div>').join('');
+
+  const fired = sel.length ? RULES.filter(r=>r.when()).slice(0,2) : [];
+  document.getElementById('t-myths').innerHTML = fired.map(r=>
+    '<div class="myth '+r.verdict+'" style="margin:0 0 1rem;">'+
+      '<div class="myth-top"><span class="v">'+VERD[r.verdict]+'</span><span>Myth Check</span></div>'+
+      '<div class="myth-body"><p class="claim">'+r.claim+'</p><div>'+r.truth+'</div>'+
+      '<p class="src">Checked against: <b>'+r.source+'</b></p></div>'+
+    '</div>').join('');
+}
+
+document.getElementById('clearall').addEventListener('click',()=>{
+  PICK.base=PICK.bot=PICK.fun=PICK.swt=PICK.fin=PICK.ice=null; PICK.fruit=[]; paint(); renderTicket();
+});
+document.getElementById('surprise').addEventListener('click',()=>{
+  const pk=a=>a[Math.floor(Math.random()*a.length)].id;
+  PICK.base=pk(ITEMS.base);
+  PICK.bot = Math.random()<0.6 ? pk(ITEMS.bot) : null;
+  PICK.fruit=[];
+  const f=ITEMS.fruit.slice();
+  const n=1+Math.floor(Math.random()*2);
+  for(let i=0;i<n;i++){ PICK.fruit.push(f.splice(Math.floor(Math.random()*f.length),1)[0].id); }
+  PICK.fun = Math.random()<0.5 ? pk(ITEMS.fun) : null;
+  PICK.swt = Math.random()<0.5 ? pk(ITEMS.swt) : null;
+  PICK.fin = Math.random()<0.5 ? pk(ITEMS.fin) : null;
+  PICK.ice = Math.random()<0.8 ? 'ice' : null;
+  paint(); renderTicket();
+});
+
+buildOptions();
+PICK.base='sparkling'; PICK.bot='mint'; PICK.fruit=['cucumber','lime']; PICK.fin='saltrim'; PICK.ice='ice';
+paint(); renderTicket();
+</script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>
