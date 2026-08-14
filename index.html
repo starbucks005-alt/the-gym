@@ -107,11 +107,34 @@ body {
 }
 .topbar-nav a.nav-cta:hover { background: var(--accent-dk); }
 
+/* Hero banner. The storefront art carries its own lettering, so it is shown
+   whole rather than used as a backdrop for overlaid text. Width and height
+   are set on the img so the page does not jump while it loads. */
+.hero-banner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.75rem 2rem 0;
+}
+.hero-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1024 / 572;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(20, 33, 43, 0.10);
+}
+@media (max-width: 700px) {
+  .hero-banner { padding: 1rem 1.1rem 0; }
+  .hero-banner img { border-radius: 10px; }
+}
+
 /* Hero */
 .hero {
   max-width: 720px;
   margin: 0 auto;
-  padding: 3.5rem 2rem 3rem;
+  padding: 2.5rem 2rem 3rem;
 }
 .hero-copy h1 {
   font-family: 'Fraunces', serif;
@@ -601,6 +624,10 @@ hr.section-rule {
 
 <!-- Hero -->
 <section style="background:var(--panel);border-bottom:1px solid var(--line);">
+  <div class="hero-banner">
+    <img src="/assets/Images/the%20gym-3.jpg" width="1024" height="572" fetchpriority="high" decoding="async"
+         alt="The Gym storefront, an integrated health and wellness collective. A mural across the windows shows the staff at work: a clinician with a clipboard, a coach, someone blending a drink at the bar, a member with a resistance band, and a cyclist. Painted on the pavement: explore our virtual collective, the-gym.net.">
+  </div>
   <div class="hero">
     <div class="hero-copy">
       <p class="section-eyebrow" style="margin-bottom:0.9rem;">Movement. On your terms.</p>
