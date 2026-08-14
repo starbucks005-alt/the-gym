@@ -62,6 +62,21 @@ const VOICES = {
     },
   },
 
+  // Noor Haddad — yoga and breathwork, RYT-500. Soft, slow, spacious.
+  // High stability and very low style: she leaves silence on purpose and
+  // never sells anything. speed pulled back so cues land unhurried.
+  noor: {
+    voiceId: "TnEUjupItG9Y8t3U4eYb",
+    model: MODEL_MULTILINGUAL,
+    settings: {
+      stability: 0.72,
+      similarity_boost: 0.85,
+      style: 0.08,
+      use_speaker_boost: false,
+      speed: 0.92,
+    },
+  },
+
   // Dr. Sana Qureshi — recovery specialist. Voice TBD; stub until cast.
   recovery: {
     voiceId: null,

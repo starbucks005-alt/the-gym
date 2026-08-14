@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sleep Lab, The Gym</title>
+<meta name="description" content="Dr. Sana Qureshi's sleep lab. Work out your real sleep opportunity, how much caffeine is still in you at bedtime, your weekly sleep debt, and whether you need a deload. Verify before you believe.">
+<link rel="canonical" href="https://the-gym.net/sleep-lab.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/sleep-lab.html">
+<meta property="og:title" content="The Sleep Lab &middot; The Gym">
+<meta property="og:description" content="Sleep opportunity, caffeine still on board at bedtime, weekly sleep debt, and the deload call. Dr. Sana Qureshi, PhD.">
+<meta property="og:image" content="https://the-gym.net/assets/Sana_eyes_open.png">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--sana:#2f8f7f;--sana-dk:#226b5f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--sana-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:880px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:60ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:62ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1.4rem 0;}
+  .grp-h{font-family:'Lora',serif;font-size:.8rem;color:var(--sana-dk);text-transform:uppercase;letter-spacing:.07em;margin:0 0 .6rem;font-weight:600;}
+  .fields{display:grid;grid-template-columns:1fr;gap:1rem;}
+  @media(min-width:620px){.fields{grid-template-columns:1fr 1fr;}}
+  .f label{display:block;font-size:.83rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;}
+  .f input,.f select{width:100%;padding:.65rem .7rem;font-family:'Inter';font-size:1rem;border:1px solid var(--line);background:#f9fbfa;border-radius:6px;color:var(--ink);}
+  .f input:focus,.f select:focus{outline:2px solid var(--sana);outline-offset:1px;}
+  .f .hint{font-size:.78rem;color:var(--soft);margin-top:.25rem;}
+  .readout{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfdfc;}
+  .readout-top{background:var(--ink);color:#fff;padding:.9rem 1.1rem;}
+  .readout-top .lbl{font-family:'Lora',serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0ab;}
+  .readout-top .nm{font-family:'Fraunces',serif;font-size:1.5rem;line-height:1.15;margin:.15rem 0 0;}
+  .readout-top .pf{font-size:.85rem;color:#c4cfd4;margin:.3rem 0 0;}
+  .readout-body{padding:1.1rem;}
+  .nutri{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin:0 0 1rem;}
+  @media(min-width:620px){.nutri{grid-template-columns:repeat(4,1fr);}}
+  .nut{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.6rem .7rem;text-align:center;}
+  .nut .v{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;line-height:1.1;}
+  .nut .k{font-size:.72rem;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem;}
+  .nut.good .v{color:#1f7a45;} .nut.warn .v{color:var(--amber);} .nut.bad .v{color:var(--red);}
+  .curve{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;margin:0 0 1rem;}
+  .curve h4{font-family:'Lora',serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--sana-dk);margin:0 0 .7rem;}
+  .bars{display:flex;align-items:flex-end;gap:3px;height:90px;}
+  .bar{flex:1;background:linear-gradient(180deg,#3aa593,#2f8f7f);border-radius:2px 2px 0 0;min-height:2px;position:relative;}
+  .bar.bed{background:linear-gradient(180deg,#e08aa0,#c8485f);}
+  .barlabels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--soft);margin-top:.35rem;}
+  .curve .note{font-size:.85rem;color:var(--muted);margin:.6rem 0 0;}
+  .sana-says{background:#fff;border-left:3px solid var(--sana);padding:.8rem 1rem;margin:0 0 1rem;font-size:.95rem;}
+  .sana-says b{color:var(--sana-dk);}
+  .flag{font-size:.92rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;padding:.75rem .95rem;margin:0 0 1rem;} .flag b{color:var(--amber);}
+  .myth{margin:1.2rem 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .myth-top{display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;font-weight:600;color:#fff;}
+  .myth-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;}
+  .myth.green .myth-top{background:var(--green);} .myth.amber .myth-top{background:var(--amber);} .myth.red .myth-top{background:var(--red);}
+  .myth-body{padding:.9rem 1rem;font-size:.95rem;}
+  .myth-body .claim{font-style:italic;color:var(--muted);margin:0 0 .5rem;}
+  .myth-body .src{margin:.6rem 0 0;font-size:.82rem;color:var(--soft);} .myth-body .src b{color:var(--sana-dk);}
+  .mythnav{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .2rem;}
+  .mbtn{font-size:.85rem;font-weight:600;padding:.42rem .8rem;border-radius:7px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;}
+  .mbtn:hover{border-color:var(--sana);} .mbtn.on{background:var(--sana);color:#fff;border-color:var(--sana);}
+  .rulebox{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .rulebox h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .6rem;}
+  .rulebox ol{margin:0;padding-left:1.2rem;font-size:.95rem;} .rulebox li{margin:.4rem 0;} .rulebox li b{color:var(--sana-dk);}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#3f6f68,#274a45);}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;}
+  .cc-role{color:var(--sana-dk);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;} .cc-emp{background:#e4f1ee;color:var(--sana-dk);}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .crew{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#e9f4f1;border:1px solid #c3ded7;border-radius:12px;}
+  .crew-h{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--sana-dk);margin-bottom:.55rem;}
+  .crew ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .crew li{font-size:.92rem;} .crew li b{color:var(--sana-dk);}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#1a2b28;color:#8fd0c2;}
+  .apnoea{margin:1.4rem 0;padding:1.1rem 1.25rem;background:#fdf1f4;border:2px solid #e8a8b8;border-radius:12px;font-size:.94rem;}
+  .apnoea h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .45rem;color:#9c2740;}
+  .apnoea ul{margin:.5rem 0 0;padding-left:1.15rem;} .apnoea li{margin:.28rem 0;} .apnoea b{color:#9c2740;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;The gains happen while you are asleep. We have the papers.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>The Sleep Lab</h1>
+    <p class="tag">Put in your actual times and Dr. Sana works out the gap between the sleep you think you are getting and the sleep you are actually getting, how much caffeine is still circulating when your head hits the pillow, and whether this week calls for a deload.</p>
+    <p class="mini">She is the evidence-based antidote to overtraining culture. She argues with Dom about rest days, and she wins, because she brings the paper.</p>
+  </div>
+
+  <div class="panel">
+    <div class="grp-h">Your week, honestly</div>
+    <div class="fields">
+      <div class="f">
+        <label for="bed">What time do you get into bed?</label>
+        <input type="time" id="bed" value="23:00">
+        <div class="hint">In bed, lights off. Not the time you decided to go to bed.</div>
+      </div>
+      <div class="f">
+        <label for="wake">What time does your alarm go off?</label>
+        <input type="time" id="wake" value="06:30">
+        <div class="hint">The real one, not the first of five.</div>
+      </div>
+      <div class="f">
+        <label for="latency">How long to fall asleep? (minutes)</label>
+        <input type="number" id="latency" value="20" min="0" max="180" step="5">
+        <div class="hint">Under 30 is normal. Under 5 every night can mean you are sleep deprived.</div>
+      </div>
+      <div class="f">
+        <label for="awake">Minutes awake during the night</label>
+        <input type="number" id="awake" value="15" min="0" max="300" step="5">
+        <div class="hint">Add up the bathroom trips and the 3am ceiling-staring.</div>
+      </div>
+      <div class="f">
+        <label for="caftime">Last caffeine of the day</label>
+        <input type="time" id="caftime" value="14:00">
+        <div class="hint">Coffee, tea, energy drink, pre-workout, cola, dark chocolate.</div>
+      </div>
+      <div class="f">
+        <label for="cafmg">How much caffeine? (mg)</label>
+        <select id="cafmg">
+          <option value="0">None</option>
+          <option value="95">1 coffee, about 95 mg</option>
+          <option value="190" selected>2 coffees, about 190 mg</option>
+          <option value="285">3 coffees, about 285 mg</option>
+          <option value="400">4+ coffees, about 400 mg</option>
+          <option value="47">1 tea, about 47 mg</option>
+          <option value="160">1 energy drink, about 160 mg</option>
+          <option value="200">Pre-workout, about 200 mg</option>
+        </select>
+        <div class="hint">Rough figures. Brew strength varies enormously.</div>
+      </div>
+      <div class="f">
+        <label for="nights">Nights per week this is roughly true</label>
+        <input type="number" id="nights" value="5" min="1" max="7" step="1">
+        <div class="hint">Used for the weekly debt figure.</div>
+      </div>
+      <div class="f">
+        <label for="target">Your target sleep</label>
+        <select id="target">
+          <option value="7">7 hours, the floor for adults</option>
+          <option value="7.5">7.5 hours</option>
+          <option value="8" selected>8 hours</option>
+          <option value="8.5">8.5 hours</option>
+          <option value="9">9 hours, if training hard</option>
+        </select>
+        <div class="hint">Adults generally need 7 to 9. Hard training pushes you up, not down.</div>
+      </div>
+    </div>
+
+    <div class="readout">
+      <div class="readout-top">
+        <div class="lbl">Sleep readout &middot; The Sleep Lab</div>
+        <div class="nm" id="verdict">&mdash;</div>
+        <div class="pf" id="verdictsub"></div>
+      </div>
+      <div class="readout-body">
+        <div class="nutri" id="stats"></div>
+        <div class="curve">
+          <h4>Caffeine still in your system</h4>
+          <div class="bars" id="bars"></div>
+          <div class="barlabels" id="barlabels"></div>
+          <p class="note" id="cafnote"></p>
+        </div>
+        <div class="sana-says" id="sana"></div>
+        <div id="flags"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="apnoea">
+    <h3>The thing a calculator cannot catch</h3>
+    <p><b>If you sleep eight hours and still wake exhausted, stop optimising and get assessed.</b> The most common cause is obstructive sleep apnoea, and no amount of sleep hygiene, magnesium, or wind-down routine touches it. It is very common, frequently undiagnosed, and it raises cardiovascular risk. It is also highly treatable once identified.</p>
+    <p>Ask your clinician about a sleep study if you have any of these:</p>
+    <ul>
+      <li>Loud snoring, or a partner who has seen you stop breathing or gasp in your sleep.</li>
+      <li>Waking with a dry mouth, a headache, or a sore throat, most mornings.</li>
+      <li>Falling asleep easily during the day, especially driving or in meetings, despite adequate time in bed.</li>
+      <li>Nightly urination, or high blood pressure that is difficult to control.</li>
+      <li>Insomnia that has lasted more than three months. Ask specifically about CBT-I, which is the first-line treatment.</li>
+    </ul>
+    <p style="margin-top:.6rem;font-style:italic;color:var(--muted);">Sana: "The number on your watch is not a diagnosis. If you are tired after eight hours, the problem is not your discipline."</p>
+  </div>
+
+  <div class="rulebox">
+    <h3>Sana's four rules of recovery</h3>
+    <ol>
+      <li><b>A consistent wake time beats a consistent bedtime.</b> Your body clock anchors to light and to waking. Pick a wake time you can hold seven days a week, including weekends, and the bedtime tends to sort itself out. This is the highest-leverage change most people can make and it costs nothing.</li>
+      <li><b>Sleep is where the training adaptation happens.</b> Restricting sleep reduces muscle protein synthesis, impairs glucose handling, raises perceived exertion, and increases injury risk in athletes. You cannot out-program it. Dom knows this. Dom still tries.</li>
+      <li><b>Deload before you need it, not after.</b> Rising resting heart rate, falling HRV over a week or more, worse sleep, and sessions that feel harder at the same load are the signals. Take the easy week while you can still choose to.</li>
+      <li><b>Track for information, not for a score.</b> Wearables are useful for spotting your own trends over weeks. They are poor at scoring any single night, and worrying about your sleep score is itself a documented way to sleep worse.</li>
+    </ol>
+  </div>
+
+  <div class="panel">
+    <div class="grp-h">Sana checks the popular claims</div>
+    <div class="mythnav" id="mythnav"></div>
+    <div class="myth" id="myth"><div class="myth-top"><span class="v" id="mythv"></span><span id="mythh"></span></div>
+      <div class="myth-body"><p class="claim" id="mythclaim"></p><div id="mythtruth"></div><p class="src" id="mythsrc"></p></div></div>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Sana_eyes_open.png" alt="Dr. Sana Qureshi, PhD" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Sana_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.8s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Dr. Sana Qureshi</h3>
+      <div class="cc-role">Sleep &amp; Recovery Physiologist, PhD &middot; Your host</div>
+      <p class="cc-tag">"Love the effort. Now show me your sleep from this week." Never smug, always sourced.</p>
+      <div class="cc-tags"><span class="cc-t">#sleep</span><span class="cc-t">#recovery</span><span class="cc-t">#HRV</span><span class="cc-t">#deload</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">The Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="crew">
+    <div class="crew-h">Who Sana argues with</div>
+    <ul>
+      <li><b>Coach Dom Castellanos</b> &mdash; the headline rivalry, friendly and constant. He programs one more hard day, she pulls it back to a deload and produces the study. They respect each other completely, which is why it is funny.</li>
+      <li><b>Noor Haddad</b> &mdash; usually ends the Dom argument by making them both breathe. Her <a href="/breath-room.html">wind-down sessions</a> are the on-ramp into everything on this page.</li>
+      <li><b>Dr. Lena Brandt</b> &mdash; when the answer is that tissue needs time rather than technique, Lena and Sana are saying the same thing from two directions.</li>
+      <li><b>Wyatt E. Cooper</b> &mdash; she rules on the tart cherry and magnesium questions at <a href="/elixir-bar.html">his bar</a>, usually by pointing out the effect is smaller than the menu implies.</li>
+      <li><b>Nadia Hassan</b> &mdash; fuel and recovery are the same conversation, so they tend to arrive together.</li>
+    </ul>
+  </div>
+
+  <div class="verify-box">
+    <h3>How the staff verify (so you don't have to take our word for it)</h3>
+    <p>Sana is the reason this site has a recovery section at all. Every figure on this page comes from published physiology rather than from a wearable's marketing copy, and where the science is genuinely uncertain, she says so instead of rounding it up.</p>
+    <p>Green means the evidence backs it. Amber means it depends, and here is on what. Red means a popular claim that is wrong.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">AASM guidelines</span><span class="pill">NIH</span><span class="pill">Sleep Foundation consensus</span><span class="pill">Stoplight verdict + citation</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical advice, and not a diagnosis.</b> The calculations here are simplified estimates. Caffeine metabolism in particular varies several-fold between individuals based on genetics, liver enzyme activity, smoking, pregnancy, and medication, so treat the figure as a rough guide to your own pattern rather than a measurement. This page does not diagnose or treat any sleep disorder. Persistent insomnia, excessive daytime sleepiness, loud snoring, or witnessed pauses in breathing warrant assessment by a clinician. Do not stop or change any prescribed medication based on anything here. If you are having thoughts of harming yourself, the 988 Suicide and Crisis Lifeline is available in the US by calling or texting 988.</p>
+</div>
+<script>
+const HALF_LIFE = 5; // hours, population average. Range is roughly 3 to 7.
+
+function mins(t){const [h,m]=t.split(':').map(Number);return h*60+m;}
+function fmtH(x){const h=Math.floor(x),m=Math.round((x-h)*60);return h+'h '+String(m).padStart(2,'0')+'m';}
+
+function calc(){
+  const bed=mins(document.getElementById('bed').value||'23:00');
+  const wake=mins(document.getElementById('wake').value||'06:30');
+  const latency=+document.getElementById('latency').value||0;
+  const awake=+document.getElementById('awake').value||0;
+  const cafT=mins(document.getElementById('caftime').value||'14:00');
+  const cafMg=+document.getElementById('cafmg').value||0;
+  const nights=+document.getElementById('nights').value||5;
+  const target=+document.getElementById('target').value||8;
+
+  // time in bed, wrapping past midnight
+  let tib=(wake-bed+1440)%1440;
+  if(tib===0)tib=1440;
+  const actual=Math.max(0,tib-latency-awake);
+  const tibH=tib/60, actualH=actual/60;
+  const efficiency = tib>0 ? (actual/tib*100) : 0;
+  const debtNight=Math.max(0,target-actualH);
+  const debtWeek=debtNight*nights;
+
+  // caffeine remaining at lights-off; handle caffeine taken before bedtime clock wrap
+  let gap=(bed-cafT+1440)%1440;
+  if(cafMg===0)gap=0;
+  const gapH=gap/60;
+  const atBed = cafMg>0 ? cafMg*Math.pow(0.5,gapH/HALF_LIFE) : 0;
+  const atWake = cafMg>0 ? cafMg*Math.pow(0.5,(gapH+tibH)/HALF_LIFE) : 0;
+
+  // ---- headline verdict ----
+  let v,vs,tone;
+  if(actualH>=target){ v='Well covered'; vs='You are getting the sleep you are asking your body for. Sana has no notes.'; tone='good'; }
+  else if(debtNight<=0.5){ v='Close enough'; vs='Within half an hour of target. That is normal variation, not a problem to solve.'; tone='good'; }
+  else if(debtNight<=1.5){ v='Running a small deficit'; vs='Under target most nights. It accumulates quietly and shows up as effort feeling harder.'; tone='warn'; }
+  else { v='Meaningful sleep debt'; vs='This is the size of gap that measurably affects training, mood, and injury risk.'; tone='bad'; }
+
+  document.getElementById('verdict').textContent=v;
+  document.getElementById('verdictsub').textContent=vs;
+
+  const eff = efficiency>=85?'good':efficiency>=75?'warn':'bad';
+  const dbt = debtWeek<=1?'good':debtWeek<=5?'warn':'bad';
+  const caf = atBed<50?'good':atBed<100?'warn':'bad';
+
+  document.getElementById('stats').innerHTML=[
+    [fmtH(actualH),'actual sleep',tone],
+    [Math.round(efficiency)+'%','efficiency',eff],
+    [fmtH(debtWeek),'weekly debt',dbt],
+    [Math.round(atBed)+' mg','caffeine at bed',caf]
+  ].map(r=>'<div class="nut '+r[2]+'"><div class="v">'+r[0]+'</div><div class="k">'+r[1]+'</div></div>').join('');
+
+  // ---- caffeine decay chart, from last dose to wake ----
+  const spanH=Math.max(1,gapH+tibH);
+  const steps=16, bars=[], labels=[];
+  for(let i=0;i<=steps;i++){
+    const t=spanH*i/steps;
+    const mg=cafMg*Math.pow(0.5,t/HALF_LIFE);
+    bars.push({mg:mg,isBed:Math.abs(t-gapH)<=(spanH/steps)/2});
+  }
+  const maxMg=Math.max(cafMg,1);
+  document.getElementById('bars').innerHTML=bars.map(b=>
+    '<div class="bar'+(b.isBed?' bed':'')+'" style="height:'+Math.max(2,(b.mg/maxMg)*100)+'%" title="'+Math.round(b.mg)+' mg"></div>').join('');
+  document.getElementById('barlabels').innerHTML='<span>last caffeine</span><span style="color:var(--red)">lights off</span><span>alarm</span>';
+
+  let cn;
+  if(cafMg===0) cn='No caffeine logged, so nothing to model. If that is genuinely true, this is one variable you can stop thinking about.';
+  else cn='Caffeine has a half life of about '+HALF_LIFE+' hours, so roughly half of it is gone every '+HALF_LIFE+' hours. From '+Math.round(cafMg)+' mg at your last dose, about <b>'+Math.round(atBed)+' mg</b> is still circulating at lights off, and about <b>'+Math.round(atWake)+' mg</b> is still there when the alarm goes. Individual metabolism varies several-fold, so use this to see the shape, not as a measurement.';
+  document.getElementById('cafnote').innerHTML=cn;
+
+  // ---- Sana's read ----
+  const L=[];
+  if(atBed>=100) L.push('You have roughly '+Math.round(atBed)+' mg of caffeine on board at lights off, which is about a strong coffee’s worth. Even when you fall asleep fine, that suppresses deep sleep. Moving your last dose earlier is usually the single easiest win available.');
+  else if(atBed>=50) L.push('About '+Math.round(atBed)+' mg at bedtime. Not dramatic, but shifting your cut-off an hour or two earlier would likely show up in how rested you feel.');
+  if(efficiency<85&&efficiency>=75) L.push('Sleep efficiency around '+Math.round(efficiency)+' percent. Below about 85 usually means time in bed is being spent awake, and the fix is counter-intuitive: spend slightly less time in bed, not more.');
+  else if(efficiency<75) L.push('Sleep efficiency around '+Math.round(efficiency)+' percent, which is low. Lying awake in bed teaches your brain that bed is a place to be awake. This is exactly what CBT-I addresses, and it works better than anything else available.');
+  if(latencyLow()) L.push('Falling asleep in under five minutes is often read as being a great sleeper. It usually means the opposite: it is a sign of significant sleep pressure from not getting enough.');
+  if(debtNight>1.5) L.push('At '+fmtH(debtWeek)+' of debt across the week, expect higher perceived exertion at the same loads, worse decision making, and elevated injury risk. This is the point where Sana would pull the extra session rather than add one.');
+  if(actualH>=target&&atBed<50) L.push('Nothing to fix here. Hold the wake time steady on weekends and this stays where it is.');
+  if(!L.length) L.push('Broadly reasonable. The highest-leverage next step is keeping your wake time identical seven days a week, including weekends.');
+  document.getElementById('sana').innerHTML='<b>Sana:</b> '+L.slice(0,3).join(' ');
+
+  const F=[];
+  if(tibH<target) F.push('You are only allowing '+fmtH(tibH)+' in bed for a '+target+' hour target. Before anything else, the window itself has to be big enough. No technique fixes a schedule that does not have room in it.');
+  if(debtWeek>=8) F.push('A weekly debt above eight hours is effectively a whole night of missed sleep every week. Sleeping in at the weekend recovers some alertness but does not undo the metabolic effects. See the myth check on catching up.');
+  document.getElementById('flags').innerHTML=F.map(f=>'<div class="flag"><b>Worth knowing:</b> '+f+'</div>').join('');
+}
+function latencyLow(){ return (+document.getElementById('latency').value||0) < 5; }
+
+/* ---- myth checks ---- */
+const MYTHS=[
+ {k:"Catching up",verdict:"red",claim:"“You can catch up on sleep at the weekend.”",
+  truth:"Partly, and not in the ways that matter most. Weekend recovery sleep does restore some alertness, which is why it feels effective. But controlled studies show that when people sleep-restrict during the week and recover at the weekend, the metabolic damage largely persists: insulin sensitivity does not fully recover, and participants often gain weight because the extra waking hours mean extra eating. Shifting your wake time by hours on weekends also drags your body clock, which is sometimes called social jetlag and makes Monday genuinely harder. Consistency beats compensation.",
+  source:"Depner et al., Current Biology, on weekend recovery sleep; PubMed research on social jetlag"},
+ {k:"Alcohol",verdict:"red",claim:"“A nightcap helps me sleep.”",
+  truth:"It helps you fall asleep and it damages the sleep you then get, which is why the belief persists. Alcohol is sedating, so sleep onset is faster. Then as it metabolises overnight it fragments sleep, suppresses REM in the first half of the night, causes rebound wakefulness in the second half, worsens snoring and sleep apnoea by relaxing the airway, and drives the 3am wake-up. You will spend adequate time in bed and get poor-quality sleep out of it. Sana's version: it is a sedative, and sedation is not sleep.",
+  source:"PubMed reviews on alcohol and sleep architecture; AASM guidance"},
+ {k:"Eight hours",verdict:"amber",claim:"“Everyone needs exactly eight hours.”",
+  truth:"It depends on the person, within a much narrower range than people hope. Adult need generally falls between seven and nine hours, and the amount you personally need is largely genetic and not something you can train down. The nuance runs both ways: the small number of people who genuinely thrive on six hours carry rare gene variants, and almost everyone who believes they are one of them is simply adapted to feeling tired. Hard training pushes your requirement up, not down. Eight is a reasonable default, not a law.",
+  source:"National Sleep Foundation consensus on sleep duration; PubMed on short-sleep gene variants"},
+ {k:"Blue light",verdict:"amber",claim:"“Blue light glasses fix your sleep.”",
+  truth:"It depends which part of the claim you mean. Light exposure in the evening genuinely does suppress melatonin and delay your circadian rhythm, so the underlying mechanism is real. What is oversold is the eyewear: trials of blue-blocking glasses show inconsistent and generally small effects on sleep outcomes. Two other things usually matter more than the wavelength. First, overall brightness, so dimming the room beats filtering the screen. Second, what you are doing on the device, since an engaging feed keeps you alert regardless of colour temperature.",
+  source:"PubMed reviews and trials on blue-light-blocking lenses and sleep; NIH on light and circadian rhythm"},
+ {k:"HRV",verdict:"amber",claim:"“My wearable says my recovery score is low, so I should skip training.”",
+  truth:"It depends on the trend, not the number. HRV is a genuine physiological signal and it is highly variable night to night, sensitive to position, alcohol, illness, a late meal, and where you are in your menstrual cycle. Consumer devices measure it reasonably well and interpret it with proprietary algorithms nobody can inspect. A single low score means very little; a downward trend over one to two weeks alongside worse sleep, a rising resting heart rate, and sessions feeling harder is a real signal worth acting on. Sana's rule: use it to spot your own patterns, never to score a single day.",
+  source:"PubMed research on HRV in athlete monitoring; validation studies of consumer wearables"},
+ {k:"Naps",verdict:"green",claim:"“A short nap actually helps.”",
+  truth:"Supported, with the length being the whole trick. Naps of roughly ten to twenty minutes improve alertness and performance without leaving you groggy, because you wake before descending into deep slow-wave sleep. Go past about thirty minutes and you risk sleep inertia, that heavy, worse-than-before feeling that can last half an hour. Keep naps before mid-afternoon so they do not eat into your night-time sleep pressure. For shift workers and the genuinely sleep-deprived, a short nap is one of the better tools available.",
+  source:"PubMed research on nap duration, sleep inertia and cognitive performance; NASA nap studies"},
+ {k:"Melatonin",verdict:"amber",claim:"“Melatonin is a sleeping pill.”",
+  truth:"It is a timing signal, not a sedative, and that distinction explains most of the disappointment. Melatonin tells your body clock that darkness has arrived, so it works best for circadian problems such as jet lag or delayed sleep phase, taken in a small dose several hours before target bedtime. For ordinary insomnia the effect on how fast you fall asleep is modest, averaging a handful of minutes in meta-analyses. Two practical notes: doses sold commonly far exceed what is needed, and as a supplement in the US, actual content has been found to vary substantially from the label.",
+  source:"PubMed meta-analyses on melatonin for insomnia and circadian disorders; JCSM analyses of melatonin content vs label"}
+];
+let mi=0;
+document.getElementById('mythnav').innerHTML=MYTHS.map((m,i)=>'<button type="button" class="mbtn" data-i="'+i+'">'+m.k+'</button>').join('');
+function renderMyth(){
+  const m=MYTHS[mi], box=document.getElementById('myth');
+  document.querySelectorAll('.mbtn').forEach(b=>b.classList.toggle('on',+b.dataset.i===mi));
+  box.className='myth '+m.verdict;
+  document.getElementById('mythv').textContent={green:"Green · Checks out",amber:"Amber · It depends",red:"Red · Myth"}[m.verdict];
+  document.getElementById('mythh').textContent='Myth Check';
+  document.getElementById('mythclaim').textContent=m.claim;
+  document.getElementById('mythtruth').innerHTML='<span>'+m.truth+'</span>';
+  document.getElementById('mythsrc').innerHTML='Checked against: <b>'+m.source+'</b>';
+}
+document.querySelectorAll('.mbtn').forEach(b=>b.addEventListener('click',()=>{mi=+b.dataset.i;renderMyth();}));
+['bed','wake','latency','awake','caftime','cafmg','nights','target'].forEach(id=>{
+  const el=document.getElementById(id);
+  el.addEventListener('input',calc); el.addEventListener('change',calc);
+});
+calc(); renderMyth();
+</script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>

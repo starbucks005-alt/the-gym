@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Body Map, The Gym</title>
+<meta name="description" content="Dr. Lena Brandt's body map. Pick where it hurts and get what it usually is, how to keep training around it, what to stop, and the red flags that mean see a clinician. Educational, not a diagnosis.">
+<link rel="canonical" href="https://the-gym.net/body-map.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/body-map.html">
+<meta property="og:title" content="The Body Map &middot; The Gym">
+<meta property="og:description" content="Pick where it hurts. Train it, protect it, or see a doctor. Dr. Lena Brandt, DPT, draws the line.">
+<meta property="og:image" content="https://the-gym.net/assets/Dr_Lena_eyes_open.png">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--accent-dk:#97285a;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--lena:#3a7fa0;--lena-dk:#2c6280;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--lena-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:880px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:60ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:62ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1.4rem 0;}
+  .emerg{margin:1.4rem 0;padding:1.1rem 1.25rem;background:#fdf1f4;border:2px solid #e8a8b8;border-radius:12px;}
+  .emerg h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .45rem;color:#9c2740;}
+  .emerg p{font-size:.94rem;margin:.35rem 0;}
+  .emerg ul{margin:.5rem 0 0;padding-left:1.15rem;font-size:.93rem;} .emerg li{margin:.28rem 0;}
+  .emerg b{color:#9c2740;}
+  .partgrid{display:flex;flex-wrap:wrap;gap:.45rem;margin:.2rem 0 0;}
+  .part{font-family:'Inter';font-size:.9rem;font-weight:600;padding:.5rem .9rem;border-radius:8px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;transition:all .12s;}
+  .part:hover{border-color:var(--lena);}
+  .part.on{background:var(--lena);color:#fff;border-color:var(--lena);}
+  .grp-h{font-family:'Lora',serif;font-size:.8rem;color:var(--lena-dk);text-transform:uppercase;letter-spacing:.07em;margin:0 0 .5rem;font-weight:600;}
+  .ex-head{font-family:'Fraunces',serif;font-size:1.75rem;margin:.2rem 0;}
+  .ex-sub{color:var(--muted);font-size:.96rem;margin:0 0 1rem;}
+  .usually{background:#eef4f7;border:1px solid #cbdde6;border-radius:9px;padding:.9rem 1rem;font-size:.95rem;margin:0 0 1.1rem;}
+  .usually b{color:var(--lena-dk);}
+  .cols{display:grid;grid-template-columns:1fr;gap:1rem;margin:0 0 1.1rem;}
+  @media(min-width:640px){.cols{grid-template-columns:1fr 1fr;}}
+  .col{border-radius:10px;padding:.95rem 1.05rem;border:1px solid;}
+  .col h4{font-family:'Lora',serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;margin:0 0 .55rem;}
+  .col ul{margin:0;padding-left:1.1rem;font-size:.93rem;} .col li{margin:.32rem 0;}
+  .col.train{background:#eef7f1;border-color:#c3e0cc;} .col.train h4{color:#1f7a45;}
+  .col.protect{background:#fffaf3;border-color:#f1ddc2;} .col.protect h4{color:#a86a10;}
+  .flags{background:#fdf1f4;border:1px solid #e8a8b8;border-radius:10px;padding:.95rem 1.05rem;margin:0 0 1.1rem;}
+  .flags h4{font-family:'Lora',serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;margin:0 0 .55rem;color:#9c2740;}
+  .flags ul{margin:0;padding-left:1.1rem;font-size:.93rem;} .flags li{margin:.32rem 0;}
+  .flags .lead{font-size:.93rem;margin:0 0 .5rem;font-weight:600;color:#9c2740;}
+  .lena-says{background:#fff;border-left:3px solid var(--lena);padding:.8rem 1rem;margin:0 0 1.1rem;font-size:.95rem;font-style:italic;color:var(--muted);}
+  .lena-says b{color:var(--lena-dk);font-style:normal;}
+  .myth{margin:1.2rem 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .myth-top{display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;font-weight:600;color:#fff;}
+  .myth-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;}
+  .myth.green .myth-top{background:var(--green);} .myth.amber .myth-top{background:var(--amber);} .myth.red .myth-top{background:var(--red);}
+  .myth-body{padding:.9rem 1rem;font-size:.95rem;}
+  .myth-body .claim{font-style:italic;color:var(--muted);margin:0 0 .5rem;}
+  .myth-body .src{margin:.6rem 0 0;font-size:.82rem;color:var(--soft);} .myth-body .src b{color:var(--lena-dk);}
+  .rulebox{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .rulebox h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .6rem;}
+  .rulebox ol{margin:0;padding-left:1.2rem;font-size:.95rem;} .rulebox li{margin:.4rem 0;} .rulebox li b{color:var(--lena-dk);}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#5c6675,#3a4452);}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;color:var(--ink);}
+  .cc-role{color:var(--lena-dk);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;} .cc-emp{background:#e8f0f4;color:var(--lena-dk);}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .crew{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#eef4f7;border:1px solid #cbdde6;border-radius:12px;}
+  .crew-h{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--lena-dk);margin-bottom:.55rem;}
+  .crew ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .crew li{font-size:.92rem;} .crew li b{color:var(--lena-dk);}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#1d2a33;color:#9fc4d6;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;We tell you when to train, and when to stop and call someone.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>The Body Map</h1>
+    <p class="tag">Pick where it hurts. Dr. Lena Brandt tells you what it usually turns out to be, how to keep training around it, what to stop doing today, and the specific signs that mean you close this page and call a clinician.</p>
+    <p class="mini">She is the licensed authority on this floor and the brake on everyone else's enthusiasm. This page exists because getting hurt while trying to get healthy is the worst outcome there is.</p>
+  </div>
+
+  <div class="emerg">
+    <h3>Before anything else</h3>
+    <p><b>This page cannot examine you, and it is not a diagnosis.</b> It is the conversation Lena has on the floor before she sends someone for a real assessment.</p>
+    <p><b>Call emergency services now</b>, or go to an emergency department, if any of these are true:</p>
+    <ul>
+      <li>Chest pain or pressure, or pain spreading to your jaw, neck, or arm, with sweating, nausea, or shortness of breath.</li>
+      <li>Numbness or weakness in the groin or inner thighs, or any new loss of bladder or bowel control, with back pain. This is a surgical emergency.</li>
+      <li>A joint that is visibly deformed, or a limb you cannot bear any weight on at all after an injury.</li>
+      <li>A snap or pop followed by immediate loss of function, especially at the back of the ankle or the front of the knee.</li>
+      <li>Severe pain with fever, or a hot, red, swollen joint. That can be an infection.</li>
+      <li>Head injury with confusion, repeated vomiting, worsening headache, or any loss of consciousness.</li>
+    </ul>
+    <p style="margin-top:.6rem;font-style:italic;color:var(--muted);">Lena: "I would rather you go and be told it was nothing. That is a good outcome, not a wasted trip."</p>
+  </div>
+
+  <div class="panel">
+    <div class="grp-h">Where does it hurt?</div>
+    <div class="partgrid" id="parts"></div>
+  </div>
+
+  <div class="panel" id="card">
+    <h2 class="ex-head" id="pname"></h2>
+    <p class="ex-sub" id="psub"></p>
+    <div class="usually" id="usually"></div>
+    <div class="cols">
+      <div class="col train"><h4>Keep training, like this</h4><ul id="train"></ul></div>
+      <div class="col protect"><h4>Stop doing this for now</h4><ul id="protect"></ul></div>
+    </div>
+    <div class="flags">
+      <h4>See a clinician</h4>
+      <p class="lead" id="flaglead"></p>
+      <ul id="flags"></ul>
+    </div>
+    <div class="lena-says" id="lena"></div>
+    <div class="myth" id="myth"><div class="myth-top"><span class="v" id="mythv"></span><span id="mythh"></span></div>
+      <div class="myth-body"><p class="claim" id="mythclaim"></p><div id="mythtruth"></div><p class="src" id="mythsrc"></p></div></div>
+  </div>
+
+  <div class="rulebox">
+    <h3>Lena's four rules for training around something</h3>
+    <ol>
+      <li><b>Pain up to about a 3 out of 10 is usually negotiable. Above that is not.</b> Mild discomfort that settles within 24 hours is generally acceptable in rehab. Pain that climbs while you work, or that is worse the next morning, means the dose was too high. Reduce the load, not the frequency.</li>
+      <li><b>Do not rest it completely.</b> Full rest is the instinct and it is usually the wrong one. Tissue adapts to load, and prolonged unloading makes it weaker and more sensitive. The goal is finding the version you can do, not stopping.</li>
+      <li><b>Change one variable at a time.</b> Load, range, speed, or volume. Change all four and you learn nothing about what your body actually tolerated.</li>
+      <li><b>Two weeks with no improvement is a referral, not a reason to try harder.</b> If a sensible plan is not moving in a fortnight, the plan is wrong or the problem is not what you think. That is when you see someone who can put hands on it.</li>
+    </ol>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Dr_Lena_eyes_open.png" alt="Dr. Lena Brandt, DPT" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Dr_Lena_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.1s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Dr. Lena Brandt, DPT</h3>
+      <div class="cc-role">Physical Therapist &middot; Your host</div>
+      <p class="cc-tag">The licensed authority on the floor. Precise, composed, dryly funny. "No. Next question." Then, a beat later, the actual help.</p>
+      <div class="cc-tags"><span class="cc-t">#physicaltherapy</span><span class="cc-t">#rehab</span><span class="cc-t">#injury</span><span class="cc-t">#licensed</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">The Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="crew">
+    <div class="crew-h">Who Lena overrules, and who overrules her</div>
+    <ul>
+      <li><b>Reece Ashford</b> &mdash; the intern, reports to Lena. He proposes, she approves, edits, or politely vetoes. Running gag: Reece says "I already cleared it with Lena," and Lena says "you did not."</li>
+      <li><b>Coach Dom Castellanos</b> &mdash; she tells him, dryly, that the knee he never complains about still needs the rehab he skips. He says "noted, doc." He does not do it. She knows.</li>
+      <li><b>Dr. Sana Qureshi</b> &mdash; when the answer is that the tissue needs time rather than technique, Sana has the sleep and recovery data to back her up.</li>
+      <li><b>Noor Haddad</b> &mdash; for the pain that is guarding and breath-holding rather than damage, Lena sends people to Noor and stops talking.</li>
+      <li><b>Dr. Claire</b> &mdash; the escalation above Lena. Anything that is not musculoskeletal goes up, not sideways.</li>
+    </ul>
+  </div>
+
+  <div class="verify-box">
+    <h3>How the staff verify (so you don't have to take our word for it)</h3>
+    <p>Lena is the licensed clinician on this floor, and this page is still not a substitute for being examined. Every entry here follows mainstream physical therapy and sports medicine guidance, and the red flags are drawn from standard screening criteria that clinicians use to decide who needs imaging or urgent referral.</p>
+    <p>Green means the evidence backs it. Amber means it depends, and here is on what. Red means a popular claim that is wrong, sometimes in a way that gets people hurt.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">APTA clinical guidelines</span><span class="pill">ACSM</span><span class="pill">Red-flag screening criteria</span><span class="pill">Stoplight verdict + citation</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical advice, and not a diagnosis.</b> Nobody can assess an injury through a web page, and this one does not try. It describes what a given area commonly involves and where the boundaries are, so you can have a better conversation with a real clinician. If you have pain that is severe, worsening, unexplained, following significant trauma, or accompanied by fever, numbness, weakness, or loss of bladder or bowel control, seek medical care rather than working through this page. If you are pregnant, have osteoporosis, an inflammatory or autoimmune condition, a history of cancer, or take blood thinners or corticosteroids, talk to your clinician before starting any loading program described here.</p>
+</div>
+<script>
+const DB = [
+ {id:"low-back",name:"Lower back",
+  sub:"The most common complaint on any gym floor, and the one with the best news attached.",
+  usually:"<b>Usually:</b> a non-specific muscular or joint strain. Around 90 percent of low back pain has no identifiable structural cause on imaging, and most episodes improve substantially within about six weeks. Disc changes and 'degeneration' show up on scans of plenty of people with no pain at all, which is why Lena does not send you for an MRI on day one.",
+  train:["Walk. Frequently, and daily. It is the single most reliable thing that helps.","Keep loading, lighter. Reduce weight by half before you reduce the movement.","Hip hinge patterning with a dowel or unloaded, to rebuild confidence in bending.","Dead bugs, bird dogs, and side planks for trunk control, not crunches.","Change positions often. Sitting still for hours is worse than most exercise."],
+  protect:["Maximal or near-maximal deadlifts and heavy loaded spinal flexion, for now.","Prolonged bed rest. It genuinely makes this worse, not better.","Aggressive end-range stretching into the painful direction, chasing a 'pop'.","Training through pain that increases rep to rep.","Sitting for more than 45 minutes without standing up."],
+  flaglead:"Most back pain is benign. These specific signs are not, and they change the plan immediately:",
+  flags:["Numbness or tingling in the groin, buttocks, or inner thighs, the area a saddle would touch.","Any new difficulty starting or controlling urination, or new bowel incontinence. Go to an emergency department, this can be cauda equina syndrome.","Progressive weakness in a leg or foot, such as a foot that catches or drops.","Back pain with unexplained weight loss, fever, or night pain that wakes you and does not settle with position change.","Pain following a significant fall or crash, or any back pain if you have osteoporosis or take long-term corticosteroids.","A history of cancer with new back pain."],
+  lena:"<b>Lena:</b> \"The scan will find something. Everyone's scan finds something. That is why we treat the person, and not the picture.\"",
+  myth:{verdict:"red",claim:"“You threw your back out because your core is weak and your posture is bad.”",truth:"This is the most repeated explanation on the gym floor and the evidence does not support it. Studies have not found a reliable link between a specific posture, or a specific 'weak core', and who develops back pain. Bracing your abdomen constantly does not protect you, and there is no single correct sitting posture. What does help is regular movement, gradually increasing load tolerance, sleep, and managing stress. The most protective posture is the next one.",source:"PubMed reviews on posture, core stability and low back pain; APTA and Lancet low back pain series"}},
+
+ {id:"neck",name:"Neck",
+  sub:"Usually a load and position problem, occasionally a nerve, rarely something urgent.",
+  usually:"<b>Usually:</b> muscular irritation and joint stiffness from sustained postures, sleep position, or a sudden movement. If pain travels down the arm past the elbow with tingling or numbness, that suggests nerve root irritation, which is still commonly self-limiting but needs a different plan and usually a clinician.",
+  train:["Gentle active range of motion in all directions, short of sharp pain, several times a day.","Chin tucks and deep neck flexor holds, low effort, high frequency.","Scapular work: rows, wall slides, and shoulder blade retraction to share the load.","Keep training the lower body and anything that does not aggravate it.","Heat before movement often helps more than ice for a stiff, guarded neck."],
+  protect:["Overhead pressing and heavy shrugs while it is actively painful.","Rapid, forceful self-manipulation. Do not crank your own neck to make it pop.","Long stretches at a laptop without changing position.","Sleeping on your stomach, which holds the neck rotated all night.","Any movement that reproduces sharp arm pain or tingling."],
+  flaglead:"Neck pain has a short list of genuinely serious causes. These are them:",
+  flags:["Neck pain after significant trauma, a car crash, or a fall, especially with midline tenderness. Do not self-treat, get assessed.","Progressive weakness or clumsiness in the hands, dropping things, or trouble with buttons.","Unsteady walking or a change in balance alongside neck pain, which can indicate spinal cord involvement.","Severe headache of sudden onset, described as the worst of your life.","Neck stiffness with fever, rash, or intolerance to bright light.","Dizziness, double vision, difficulty speaking or swallowing, or facial numbness with neck movement."],
+  lena:"<b>Lena:</b> \"You do not need to crack it. You need to move it, often, and stop holding it like it is made of glass.\"",
+  myth:{verdict:"amber",claim:"“Tech neck from looking at your phone is destroying your spine.”",truth:"It depends on what you are claiming. Sustained static positions do produce muscle fatigue and discomfort, which is real and worth addressing. What is not supported is the idea that phone use causes permanent structural damage or dramatic degeneration. Neck posture is not strongly predictive of who ends up with neck pain, and the sensational images of the neck 'collapsing' are marketing rather than research. The fix is variety and load tolerance, not sitting rigidly upright forever.",source:"PubMed studies on neck posture, mobile device use and neck pain incidence"}},
+
+ {id:"shoulder",name:"Shoulder",
+  sub:"The most mobile joint you own, which is exactly why it complains.",
+  usually:"<b>Usually:</b> rotator cuff related pain, the umbrella term that has largely replaced 'impingement'. It typically responds well to progressive loading rather than rest. Frozen shoulder is different, involves a marked loss of passive range in all directions, especially external rotation, and has its own long timeline.",
+  train:["Isometric holds first: press into a wall in external rotation, 30 to 45 seconds, low pain.","Progressive band or dumbbell external rotation and scaption, high reps, light load.","Push-ups at a height you can control, walking your hands lower as tolerance improves.","Full-range rowing and scapular retraction, which almost always feels good.","Keep pressing, but change the angle. Landmine and neutral-grip pressing before barbell overhead."],
+  protect:["Barbell upright rows and behind-the-neck pressing. Lena's least favourite exercises in existence.","Sleeping directly on the painful shoulder.","Pushing into sharp pain at end range overhead.","Aggressive passive stretching of a shoulder that is losing range, which can aggravate a frozen shoulder.","Testing it repeatedly through the day to see if it still hurts. It will."],
+  flaglead:"Escalate the shoulder when any of these appear:",
+  flags:["Inability to lift the arm at all after a fall or a dislocation, or a visibly deformed shoulder.","A sudden pop or tear during a heavy lift followed by immediate weakness and bruising.","Shoulder pain with chest tightness, jaw pain, sweating, or breathlessness. Treat as cardiac until proven otherwise.","Progressive loss of passive range in every direction, which suggests frozen shoulder and needs a plan.","Night pain that consistently wakes you and does not change with position, especially with unexplained weight loss.","Numbness, pins and needles, or a cold, pale hand on that side."],
+  lena:"<b>Lena:</b> \"Rotator cuff pain almost never needs rest. It needs load it can actually tolerate, three times a week, for longer than you want to do it.\"",
+  myth:{verdict:"red",claim:"“Your shoulder pain is a pinched tendon, so you have to stop lifting until it heals.”",truth:"The impingement model, where a bone mechanically pinches a tendon, has largely fallen out of favour, and with it the advice to rest. Current guidance for rotator cuff related shoulder pain is progressive exercise, and trials repeatedly show structured loading performs as well as surgery for many people with this presentation. Rest tends to deconditions the tissue and prolong things. The skill is finding the tolerable dose, not stopping.",source:"PubMed trials on subacromial decompression vs exercise; APTA and BJSM shoulder guidance"}},
+
+ {id:"knee",name:"Knee",
+  sub:"Loud, alarming, and usually far less fragile than it feels.",
+  usually:"<b>Usually:</b> patellofemoral pain, the diffuse ache around or behind the kneecap that shows up with squatting, stairs, and sitting. It is a load tolerance problem, not a sign the joint is wearing out. Meniscus and ligament injuries are usually traceable to a specific twisting incident with swelling.",
+  train:["Isometric wall sits and Spanish squats, which frequently reduce pain immediately.","Squat to a box at a depth that does not hurt, then lower the box over weeks.","Step-downs and split squats, controlled and slow, focusing on the descent.","Quad and glute strengthening. Strong quads are the best knee insurance available.","Cycling with a higher saddle and lower resistance, which loads the knee gently."],
+  protect:["Deep loaded squatting and lunging while it is irritable. Reduce depth, not the exercise.","Running downhill or on heavily cambered roads.","Sudden jumps in running volume, the classic cause.","Prolonged sitting with the knee bent, the reason it aches at the cinema.","Wearing a brace all day as a substitute for building strength."],
+  flaglead:"A knee needs assessment, not a program, when:",
+  flags:["It swelled substantially within an hour of an injury, which suggests bleeding in the joint.","You heard or felt a pop at the moment of injury and the knee felt unstable afterward.","The knee locks, catches, or will not fully straighten.","It gives way underneath you unpredictably.","You cannot bear weight on it, or cannot walk four steps.","It is hot, red, and swollen with fever, which can be infection or acute inflammatory arthritis."],
+  lena:"<b>Lena:</b> \"Knees are allowed to go past your toes. They have been doing it on every staircase you have ever climbed.\"",
+  myth:{verdict:"red",claim:"“Squats wear out your knees, and your knees should never pass your toes.”",truth:"Both halves are wrong and the second one is nonsense that has cost people a lot of range of motion. Knees travelling forward past the toes is a normal, necessary human movement, and restricting it simply shifts load onto the hips and lower back. As for wear: appropriately loaded squatting builds cartilage and bone tolerance, and lifters do not show higher rates of knee osteoarthritis than the general population. Sudden spikes in load cause problems. Squatting itself does not.",source:"PubMed research on knee kinematics in squatting; studies on joint loading and osteoarthritis risk in lifters"}},
+
+ {id:"hip",name:"Hip and groin",
+  sub:"Often blamed on tightness when the real issue is capacity.",
+  usually:"<b>Usually:</b> gluteal tendinopathy for pain on the outside of the hip, or hip flexor and adductor related pain at the front and groin. Deep, pinching groin pain at the end of a squat can involve the joint itself. True hip osteoarthritis tends to produce stiffness that is worst in the morning and pain felt in the groin, not the outer hip.",
+  train:["Isometric abduction holds against a wall for outer hip pain, which usually calms it fast.","Progressive loaded hip hinging: Romanian deadlifts and hip thrusts within a comfortable range.","Copenhagen plank progressions for adductor and groin capacity.","Walking, on flat ground, gradually building duration.","Single-leg balance and step-ups to build control under load."],
+  protect:["Crossing your legs and standing hanging on one hip, both of which compress the outer tendons.","Aggressive IT band foam rolling, which mostly just hurts and compresses the tender area.","Deep stretching into the pinch at the front of the hip.","Sleeping directly on the painful side without a pillow between the knees.","Sudden increases in hill walking or running volume."],
+  flaglead:"Hip pain warrants a clinician when:",
+  flags:["You cannot bear weight after a fall, especially if you are older or have osteoporosis. Assume a fracture until imaged.","Groin pain with fever, or in a child or adolescent with a limp, which needs same-day assessment.","Deep, constant, unremitting pain that is unrelated to activity or position, particularly with a cancer history.","Progressive loss of hip rotation with groin pain and morning stiffness.","Sudden severe groin pain after a forceful movement, with an inability to lift the leg.","Numbness or weakness travelling down the leg with the hip pain."],
+  lena:"<b>Lena:</b> \"Your hip flexors are not tight because you sit. They are underworked. Stretching something weak just makes it a longer weak thing.\"",
+  myth:{verdict:"amber",claim:"“You need to foam roll your IT band to release it.”",truth:"It depends what you think is happening. The IT band is a dense sheet of connective tissue anchored along the femur, and it does not meaningfully lengthen or 'release' under a foam roller. Estimates of the force needed to deform it are far beyond what a person can apply with body weight. What rolling does do is produce a short-term reduction in pain sensitivity, which is genuinely useful before training. So it can feel good and help you move, just not for the reason on the label. Persistent outer hip pain is usually gluteal tendinopathy, and that responds to loading.",source:"PubMed biomechanical studies on iliotibial band deformation; reviews on foam rolling and pain modulation"}},
+
+ {id:"achilles",name:"Achilles and calf",
+  sub:"The tendon that responds beautifully to load and terribly to rest.",
+  usually:"<b>Usually:</b> Achilles tendinopathy, a load-related irritation that is stiff and sore for the first minutes of walking in the morning and often warms up with activity. It is not a tear. It responds well to slow, heavy calf work, and it takes months rather than weeks, which is the part nobody wants to hear.",
+  train:["Heavy slow calf raises, both straight-knee and bent-knee, three to four times a week.","Isometric calf holds, 30 to 45 seconds, when it is too irritable to move through range.","Start on two legs, progress to one, then add load. Slow on the way down.","Keep walking. Reduce hills and speed rather than stopping.","Expect and accept mild soreness during. It should settle by the next morning."],
+  protect:["Sudden returns to sprinting, jumping, or hill running.","Deep, aggressive stretching of a painful Achilles, which compresses it at the heel.","Complete rest for weeks, which reliably makes tendons worse.","New minimal or zero-drop shoes introduced suddenly.","Chasing a cortisone injection into the tendon as a first move."],
+  flaglead:"This one has a specific emergency, and it gets missed constantly:",
+  flags:["A sudden sharp pain like being kicked or struck in the back of the ankle, often with an audible snap, followed by difficulty pushing off or standing on tiptoe. That is an Achilles rupture and it needs urgent assessment, even though walking may still be possible.","A palpable gap in the tendon above the heel.","Calf pain with swelling, warmth, redness, and tenderness, particularly after surgery, immobility, or long travel. That can be a deep vein thrombosis and is a medical emergency.","Numbness or pins and needles in the foot.","Pain and swelling after taking a fluoroquinolone antibiotic, which is associated with tendon rupture.","Inability to bear weight after an ankle injury, with bony tenderness."],
+  lena:"<b>Lena:</b> \"People still walk on a ruptured Achilles, which is why it gets missed. If you cannot rise onto that toe, you are going to be seen today.\"",
+  myth:{verdict:"red",claim:"“Rest is what heals a sore Achilles.”",truth:"Rest is close to the worst available option for tendinopathy, and it is still the most common advice given. Tendons adapt to mechanical load, and unloading them reduces their capacity, so pain returns as soon as normal activity resumes. The best supported treatment is progressive, heavy, slow resistance work, continued for months. Some discomfort during loading is expected and acceptable, provided it settles within 24 hours. The hard part is the timeline, not the exercise.",source:"PubMed trials on heavy slow resistance training for Achilles tendinopathy; BJSM tendon consensus statements"}},
+
+ {id:"elbow-wrist",name:"Elbow and wrist",
+  sub:"Named after sports most sufferers have never played.",
+  usually:"<b>Usually:</b> a tendinopathy at the outside of the elbow, tennis elbow, or the inside, golfer's elbow, from gripping and repetitive load. Wrist pain is commonly load-related or, at the thumb side, De Quervain's from repeated gripping and lifting. Numbness in the hand points toward nerve involvement rather than tendon.",
+  train:["Isometric wrist extension holds against your other hand, 30 to 45 seconds, several times daily.","Slow, heavy wrist extension and flexion with a light dumbbell, emphasising the lowering phase.","Grip work at a load that does not flare it, built up gradually.","Keep training everything else. Use straps to take grip out of pulling movements temporarily.","Shoulder and scapular strengthening, since weak proximal control loads the elbow more."],
+  protect:["Repeated heavy gripping while it is actively irritable.","Wearing a brace continuously instead of loading the tendon.","Steroid injection as a first resort, which often gives short-term relief and worse long-term outcomes.","Stretching aggressively into sharp pain.","Sudden increases in climbing, racket sport, or heavy carrying volume."],
+  flaglead:"Get the elbow, wrist, or hand looked at when:",
+  flags:["Numbness or tingling in the hand, especially at night or waking you, which suggests nerve compression.","Persistent weakness or loss of grip, or muscle wasting at the base of the thumb.","Hand or fingers that turn pale, blue, or cold.","Significant swelling, deformity, or inability to move the joint after a fall onto an outstretched hand. Wrist fractures are commonly missed.","A hot, red, swollen joint with fever.","Pain that is unrelated to use and constant, including at rest and overnight."],
+  lena:"<b>Lena:</b> \"Wearing the strap is not treatment. It is a way of postponing treatment while your grip gets weaker.\"",
+  myth:{verdict:"amber",claim:"“A cortisone shot will fix my tennis elbow.”",truth:"It depends on the timeframe you care about. Corticosteroid injection reliably reduces pain in the short term, over roughly the first six weeks, which is genuinely valuable to some people. The problem appears later: trials show that at six and twelve months, people who had the injection often do worse than those who did exercise or simply waited, with higher recurrence. It is a legitimate tool for buying a window, not a repair. The loading program still has to happen.",source:"PubMed randomised trials and meta-analyses on corticosteroid injection for lateral epicondylalgia"}},
+
+ {id:"hamstring",name:"Hamstring",
+  sub:"The most re-injured muscle in sport, almost always from returning too early.",
+  usually:"<b>Usually:</b> a strain at the muscle-tendon junction from sprinting or a rapid stretch, graded by how much function is lost. High hamstring pain right at the sit bone that is worse with sitting and driving is more likely a proximal tendinopathy, which is a slower, more stubborn problem with a different plan.",
+  train:["Isometric hamstring holds early, at a length that does not provoke sharp pain.","Progressive eccentric work: Nordic curls and Romanian deadlifts, built slowly.","Extended-range strengthening once pain settles, since length under load is what protects against re-injury.","Return to running by gradual speed progression, not distance.","For high hamstring tendinopathy, avoid deep stretching and load it in a shortened position first."],
+  protect:["Sprinting or anything explosive until you have full pain-free strength at length.","Aggressive stretching of an acutely strained hamstring in the first days.","Sitting for long periods on a hard surface with proximal tendon pain.","Returning to sport based on how it feels walking, which tells you almost nothing.","Chasing 'looseness' with static stretching instead of strength."],
+  flaglead:"Escalate a hamstring injury when:",
+  flags:["A sudden pop at the sit bone with severe pain, extensive bruising down the thigh, and difficulty walking, which can be a proximal avulsion needing surgical assessment.","Inability to bear weight after the injury.","Numbness or tingling down the back of the leg, or pain radiating below the knee, which points at the nerve or the back rather than the muscle.","Rapidly expanding swelling or a hard, tense compartment.","No improvement at all after two weeks of sensible rehab.","Hamstring pain with no injury, particularly with night pain or unexplained weight loss."],
+  lena:"<b>Lena:</b> \"It feels fine at week two. It is not fine at week two. This is the injury that punishes optimism.\"",
+  myth:{verdict:"red",claim:"“Stretch more and you won't pull a hamstring.”",truth:"Static stretching before activity has not been shown to reduce injury risk, and done immediately beforehand it can briefly reduce force output. What does have strong evidence is eccentric strengthening, particularly the Nordic hamstring curl, which has been shown across multiple trials to substantially reduce hamstring injury rates in sport. Strength at long muscle lengths is the protective quality, not flexibility. Warm up by moving, then build strength.",source:"PubMed meta-analyses on Nordic hamstring exercise and injury prevention; reviews on stretching and injury risk"}}
+];
+
+const VERDICT = {green:"Green · Checks out", amber:"Amber · It depends", red:"Red · Myth"};
+const partsHost=document.getElementById('parts');
+partsHost.innerHTML = DB.map((p,i)=>'<button type="button" class="part" data-i="'+i+'">'+p.name+'</button>').join('');
+let current=0;
+function render(){
+  const p=DB[current];
+  document.querySelectorAll('.part').forEach(b=>b.classList.toggle('on',+b.dataset.i===current));
+  document.getElementById('pname').textContent=p.name;
+  document.getElementById('psub').textContent=p.sub;
+  document.getElementById('usually').innerHTML=p.usually;
+  document.getElementById('train').innerHTML=p.train.map(t=>'<li>'+t+'</li>').join('');
+  document.getElementById('protect').innerHTML=p.protect.map(t=>'<li>'+t+'</li>').join('');
+  document.getElementById('flaglead').textContent=p.flaglead;
+  document.getElementById('flags').innerHTML=p.flags.map(t=>'<li>'+t+'</li>').join('');
+  document.getElementById('lena').innerHTML=p.lena;
+  const my=p.myth, box=document.getElementById('myth');
+  box.className='myth '+my.verdict;
+  document.getElementById('mythv').textContent=VERDICT[my.verdict];
+  document.getElementById('mythh').textContent='Myth Check';
+  document.getElementById('mythclaim').textContent=my.claim;
+  document.getElementById('mythtruth').innerHTML='<span>'+my.truth+'</span>';
+  document.getElementById('mythsrc').innerHTML='Checked against: <b>'+my.source+'</b>';
+}
+document.querySelectorAll('.part').forEach(b=>b.addEventListener('click',()=>{current=+b.dataset.i;render();}));
+render();
+</script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>
