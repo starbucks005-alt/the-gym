@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel, The Gym</title>
+<meta name="description" content="Nadia Hassan's fuel desk. Work out your actual protein target, how to split it across the day, and what to eat around training. Plus every supplement claim checked. Verify before you believe.">
+<link rel="canonical" href="https://the-gym.net/fuel.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/fuel.html">
+<meta property="og:title" content="Fuel &middot; The Gym">
+<meta property="og:description" content="Your real protein target, split across the day, and every supplement claim checked. Nadia Hassan.">
+<meta property="og:image" content="https://the-gym.net/assets/Nadia_eyes_open.png">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--nadia:#2e7a50;--nadia-dk:#22603d;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--nadia-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:880px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:60ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:62ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:1.4rem 0;}
+  .grp-h{font-family:'Lora',serif;font-size:.8rem;color:var(--nadia-dk);text-transform:uppercase;letter-spacing:.07em;margin:0 0 .6rem;font-weight:600;}
+  .fields{display:grid;grid-template-columns:1fr;gap:1rem;}
+  @media(min-width:620px){.fields{grid-template-columns:1fr 1fr;}}
+  .f label{display:block;font-size:.83rem;color:var(--muted);margin-bottom:.3rem;font-weight:600;}
+  .f input,.f select{width:100%;padding:.65rem .7rem;font-family:'Inter';font-size:1rem;border:1px solid var(--line);background:#f9fbfa;border-radius:6px;color:var(--ink);}
+  .f input:focus,.f select:focus{outline:2px solid var(--nadia);outline-offset:1px;}
+  .f .hint{font-size:.78rem;color:var(--soft);margin-top:.25rem;}
+  .unit{display:flex;gap:.4rem;}
+  .unit button{flex:1;padding:.65rem;font-family:'Inter';font-weight:600;font-size:.9rem;border:1.5px solid var(--line);background:#fff;color:#46545f;border-radius:6px;cursor:pointer;}
+  .unit button.on{background:var(--nadia);color:#fff;border-color:var(--nadia);}
+  .readout{margin:1.3rem 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fbfdfc;}
+  .readout-top{background:var(--ink);color:#fff;padding:.9rem 1.1rem;}
+  .readout-top .lbl{font-family:'Lora',serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0ab;}
+  .readout-top .nm{font-family:'Fraunces',serif;font-size:1.9rem;line-height:1.15;margin:.15rem 0 0;}
+  .readout-top .pf{font-size:.85rem;color:#c4cfd4;margin:.3rem 0 0;}
+  .readout-body{padding:1.1rem;}
+  .nutri{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin:0 0 1rem;}
+  @media(min-width:620px){.nutri{grid-template-columns:repeat(4,1fr);}}
+  .nut{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.6rem .7rem;text-align:center;}
+  .nut .v{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;line-height:1.1;color:var(--nadia-dk);}
+  .nut .k{font-size:.72rem;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem;}
+  .split{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;margin:0 0 1rem;}
+  .split h4{font-family:'Lora',serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--nadia-dk);margin:0 0 .7rem;}
+  .meals{display:flex;gap:.45rem;flex-wrap:wrap;}
+  .meal{flex:1;min-width:110px;background:#eef7f1;border:1px solid #c3e0cc;border-radius:8px;padding:.6rem .5rem;text-align:center;}
+  .meal .m{font-size:.74rem;color:#1f7a45;text-transform:uppercase;letter-spacing:.05em;font-weight:600;}
+  .meal .g{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:#16212b;}
+  .split .note{font-size:.86rem;color:var(--muted);margin:.7rem 0 0;}
+  .nadia-says{background:#fff;border-left:3px solid var(--nadia);padding:.8rem 1rem;margin:0 0 1rem;font-size:.95rem;}
+  .nadia-says b{color:var(--nadia-dk);}
+  .flag{font-size:.92rem;background:#fffaf3;border:1px solid #f1ddc2;border-radius:8px;padding:.75rem .95rem;margin:0 0 1rem;} .flag b{color:var(--amber);}
+  .foods{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#eef7f1;border:1px solid #c3e0cc;border-radius:12px;}
+  .foods h3{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--nadia-dk);margin:0 0 .3rem;}
+  .foods p{font-size:.92rem;color:var(--muted);margin:0 0 .8rem;}
+  .ftable{width:100%;border-collapse:collapse;font-size:.92rem;}
+  .ftable th{text-align:left;font-family:'Lora',serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--nadia-dk);padding:.3rem .4rem;border-bottom:1px solid #c3e0cc;}
+  .ftable td{padding:.4rem;border-bottom:1px solid #d9ece0;}
+  .ftable td:last-child{text-align:right;font-weight:700;color:var(--nadia-dk);white-space:nowrap;}
+  .myth{margin:1.2rem 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .myth-top{display:flex;align-items:center;gap:.7rem;padding:.7rem 1rem;font-weight:600;color:#fff;}
+  .myth-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;}
+  .myth.green .myth-top{background:var(--green);} .myth.amber .myth-top{background:var(--amber);} .myth.red .myth-top{background:var(--red);}
+  .myth-body{padding:.9rem 1rem;font-size:.95rem;}
+  .myth-body .claim{font-style:italic;color:var(--muted);margin:0 0 .5rem;}
+  .myth-body .src{margin:.6rem 0 0;font-size:.82rem;color:var(--soft);} .myth-body .src b{color:var(--nadia-dk);}
+  .mythnav{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .2rem;}
+  .mbtn{font-size:.85rem;font-weight:600;padding:.42rem .8rem;border-radius:7px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;}
+  .mbtn:hover{border-color:var(--nadia);} .mbtn.on{background:var(--nadia);color:#fff;border-color:var(--nadia);}
+  .rulebox{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;}
+  .rulebox h3{font-family:'Fraunces',serif;font-size:1.2rem;margin:0 0 .6rem;}
+  .rulebox ol{margin:0;padding-left:1.2rem;font-size:.95rem;} .rulebox li{margin:.4rem 0;} .rulebox li b{color:var(--nadia-dk);}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#3f6f55,#25493a);}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;}
+  .cc-role{color:var(--nadia-dk);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;} .cc-emp{background:#e4f0e9;color:var(--nadia-dk);}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .crew{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#eef7f1;border:1px solid #c3e0cc;border-radius:12px;}
+  .crew-h{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--nadia-dk);margin-bottom:.55rem;}
+  .crew ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+  .crew li{font-size:.92rem;} .crew li b{color:var(--nadia-dk);}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#1a2a22;color:#8fd0aa;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;We read the label, then we read the study.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>Fuel</h1>
+    <p class="tag">Nadia Hassan works out what you actually need, in grams, from your bodyweight and what you are asking your body to do. Then she shows you what that looks like as food, and checks every supplement claim you were about to believe.</p>
+    <p class="mini">She brings The Dose's nutrition rigor to the gym floor. Performance fuel, recovery eating, and every label checked against the research before it gets near anyone.</p>
+  </div>
+
+  <div class="panel">
+    <div class="grp-h">Your numbers</div>
+    <div class="fields">
+      <div class="f">
+        <label for="wt">Bodyweight</label>
+        <input type="number" id="wt" value="70" min="30" max="250" step="1">
+        <div class="hint" id="wthint">Kilograms.</div>
+      </div>
+      <div class="f">
+        <label>Units</label>
+        <div class="unit">
+          <button type="button" id="ukg" class="on">kg</button>
+          <button type="button" id="ulb">lb</button>
+        </div>
+        <div class="hint">Everything below recalculates.</div>
+      </div>
+      <div class="f">
+        <label for="goal">What are you doing</label>
+        <select id="goal">
+          <option value="general">General health, not training much</option>
+          <option value="build" selected>Building muscle</option>
+          <option value="cut">Losing fat, keeping muscle</option>
+          <option value="endurance">Endurance training</option>
+          <option value="older">Over sixty-five, staying strong</option>
+        </select>
+        <div class="hint">This sets the grams per kilogram, see the note below.</div>
+      </div>
+      <div class="f">
+        <label for="meals">Meals you actually eat</label>
+        <select id="meals">
+          <option value="2">2 a day</option>
+          <option value="3" selected>3 a day</option>
+          <option value="4">4 a day</option>
+          <option value="5">5 a day</option>
+        </select>
+        <div class="hint">Used to split the target, not to prescribe a schedule.</div>
+      </div>
+    </div>
+
+    <div class="readout">
+      <div class="readout-top">
+        <div class="lbl">Your target &middot; Fuel</div>
+        <div class="nm" id="target">&mdash;</div>
+        <div class="pf" id="targetsub"></div>
+      </div>
+      <div class="readout-body">
+        <div class="nutri" id="stats"></div>
+        <div class="split">
+          <h4>Split across the day</h4>
+          <div class="meals" id="mealsplit"></div>
+          <p class="note" id="splitnote"></p>
+        </div>
+        <div class="nadia-says" id="nadia"></div>
+        <div id="flags"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foods">
+    <h3>What that looks like as food</h3>
+    <p>Protein per typical serving, so you can see how quickly the number adds up. Nothing here is exotic and nothing here is a powder.</p>
+    <table class="ftable">
+      <thead><tr><th>Food</th><th>Serving</th><th>Protein</th></tr></thead>
+      <tbody>
+        <tr><td>Chicken breast</td><td>150 g cooked</td><td>46 g</td></tr>
+        <tr><td>Greek yogurt</td><td>200 g</td><td>20 g</td></tr>
+        <tr><td>Eggs</td><td>2 large</td><td>13 g</td></tr>
+        <tr><td>Tinned tuna</td><td>1 tin, drained</td><td>25 g</td></tr>
+        <tr><td>Lentils, cooked</td><td>1 cup</td><td>18 g</td></tr>
+        <tr><td>Firm tofu</td><td>150 g</td><td>17 g</td></tr>
+        <tr><td>Cottage cheese</td><td>150 g</td><td>17 g</td></tr>
+        <tr><td>Milk or soy milk</td><td>1 cup</td><td>8 g</td></tr>
+        <tr><td>Whey or plant protein</td><td>1 scoop</td><td>24 g</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rulebox">
+    <h3>Nadia's four rules of fueling</h3>
+    <ol>
+      <li><b>Total daily protein is the thing. Timing is the decoration.</b> Hitting your daily number reliably matters far more than which hour you eat it in. Once the total is right, spreading it across the day gives you a small extra benefit. Getting the total wrong cannot be fixed by timing.</li>
+      <li><b>You cannot supplement your way out of not eating.</b> The powders on the shelf are convenient food, not a shortcut. If your daily protein comes from real meals, you may not need a scoop at all, and Nadia will happily tell you that even though it is bad for business.</li>
+      <li><b>Carbohydrate is not the enemy of anything.</b> It is the fuel for hard training and it is what refills the tank afterward. Cutting it makes sessions feel worse and rarely changes the outcome once calories and protein are matched.</li>
+      <li><b>Eat enough to train, not just enough to look like you train.</b> Chronic under-eating shows up as stalled progress, poor sleep, injuries, disrupted menstrual cycles, and bone loss. That is Relative Energy Deficiency in Sport, it affects men and women, and it is far more common than overtraining.</li>
+    </ol>
+  </div>
+
+  <div class="panel">
+    <div class="grp-h">Nadia checks the labels</div>
+    <div class="mythnav" id="mythnav"></div>
+    <div class="myth" id="myth"><div class="myth-top"><span class="v" id="mythv"></span><span id="mythh"></span></div>
+      <div class="myth-body"><p class="claim" id="mythclaim"></p><div id="mythtruth"></div><p class="src" id="mythsrc"></p></div></div>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Nadia_eyes_open.png" alt="Nadia Hassan" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Nadia_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 8.3s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Nadia Hassan</h3>
+      <div class="cc-role">Sports Nutrition &middot; Your host</div>
+      <p class="cc-tag">Cross-posts The Dose's nutrition rigor to the gym floor. Every supplement label checked before it gets near anyone.</p>
+      <div class="cc-tags"><span class="cc-t">#nutrition</span><span class="cc-t">#protein</span><span class="cc-t">#fuel</span><span class="cc-t">#supplements</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">Dose / Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="crew">
+    <div class="crew-h">Who Nadia works with</div>
+    <ul>
+      <li><b>Zara Cole</b> &mdash; runs <a href="/smoothie-bar.html">the smoothie bar</a> and sends every blend past Nadia before it goes on the board. Zara says so first, which Nadia appreciates.</li>
+      <li><b>Wyatt E. Cooper</b> &mdash; ongoing argument about whether a drink can be a meal. Nadia is winning. His bar is <a href="/elixir-bar.html">here</a>.</li>
+      <li><b>Dr. Sana Qureshi</b> &mdash; fuel and recovery are the same conversation, so they tend to arrive together. Her <a href="/sleep-lab.html">Sleep Lab</a> is the other half of this page.</li>
+      <li><b>Dr. Henry Chen, RPh</b> &mdash; anything that interacts with a medication goes to the pharmacist, not to her.</li>
+      <li><b>Coach Dom Castellanos</b> &mdash; will remind you the food matters less than showing up Thursday. He is not entirely wrong.</li>
+      <li><b>Eli Adler</b> &mdash; every verdict on this page is in <a href="/stoplight.html">the Stoplight</a> with its source.</li>
+    </ul>
+  </div>
+
+  <div class="verify-box">
+    <h3>How the staff verify (so you don't have to take our word for it)</h3>
+    <p>Sports nutrition is the most heavily marketed corner of fitness, and the gap between what a label implies and what a trial shows is where most of the money is made. Nadia carries PubMed, USDA FoodData Central and NIH ODS, and she uses them on the boring claims as well as the exciting ones.</p>
+    <p>Green means the evidence backs it. Amber means it depends, and here is on what. Red means a popular claim that is wrong.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">USDA FoodData Central</span><span class="pill">NIH ODS</span><span class="pill">ISSN position stands</span><span class="pill">Stoplight verdict + citation</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical advice, and not personalised nutrition counselling.</b> The targets here are population-level starting points from published guidance, not a prescription, and they do not account for your medical history, medications, or circumstances. Dietary supplements are not reviewed by the FDA for safety or effectiveness before they are sold. If you have kidney or liver disease, diabetes, an eating disorder or a history of one, are pregnant or breastfeeding, or are feeding a child, talk to your clinician or a registered dietitian before changing your intake. If you are struggling with food or your body, that deserves real support: in the US the National Eating Disorders Association helpline is 1-800-931-2237.</p>
+</div>
+<script>
+/* Protein targets in g per kg bodyweight, from published guidance.
+   Ranges are deliberately given as a band, because that is how the
+   evidence reports them. */
+const GOALS = {
+  general:   {lo:0.8, hi:1.2, label:'General health',        note:'The 0.8 g per kg figure is the RDA, which is the amount that prevents deficiency, not the amount that is optimal if you are active. Most people who move regularly do better slightly above it.'},
+  build:     {lo:1.6, hi:2.2, label:'Building muscle',       note:'Around 1.6 g per kg is where the benefit for muscle growth plateaus in the meta-analyses. Going higher is not harmful for healthy kidneys, it simply stops adding much.'},
+  cut:       {lo:1.8, hi:2.4, label:'Losing fat',            note:'Protein goes up when calories come down, because it protects muscle in a deficit and it is the most filling of the three macronutrients.'},
+  endurance: {lo:1.2, hi:1.6, label:'Endurance training',    note:'Lower than lifting but well above the RDA. Endurance athletes routinely under-eat protein because the focus goes to carbohydrate.'},
+  older:     {lo:1.2, hi:1.6, label:'Over sixty-five',       note:'Requirements rise with age because older muscle responds less to the same dose of protein. This is one of the highest-value changes available for staying independent.'},
+};
+
+const el = id => document.getElementById(id);
+let unit = 'kg';
+
+function kg() {
+  const v = +el('wt').value || 0;
+  return unit === 'kg' ? v : v * 0.4536;
+}
+
+function calc() {
+  const w = kg();
+  const g = GOALS[el('goal').value] || GOALS.build;
+  const meals = +el('meals').value || 3;
+  const lo = w * g.lo, hi = w * g.hi, mid = (lo + hi) / 2;
+
+  el('target').textContent = Math.round(lo) + ' to ' + Math.round(hi) + ' g protein a day';
+  el('targetsub').textContent = g.label + ' · ' + g.lo + ' to ' + g.hi + ' g per kg of bodyweight';
+
+  // A practical per-meal ceiling: roughly 0.4 g/kg per sitting is where the
+  // muscle-building response tends to max out.
+  const perMealCap = w * 0.4;
+  const perMeal = mid / meals;
+
+  el('stats').innerHTML = [
+    [Math.round(w) + ' kg', 'bodyweight'],
+    [Math.round(mid) + ' g', 'midpoint target'],
+    [Math.round(perMeal) + ' g', 'per meal'],
+    [Math.round(perMealCap) + ' g', 'per-meal ceiling'],
+  ].map(r => '<div class="nut"><div class="v">' + r[0] + '</div><div class="k">' + r[1] + '</div></div>').join('');
+
+  const names = meals === 2 ? ['Meal 1', 'Meal 2']
+    : meals === 3 ? ['Breakfast', 'Lunch', 'Dinner']
+    : meals === 4 ? ['Breakfast', 'Lunch', 'Snack', 'Dinner']
+    : ['Breakfast', 'Snack', 'Lunch', 'Snack', 'Dinner'];
+  el('mealsplit').innerHTML = names.map(n =>
+    '<div class="meal"><div class="m">' + n + '</div><div class="g">' + Math.round(perMeal) + ' g</div></div>').join('');
+
+  el('splitnote').innerHTML = perMeal > perMealCap
+    ? 'At ' + meals + ' meals you would need about ' + Math.round(perMeal) + ' g per sitting, which is above the roughly ' +
+      Math.round(perMealCap) + ' g where the muscle-building response tends to plateau. Adding a meal or a snack uses the protein more efficiently. It is not wasted, it is just doing less.'
+    : 'About ' + Math.round(perMeal) + ' g a sitting, comfortably under the roughly ' + Math.round(perMealCap) +
+      ' g per-meal ceiling. That is a workable split.';
+
+  const L = [];
+  L.push(g.note);
+  if (el('goal').value === 'cut') L.push('In a deficit, keep resistance training in. Protein protects muscle, training tells your body which tissue to keep.');
+  if (el('goal').value === 'older') L.push('Pair it with resistance training. Protein alone does much less for older muscle than protein plus lifting.');
+  if (Math.round(mid) > 200) L.push('That is a large daily number. It is achievable, and it usually needs planning rather than willpower.');
+  el('nadia').innerHTML = '<b>Nadia:</b> ' + L.slice(0, 2).join(' ');
+
+  const F = [];
+  if (w < 45 || w > 150) F.push('That bodyweight is outside the range these population guidelines were built on, so treat the number as a rough anchor and talk to a dietitian for something individual.');
+  F.push('These are grams of protein, not grams of food. One hundred grams of chicken is not one hundred grams of protein, it is about thirty. The table below shows the difference.');
+  el('flags').innerHTML = F.map(f => '<div class="flag"><b>Worth knowing:</b> ' + f + '</div>').join('');
+}
+
+el('ukg').addEventListener('click', () => {
+  if (unit === 'kg') return;
+  unit = 'kg'; el('ukg').classList.add('on'); el('ulb').classList.remove('on');
+  el('wt').value = Math.round(+el('wt').value * 0.4536);
+  el('wthint').textContent = 'Kilograms.'; calc();
+});
+el('ulb').addEventListener('click', () => {
+  if (unit === 'lb') return;
+  unit = 'lb'; el('ulb').classList.add('on'); el('ukg').classList.remove('on');
+  el('wt').value = Math.round(+el('wt').value / 0.4536);
+  el('wthint').textContent = 'Pounds.'; calc();
+});
+['wt', 'goal', 'meals'].forEach(id => {
+  el(id).addEventListener('input', calc); el(id).addEventListener('change', calc);
+});
+
+/* ---- myth checks ---- */
+const MYTHS = [
+ {k:'Protein & kidneys',verdict:'red',claim:'“High protein damages your kidneys.”',
+  truth:'Not in people with healthy kidneys, and this one has been studied specifically because the belief is so widespread. Controlled trials and long-term observation in healthy adults eating high-protein diets, including athletes well above 2 g per kg, show no meaningful decline in kidney function. The claim comes from correctly transferring advice for people who already have kidney disease onto people who do not. If you do have reduced kidney function, protein restriction may genuinely be indicated, and that is a conversation with your nephrologist rather than with the internet.',
+  source:'PubMed reviews on high protein intake and renal function in healthy adults; ISSN Position Stand: Protein and Exercise'},
+ {k:'Creatine',verdict:'green',claim:'“Creatine actually works.”',
+  truth:'True, and it is the most thoroughly supported supplement in sports nutrition. Creatine monohydrate reliably improves performance in short, high-intensity efforts and supports gains in lean mass alongside training, across hundreds of studies. Three practical points: monohydrate is the studied form and the cheapest, so ignore the expensive variants; you do not need a loading phase, 3 to 5 g daily gets you there in a few weeks; and the early weight gain is water drawn into muscle, not fat. It does not cause hair loss or kidney damage in healthy people, despite both rumours persisting.',
+  source:'ISSN Position Stand: Creatine Supplementation; NIH ODS; extensive PubMed literature'},
+ {k:'Anabolic window',verdict:'red',claim:'“You must eat protein within thirty minutes of training.”',
+  truth:'The window is far wider than thirty minutes, likely several hours either side of your session. This is the single most persistent myth in the gym and it sells an enormous amount of ready-to-drink protein. What actually drives the outcome is total daily intake, spread reasonably across the day. If you trained fasted first thing, eating sooner rather than later is sensible. If you had a normal meal beforehand, sprinting to the locker room achieves nothing.',
+  source:'ISSN Position Stand: Nutrient Timing; Schoenfeld & Aragon, JISSN'},
+ {k:'BCAAs',verdict:'red',claim:'“BCAAs build muscle.”',
+  truth:'Not on their own, and this is the clearest example of a supplement outliving its evidence. Muscle protein synthesis needs all nine essential amino acids; supplying only three leaves the process short of the rest. Trials comparing BCAAs against whole protein consistently favour the whole protein, and if you are already meeting your daily target, BCAAs add essentially nothing. They were a reasonable idea in the 1990s. The research moved and the marketing did not.',
+  source:'PubMed trials on BCAA supplementation and muscle protein synthesis; ISSN Position Stand: Protein and Exercise'},
+ {k:'Fat burners',verdict:'red',claim:'“Fat burners and metabolism boosters work.”',
+  truth:'No, and this category is where the genuine harm sits. The measurable effect of thermogenic ingredients on daily energy expenditure is tiny and does not translate into meaningful fat loss. Worse, weight-loss supplements are the category most frequently found adulterated with undeclared pharmaceuticals, and the FDA has issued repeated warnings and recalls. They are also among the products most associated with liver injury. If a supplement claims to melt fat, that claim alone tells you the company is comfortable saying things it cannot support.',
+  source:'FDA warnings on tainted weight-loss products; NIH ODS, Dietary Supplements for Weight Loss; LiverTox'},
+ {k:'Eating late',verdict:'red',claim:'“Eating after eight at night makes you gain fat.”',
+  truth:'The clock is not doing the work. What matters is total intake across the day, and late eating is associated with weight gain mostly because evening eating tends to be extra eating, often while distracted. The nuance worth keeping: eating a very large meal right before bed can disrupt sleep, and poor sleep does affect appetite regulation the next day. So there is a real indirect effect, and it is not the one the claim describes.',
+  source:'PubMed research on meal timing, energy balance and body composition'},
+ {k:'Protein powder',verdict:'amber',claim:'“You need a protein powder.”',
+  truth:'It depends entirely on what your food already gives you. Powder is a convenient, usually cheap protein source with no special properties beyond that, and plenty of people hit their target from meals without it. Where it genuinely helps is when the target is high, appetite is low, or the schedule is tight. The one caveat that matters: supplements are not reviewed by the FDA before sale, and independent testing has repeatedly found products with heavy metals or inaccurate labels. Buy third-party tested, NSF Certified for Sport or Informed Sport, especially if you are drug tested.',
+  source:'NIH ODS; FDA on dietary supplement regulation; independent product testing reports'},
+ {k:'Carbs at night',verdict:'red',claim:'“Cutting carbs is the fastest way to lose fat.”',
+  truth:'Not once the variables are controlled. Low-carbohydrate diets often produce fast early weight loss, and most of that is water released as glycogen is depleted, which is why it stops. In trials that match calories and protein, low-carb diets do not outperform other approaches for fat loss over time. The best diet remains the one you can actually keep doing. For training specifically, cutting carbohydrate usually makes hard sessions feel worse for no compensating benefit.',
+  source:'PubMed meta-analyses on low-carbohydrate vs isocaloric diets; NIH'},
+];
+let mi = 0;
+el('mythnav').innerHTML = MYTHS.map((m, i) => '<button type="button" class="mbtn" data-i="' + i + '">' + m.k + '</button>').join('');
+function renderMyth() {
+  const m = MYTHS[mi], box = el('myth');
+  document.querySelectorAll('.mbtn').forEach(b => b.classList.toggle('on', +b.dataset.i === mi));
+  box.className = 'myth ' + m.verdict;
+  el('mythv').textContent = {green:'Green · Checks out',amber:'Amber · It depends',red:'Red · Myth'}[m.verdict];
+  el('mythh').textContent = 'Myth Check';
+  el('mythclaim').textContent = m.claim;
+  el('mythtruth').innerHTML = '<span>' + m.truth + '</span>';
+  el('mythsrc').innerHTML = 'Checked against: <b>' + m.source + '</b>';
+}
+document.querySelectorAll('.mbtn').forEach(b => b.addEventListener('click', () => { mi = +b.dataset.i; renderMyth(); }));
+
+calc(); renderMyth();
+</script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Stoplight, The Gym</title>
+<meta name="description" content="Eli Adler's Stoplight. Every fitness, nutrition and recovery claim the staff have checked, with a green, amber or red verdict and a named source. Search it yourself. Verify before you believe.">
+<link rel="canonical" href="https://the-gym.net/stoplight.html">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Gym">
+<meta property="og:url" content="https://the-gym.net/stoplight.html">
+<meta property="og:title" content="The Stoplight &middot; The Gym">
+<meta property="og:description" content="Every claim the staff have checked, with a verdict and a named source. Search it yourself.">
+<meta property="og:image" content="https://the-gym.net/assets/Eli_eyes_open.png">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5EB5MERC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K5EB5MERC7');
+</script>
+<meta name="author" content="Dr. Terry Oroszi, EdD">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#16212b;--muted:#5a6a78;--soft:#7a8a98;--bg:#f6f8f7;--panel:#fff;--line:#d4dde2;--accent:#c0356f;--green:#2e9e5b;--amber:#d99016;--red:#c8485f;--eli:#3a4a5a;--eli-dk:#2a3846;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.5;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 1.1rem 4rem;}
+  a{color:var(--eli-dk);}
+  .ribbon{background:var(--ink);color:#fff;text-align:center;font-family:'Lora',serif;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;padding:.5rem;}
+  .ribbon b{color:var(--accent);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:920px;margin:0 auto;padding:1rem 1.1rem .4rem;}
+  .brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;} .brand .dot{color:var(--accent);}
+  .backlink{font-size:.85rem;color:var(--muted);text-decoration:none;}
+  .hero{padding:1.5rem 0 .4rem;}
+  .hero h1{font-family:'Fraunces',serif;font-size:2.35rem;line-height:1.05;margin:0 0 .5rem;}
+  .hero .tag{color:var(--muted);font-size:1.06rem;max-width:62ch;margin:0 0 .8rem;}
+  .hero .mini{color:var(--soft);font-size:.92rem;max-width:64ch;font-style:italic;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.4rem;margin:1.4rem 0;}
+  .tally{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin:1.2rem 0;}
+  @media(min-width:620px){.tally{grid-template-columns:repeat(4,1fr);}}
+  .tl{border-radius:10px;padding:.85rem .9rem;text-align:center;border:1px solid;}
+  .tl .v{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:700;line-height:1;}
+  .tl .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;margin-top:.25rem;}
+  .tl.all{background:#eef1f3;border-color:#d3dbe1;} .tl.all .v{color:var(--eli);} .tl.all .k{color:#63737f;}
+  .tl.g{background:#eef7f1;border-color:#c3e0cc;} .tl.g .v{color:#1f7a45;} .tl.g .k{color:#1f7a45;}
+  .tl.a{background:#fffaf3;border-color:#f1ddc2;} .tl.a .v{color:#a86a10;} .tl.a .k{color:#a86a10;}
+  .tl.r{background:#fdf1f4;border-color:#e8a8b8;} .tl.r .v{color:#a8394f;} .tl.r .k{color:#a8394f;}
+  .controls{display:grid;grid-template-columns:1fr;gap:.9rem;}
+  .lbl{font-family:'Lora',serif;font-size:.76rem;color:var(--eli-dk);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.35rem;font-weight:600;}
+  .search{width:100%;padding:.75rem .85rem;font-family:'Inter';font-size:1rem;border:1px solid var(--line);background:#f9fbfa;border-radius:7px;color:var(--ink);}
+  .search:focus{outline:2px solid var(--eli);outline-offset:1px;}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;}
+  .chip{font-family:'Inter';font-size:.84rem;font-weight:600;padding:.4rem .8rem;border-radius:7px;border:1.5px solid var(--line);background:#fff;color:#46545f;cursor:pointer;}
+  .chip:hover{border-color:var(--eli);}
+  .chip.on{background:var(--eli);color:#fff;border-color:var(--eli);}
+  .chip.g.on{background:var(--green);border-color:var(--green);}
+  .chip.a.on{background:var(--amber);border-color:var(--amber);}
+  .chip.r.on{background:var(--red);border-color:var(--red);}
+  .count{font-size:.88rem;color:var(--muted);margin:1.2rem 0 .6rem;}
+  .count b{color:var(--ink);}
+  .card{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:#fff;margin:0 0 .85rem;}
+  .card-top{display:flex;align-items:center;gap:.7rem;padding:.6rem .95rem;color:#fff;flex-wrap:wrap;}
+  .card.green .card-top{background:var(--green);} .card.amber .card-top{background:var(--amber);} .card.red .card-top{background:var(--red);}
+  .card-top .v{font-family:'Lora',serif;text-transform:uppercase;letter-spacing:.08em;font-size:.76rem;font-weight:700;}
+  .card-top .src{margin-left:auto;font-size:.76rem;opacity:.92;}
+  .card-body{padding:.85rem .95rem;}
+  .claim{font-family:'Fraunces',serif;font-size:1.08rem;font-style:italic;color:var(--ink);margin:0 0 .55rem;line-height:1.4;}
+  .truth{font-size:.94rem;color:#37454f;margin:0 0 .7rem;}
+  .meta{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-size:.78rem;}
+  .tag{background:#eef1f3;color:#5a6a78;padding:.2rem .55rem;border-radius:999px;}
+  .tag.src{background:#fdf1f7;color:var(--accent);}
+  .meta a{margin-left:auto;font-weight:600;color:var(--eli-dk);text-decoration:none;}
+  .meta a:hover{text-decoration:underline;}
+  .empty{text-align:center;color:var(--soft);font-style:italic;padding:2.5rem 1rem;}
+  .howto{margin:1.4rem 0;padding:1.1rem 1.3rem;background:#eef1f3;border:1px solid #d3dbe1;border-radius:12px;}
+  .howto h3{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--eli-dk);margin:0 0 .6rem;}
+  .howto dl{margin:0;font-size:.94rem;}
+  .howto dt{font-weight:700;margin-top:.55rem;}
+  .howto dt.g{color:#1f7a45;} .howto dt.a{color:#a86a10;} .howto dt.r{color:#a8394f;}
+  .howto dd{margin:.15rem 0 0;color:#45535e;}
+  .castcard{max-width:340px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;margin:1.8rem 0;box-shadow:0 1px 4px rgba(20,33,43,.06);}
+  .cc-photo{position:relative;height:220px;background:linear-gradient(160deg,#4a5866,#2a3846);}
+  .cc-body{padding:1rem 1.1rem 1.15rem;}
+  .cc-nm{font-family:'Fraunces',serif;font-weight:700;font-size:1.3rem;margin:0;}
+  .cc-role{color:var(--eli-dk);font-weight:700;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;margin:.3rem 0 .55rem;}
+  .cc-tag{font-style:italic;color:var(--muted);font-size:.98rem;margin:0 0 1rem;}
+  .cc-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem;}
+  .cc-t{font-size:.78rem;background:#f0ece6;color:#6a6157;padding:.2rem .55rem;border-radius:6px;}
+  .cc-foot{display:flex;align-items:center;gap:.5rem;}
+  .cc-pill{font-size:.78rem;padding:.25rem .62rem;border-radius:999px;}
+  .cc-inf{background:#eef0f2;color:#5a6a78;} .cc-emp{background:#e7ecf0;color:var(--eli-dk);}
+  .cc-hire{margin-left:auto;background:#15212b;color:#fff;border:none;border-radius:8px;padding:.55rem 1.25rem;font-weight:700;font-family:'Inter';font-size:.95rem;cursor:pointer;}
+  .verify-box{margin:2rem 0;padding:1.3rem 1.5rem;background:#0f1922;color:#e8eef0;border-radius:12px;}
+  .verify-box h3{font-family:'Fraunces',serif;margin:0 0 .5rem;color:#fff;font-size:1.2rem;}
+  .verify-box p{font-size:.92rem;color:#c4cfd4;margin:.4rem 0;}
+  .verify-box .dots{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap;}
+  .verify-box .pill{font-size:.78rem;padding:.25rem .6rem;border-radius:999px;background:#1e2a33;color:#9db4c6;}
+  .disc{margin-top:2rem;font-size:.82rem;color:var(--soft);border-top:1px solid var(--line);padding-top:1rem;line-height:1.55;} .disc b{color:var(--muted);}
+@keyframes gym-blink{0%,92%{opacity:0;}94%,96%{opacity:1;}98%,100%{opacity:0;}}
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Verify before you believe.</b> &nbsp;Every verdict on this site, in one place, with its source.</div>
+<div class="topbar"><a href="/" class="brand">THE GYM<span class="dot">.</span></a><a class="backlink" href="index.html">&larr; Back to The Gym</a></div>
+<div class="wrap">
+  <div class="hero">
+    <h1>The Stoplight</h1>
+    <p class="tag">Every claim the staff have checked, in one searchable list. Eli Adler runs it. Green means the evidence backs it, amber means it depends, red means a popular claim that is wrong. Each one names a source you can open yourself.</p>
+    <p class="mini">This is the page the rest of the site points at. Nothing gets a verdict here without one, and Eli does not soften a red to be pleasant.</p>
+  </div>
+
+  <div class="tally" id="tally"></div>
+
+  <div class="panel">
+    <div class="controls">
+      <div>
+        <div class="lbl">Search the claims</div>
+        <input class="search" id="q" type="search" placeholder="creatine, cortisol, stretching, detox, sleep..." autocomplete="off">
+      </div>
+      <div>
+        <div class="lbl">Verdict</div>
+        <div class="chips" id="vfilter">
+          <button type="button" class="chip on" data-v="">All</button>
+          <button type="button" class="chip g" data-v="green">Green</button>
+          <button type="button" class="chip a" data-v="amber">Amber</button>
+          <button type="button" class="chip r" data-v="red">Red</button>
+        </div>
+      </div>
+      <div>
+        <div class="lbl">Where it was checked</div>
+        <div class="chips" id="tfilter"></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="count" id="count"></p>
+  <div id="results"></div>
+
+  <div class="howto">
+    <h3>What the three colours actually mean</h3>
+    <dl>
+      <dt class="g">Green &middot; checks out</dt>
+      <dd>The evidence supports the claim as stated. Not "someone said it works", but that the research points the same way the claim does. Green is the rarest verdict here, and that is worth noticing.</dd>
+      <dt class="a">Amber &middot; it depends</dt>
+      <dd>There is something real underneath, and the popular version overstates it, or it only holds under conditions people leave out. Amber is the most common verdict, because most fitness claims are a real effect with the size and the caveats stripped off.</dd>
+      <dt class="r">Red &middot; myth</dt>
+      <dd>The claim is wrong. Sometimes harmlessly, sometimes in a way that gets people hurt or takes their money. Red is not a matter of taste, and Eli does not negotiate it.</dd>
+    </dl>
+  </div>
+
+  <div class="castcard">
+    <div class="cc-photo" style="padding:0;overflow:hidden;">
+      <img src="/assets/Eli_eyes_open.png" alt="Eli Adler" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;">
+      <img src="/assets/Eli_eyes_closed.png" alt="" aria-hidden="true" style="width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;opacity:0;animation:gym-blink 9.6s infinite;">
+    </div>
+    <div class="cc-body">
+      <h3 class="cc-nm">Eli Adler</h3>
+      <div class="cc-role">The Stoplight &middot; Your host</div>
+      <p class="cc-tag">Dry, exact, unhurried, faintly amused by how confident bad claims are. Does not soften a red verdict to be pleasant.</p>
+      <div class="cc-tags"><span class="cc-t">#factcheck</span><span class="cc-t">#evidence</span><span class="cc-t">#stoplight</span><span class="cc-t">#sources</span></div>
+      <div class="cc-foot"><span class="cc-pill cc-inf">In-framework</span><span class="cc-pill cc-emp">Dose / Gym</span><button class="cc-hire">Hire</button></div>
+    </div>
+  </div>
+
+  <div class="verify-box">
+    <h3>How a claim gets a verdict</h3>
+    <p>A claim reaches Eli from somewhere on the floor. Jax finds it spiking in search, Dom debunks it in one sentence, Reece form-checks the reel, or a member simply asks. Then the person whose lane it is looks it up: Nadia on nutrition, Dr. Henry on supplements and interactions, Dr. Lena on injury, Dr. Sana on sleep and recovery, Amara on botanicals.</p>
+    <p>Eli's job is the last step, and it is a narrow one. He does not decide whether something sounds reasonable. He decides whether the evidence named actually says what the claim says, and then he writes down where he looked. If nobody has properly studied it, that is the answer, and it goes in as amber rather than being quietly upgraded.</p>
+    <div class="dots"><span class="pill">PubMed</span><span class="pill">Cochrane</span><span class="pill">NIH ODS &middot; NCCIH</span><span class="pill">FDA &middot; USDA</span><span class="pill">ACSM &middot; ISSN &middot; AASM</span></div>
+  </div>
+
+  <p class="disc"><b>Educational, not medical advice.</b> These verdicts describe the state of published evidence as the staff read it, in plain language, for general education. They are not personalised advice and they do not account for your medical history, medications, or circumstances. Evidence changes, and a verdict here is a starting point for your own reading rather than the end of the conversation. Follow the named source and judge it yourself. That is the entire point of the page. For anything concerning your own health, talk to a qualified clinician.</p>
+</div>
+<script type="module">
+import { STOPLIGHT } from '/js/data/stoplight.js';
+
+const results = document.getElementById('results');
+const countEl = document.getElementById('count');
+const qEl = document.getElementById('q');
+let q = '', verdict = '', topic = '';
+
+// tally
+const by = STOPLIGHT.reduce((a, c) => ((a[c.verdict] = (a[c.verdict] || 0) + 1), a), {});
+document.getElementById('tally').innerHTML = [
+  ['all', STOPLIGHT.length, 'claims checked'],
+  ['g', by.green || 0, 'green'],
+  ['a', by.amber || 0, 'amber'],
+  ['r', by.red || 0, 'red'],
+].map(([c, v, k]) => `<div class="tl ${c}"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
+
+// topic chips
+const topics = [...new Set(STOPLIGHT.map(c => c.topic))].sort();
+document.getElementById('tfilter').innerHTML =
+  `<button type="button" class="chip on" data-t="">Everywhere</button>` +
+  topics.map(t => `<button type="button" class="chip" data-t="${t}">${t}</button>`).join('');
+
+function esc(s) { return String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m])); }
+
+function mark(text, needle) {
+  const safe = esc(text);
+  if (!needle) return safe;
+  const re = new RegExp('(' + needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+  return safe.replace(re, '<mark>$1</mark>');
+}
+
+function render() {
+  const needle = q.trim().toLowerCase();
+  const list = STOPLIGHT.filter(c => {
+    if (verdict && c.verdict !== verdict) return false;
+    if (topic && c.topic !== topic) return false;
+    if (!needle) return true;
+    return (c.claim + ' ' + c.truth + ' ' + c.source + ' ' + c.page).toLowerCase().includes(needle);
+  });
+
+  const label = [
+    verdict ? verdict : null,
+    topic ? 'in ' + topic : null,
+    needle ? 'matching "' + esc(q.trim()) + '"' : null,
+  ].filter(Boolean).join(', ');
+  countEl.innerHTML = `<b>${list.length}</b> of ${STOPLIGHT.length} claims` + (label ? ' &middot; ' + label : '');
+
+  if (!list.length) {
+    results.innerHTML = `<div class="empty">Nothing checked matches that yet.<br>
+      That is not the same as it being false. It means nobody here has run it through the Stoplight.</div>`;
+    return;
+  }
+
+  results.innerHTML = list.map(c => `
+    <div class="card ${c.verdict}">
+      <div class="card-top">
+        <span class="v">${c.verdict === 'green' ? 'Green · Checks out' : c.verdict === 'amber' ? 'Amber · It depends' : 'Red · Myth'}</span>
+        <span class="src">${esc(c.host)}</span>
+      </div>
+      <div class="card-body">
+        <p class="claim">${mark(c.claim, q.trim())}</p>
+        <p class="truth">${mark(c.truth, q.trim())}</p>
+        <div class="meta">
+          <span class="tag">${esc(c.topic)}</span>
+          <span class="tag src">${mark(c.source, q.trim())}</span>
+          ${c.also ? c.also.map(a => `<span class="tag">also on ${esc(a.page)}</span>`).join('') : ''}
+          <a href="${c.href}">${esc(c.page)} &rarr;</a>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+qEl.addEventListener('input', e => { q = e.target.value; render(); });
+document.getElementById('vfilter').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  verdict = b.dataset.v;
+  document.querySelectorAll('#vfilter .chip').forEach(x => x.classList.toggle('on', x === b));
+  render();
+});
+document.getElementById('tfilter').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  topic = b.dataset.t;
+  document.querySelectorAll('#tfilter .chip').forEach(x => x.classList.toggle('on', x === b));
+  render();
+});
+
+// deep link: /stoplight.html?q=creatine
+const params = new URLSearchParams(location.search);
+if (params.get('q')) { q = params.get('q'); qEl.value = q; }
+render();
+</script>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:2rem;">
+  © 2026 The Gym · Mission Possible Institute, LLC · Verify before you believe.
+</footer>
+</body>
+</html>
