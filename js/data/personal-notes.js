@@ -28,10 +28,10 @@ export const PERSONAL_NOTES = {
 
   // ─────────────────────────────────────────────────────────────────────
   // Stephen Thomas. General Manager and Wellness Director, and the newest
-  // person on the floor. Came up through operations, not coaching. Warm,
-  // question-first, allergic to salesmen. Outnumbered at home four to one
-  // by his wife, two preschool daughters, and the puppy, and delighted
-  // about it.
+  // person on the floor. BS Kinesiology and an MBA; practices neither.
+  // Warm, question-first, allergic to salesmen. Outnumbered at home four
+  // to one by his wife Maya, his daughters Zuri and Mia, and the rescue
+  // golden retriever named Girl, and delighted about it.
   // ─────────────────────────────────────────────────────────────────────
   director: [
     {
@@ -40,7 +40,11 @@ export const PERSONAL_NOTES = {
     },
     {
       date: "2026-08-05",
-      body: "My youngest informed me at dinner that I am not the boss of the house. My oldest agreed. My wife did not look up from her plate, which I took as a third vote. Even the puppy has more standing than I do. Four girls and a dog and I am somewhere below the dog. I would not change one thing about it. Honestly, it is good practice for work. You cannot walk into a room full of experts needing to be the smartest one, and I get that ego sanded off me nightly by a four-year-old.",
+      body: "Mia informed me at dinner that I am not the boss of the house. Zuri agreed. Maya did not look up from her plate, which I took as a third vote. Even the dog outranks me. Four of them and I am somewhere below the rescue, and I would not change one thing about it. Honestly it is good practice for work. You cannot walk into a room full of experts needing to be the smartest one, and I get that ego sanded off me nightly by a three-year-old.",
+    },
+    {
+      date: "2026-08-01",
+      body: "People ask how the dog ended up named Girl and I never get through it properly. She came from the rescue with no name. Every stranger at the park called her he, and Mia is three and got upset every single time, because it was wrong and nobody was listening. Zuri is five. She thought about it for a few days and then announced at breakfast that the dog is called Girl, so now nobody can get it wrong. Maya is a lawyer and you can tell. Zuri did not try to fix her sister's feelings and she did not try to correct the strangers. She took the ambiguity out so the mistake could not be made. That is drafting. I have run staff meetings that went worse.",
     },
     {
       date: "2026-07-29",
@@ -48,7 +52,7 @@ export const PERSONAL_NOTES = {
     },
     {
       date: "2026-07-22",
-      body: "The girls have decided that Everly Castle is the greatest thing at ETL You and possibly the world. I have heard about it every evening for eleven days. I have opinions about it now. I have theories. My wife caught me asking a follow-up question about it unprompted and has not let it go since.",
+      body: "Zuri and Mia have decided that Everly Castle is the greatest thing at ETL You and possibly the world. I have heard about it every evening for eleven days. I have opinions about it now. I have theories. Maya caught me asking a follow-up question about it unprompted and has not let it go since.",
     },
     {
       date: "2026-07-15",
@@ -60,11 +64,11 @@ export const PERSONAL_NOTES = {
     },
     {
       date: "2026-07-01",
-      body: "Saturday morning with the young men again. One of them asked me why I keep showing up when I am not getting paid and I am not their father. I told him that is exactly the reason. They do not need me to be their dad. They need to watch a grown man be on time, keep his word, be gentle with his wife and his girls, and say I do not know out loud when he does not know. Not so they have somebody to look up to. So they can be that for somebody else. The chain is the point. I am just one link and not the important one.",
+      body: "Saturday morning with the young men again. One of them asked me why I keep showing up when I am not getting paid and I am not their father. I told him that is exactly the reason. They do not need me to be their dad. They need to watch a grown man be on time, keep his word, be gentle with Maya and the girls, and say I do not know out loud when he does not know. Not so they have somebody to look up to. So they can be that for somebody else. The chain is the point. I am just one link and not the important one.",
     },
     {
       date: "2026-06-24",
-      body: "Six months in Dayton. We did not move here for a job. My wife's parents are getting older and needed family closer, and we decided it at the kitchen table in about twenty minutes. The job came after. People keep telling me that was a big sacrifice for my career. It was a Tuesday, and it was not close.",
+      body: "Six months in Dayton. We did not move here for a job. Maya's parents are getting older and needed family closer, and we decided it at the kitchen table in about twenty minutes. The jobs came after. She left practice and took a professorship at the UD law school, and people keep telling her that was a big sacrifice. She points out she traded billable hours for her parents, her girls and her evenings, and asks them which part sounds like the sacrifice. Nobody has had an answer yet.",
     },
     {
       date: "2026-06-17",

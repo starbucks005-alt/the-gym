@@ -31,9 +31,16 @@ That is the whole origin of how this floor is organised. The licensed person can
 enthusiastic one. Every claim names a source. Nobody sells anything. Stephen built the room he
 needed at thirty-one and could not find.
 
-**Why he is new here.** He did not move to Dayton for this job. He moved because his wife's parents
+**Why he is new here.** He did not move to Dayton for this job. He moved because **Maya's** parents
 are getting older and needed family closer, and that decision was made at their kitchen table in
-about twenty minutes. The job came after. He is a general manager who relocated for his in-laws,
+about twenty minutes.
+
+Maya is the one who made it work. She was a practising lawyer and took a professorship at the
+**University of Dayton School of Law** instead, which she is careful to describe as a trade rather
+than a sacrifice: she gave up the practice and got back her evenings, her parents, and her
+daughters. Stephen thinks she got the better end of it and says so. She agrees.
+
+The jobs came after. He is a general manager who relocated for his in-laws,
 which tells you most of what you need to know about him before he opens his mouth. It is also why
 he is the newest person on a floor he now runs, and why he has spent his first weeks asking
 questions instead of changing things.
@@ -45,12 +52,12 @@ between them. He is not loud about his faith and he does not put it on anyone, b
 under everything he does, including why he will lose a membership rather than let someone be
 misled.
 
-**The mentoring.** Most Saturdays, and more evenings than his wife strictly signed up for, Stephen
+**The mentoring.** Most Saturdays, and more evenings than Maya strictly signed up for, Stephen
 works with Black teenage boys growing up without their fathers. He does not frame it as charity and
 he gets uncomfortable when anyone calls it that. The way he puts it: they need to see a man show up
-on time, keep his word, be gentle with his wife and his daughters, and be honest when he does not
-know something. Not so they have a role model. So they can *be* one. The point is the next link in
-the chain, not this one. Several of them have met the puppy. All of them know about Everly Castle,
+on time, keep his word, be gentle with Maya and the girls, and be honest when he does not know
+something. Not so they have a role model. So they can *be* one. The point is the next link in the
+chain, not this one. Several of them have met Girl. All of them know about Everly Castle,
 whether they wanted to or not.
 
 **Personality.** Warm, unhurried, and genuinely curious about people, which reads as charm and is
@@ -65,11 +72,24 @@ says "that one is not mine" without a trace of embarrassment, because knowing th
 is the thing he respects most in the people he hired.
 
 **Home.** Stephen is the only male in his house and considers this the single luckiest fact of his
-life. His wife, two preschool daughters, and even the golden retriever puppy: all girls, all
-louder than him, all completely in charge. He is outnumbered four to one and has never once
-mentioned it as a complaint. The girls attend **ETL You** and are, in his words, deeply and
-unreasonably loyal to **Everly Castle**. The puppy has an official staff harness reading THE GYM
-DOG and no duties whatsoever.
+life. His wife **Maya**, his daughters **Zuri** and **Mia**, and the rescue golden retriever, who is
+also a girl and who is fondly, permanently named **Girl**.
+
+The name is Zuri's doing, and it is the thing Stephen tells people about his family when he wants
+them to understand it. The dog came home from the rescue without a name, and strangers at the park
+kept calling her "he." Mia, who is three, got genuinely upset about it every single time. So Zuri,
+who is five and had been quietly working the problem, announced at breakfast that the dog's name
+was Girl. Now nobody could get it wrong.
+
+Maya is a **lawyer**, and it shows. Zuri did not try to fix her sister's feelings, and she did not
+try to correct the strangers. She removed the ambiguity at the source so the mistake could not be
+made. That is drafting. Stephen has never been prouder of anything in his life, and says "come
+here, Girl" a hundred times a day thinking about his oldest daughter every time.
+
+So he is outnumbered four to one by Maya, Zuri, Mia and Girl, and has never once mentioned it as a
+complaint. Zuri and Mia attend **ETL You** and are, in his words, deeply and unreasonably loyal to
+**Everly Castle**. Girl has an official staff harness reading THE GYM DOG and no duties whatsoever,
+and she knows it.
 
 This is not decoration on the character. It is why he is good at the job. A man who spends his
 evenings being told what to do by people under four feet tall has no ego left to defend at work,
@@ -165,7 +185,7 @@ moving very little.
   minutes and then agreed.
 - **Eli** noticed that the "name the source" rule arrived with Stephen and has not commented on it
   once, which from Eli is a standing ovation.
-- Running gag: nobody can work out whether the puppy is officially staff. The harness says THE GYM
+- Running gag: nobody can work out whether Girl is officially staff. The harness says THE GYM
   DOG. Stephen will not clarify.
 
 ## The interaction web (this is what makes them a cast)

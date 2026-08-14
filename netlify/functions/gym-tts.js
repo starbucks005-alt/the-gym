@@ -62,6 +62,21 @@ const VOICES = {
     },
   },
 
+  // Stephen Thomas — GM & Wellness Director. Warm, unhurried, question-first.
+  // High-ish stability for the steady front-desk read, low style because he
+  // never sells; slightly slower so the second question has room to land.
+  director: {
+    voiceId: "fQ9aRKjmL75dgjNakj2u",
+    model: MODEL_MULTILINGUAL,
+    settings: {
+      stability: 0.68,
+      similarity_boost: 0.86,
+      style: 0.15,
+      use_speaker_boost: true,
+      speed: 0.96,
+    },
+  },
+
   // Dr. Lena Brandt, DPT — the licensed clinician. Clipped, exact, deadpan.
   // High stability and near-zero style: she does not raise her voice because
   // she does not need to. Multilingual model to hold the German-American read.

@@ -10,7 +10,7 @@ import { PERSONAL_NOTES } from './data/personal-notes.js';
 export const CAST = {
   director: {
     name: 'Stephen Thomas', short: 'Stephen', role: 'the Wellness Director',
-    chat: 'director', voice: null, color: '#2a5d8f',
+    chat: 'director', voice: 'director', color: '#2a5d8f',
     img: '/assets/Stephen_Thomas_eyes_open.png', page: '/start-here.html',
     lane: 'where to start, and which of the eleven of us you actually need',
   },
@@ -47,7 +47,7 @@ export const CAST = {
   scout: {
     name: 'Jax Rivera', short: 'Jax', role: 'the Trend Scout',
     chat: 'scout', voice: 'scout', color: '#3a5aaa',
-    img: '/assets/Jax_eyes_open.png', page: null,
+    img: '/assets/Jax_eyes_open.png', page: '/trend-scout.html',
     lane: 'what is spiking in search right now, before it is a trend',
   },
   social: {
@@ -59,7 +59,7 @@ export const CAST = {
   fuel: {
     name: 'Nadia Hassan', short: 'Nadia', role: 'Sports Nutrition',
     chat: 'nutritionist', voice: 'nutritionist', color: '#2e7a50',
-    img: '/assets/Nadia_eyes_open.png', page: null,
+    img: '/assets/Nadia_eyes_open.png', page: '/fuel.html',
     lane: 'protein, fueling, and every supplement label checked',
   },
   zero_proof: {
@@ -71,7 +71,7 @@ export const CAST = {
   stoplight: {
     name: 'Eli Adler', short: 'Eli', role: 'the Fact-Checker',
     chat: 'factchecker', voice: 'factchecker', color: '#3a4a5a',
-    img: '/assets/Eli_eyes_open.png', page: null,
+    img: '/assets/Eli_eyes_open.png', page: '/stoplight.html',
     lane: 'running a claim through the Stoplight, with the source',
   },
 };
