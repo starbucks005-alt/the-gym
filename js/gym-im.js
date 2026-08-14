@@ -40,7 +40,7 @@ export const CAST = {
   },
   scout: {
     name: 'Jax Rivera', short: 'Jax', role: 'the Trend Scout',
-    chat: 'scout', voice: null, color: '#3a5aaa',
+    chat: 'scout', voice: 'scout', color: '#3a5aaa',
     img: '/assets/Jax_eyes_open.png', page: null,
     lane: 'what is spiking in search right now, before it is a trend',
   },

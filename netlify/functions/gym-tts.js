@@ -119,6 +119,21 @@ const VOICES = {
     },
   },
 
+  // Jax Rivera — 18, trend scout, Reece's hire. Fast and very online.
+  // Low stability + high style for the breathless energy; speed 1.15 because
+  // he talks quickly and gets excited about search volume.
+  scout: {
+    voiceId: "3XOBzXhnDY98yeWQ3GdM",
+    model: MODEL_MULTILINGUAL,
+    settings: {
+      stability: 0.32,
+      similarity_boost: 0.88,
+      style: 0.48,
+      use_speaker_boost: true,
+      speed: 1.15,
+    },
+  },
+
   // Zara Cole — smoothie bar, socials, bench crew. Bright and quick.
   // Lower stability + higher style for the social-media energy;
   // speaker_boost on so she carries over gym-floor noise.
