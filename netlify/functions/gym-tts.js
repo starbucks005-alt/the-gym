@@ -62,6 +62,20 @@ const VOICES = {
     },
   },
 
+  // Dr. Lena Brandt, DPT — the licensed clinician. Clipped, exact, deadpan.
+  // High stability and near-zero style: she does not raise her voice because
+  // she does not need to. Multilingual model to hold the German-American read.
+  therapist: {
+    voiceId: "T720RsqorTx4ZZWohrNN",
+    model: MODEL_MULTILINGUAL,
+    settings: {
+      stability: 0.78,
+      similarity_boost: 0.85,
+      style: 0.06,
+      use_speaker_boost: false,
+    },
+  },
+
   // Noor Haddad — yoga and breathwork, RYT-500. Soft, slow, spacious.
   // High stability and very low style: she leaves silence on purpose and
   // never sells anything. speed pulled back so cues land unhurried.

@@ -214,6 +214,10 @@ hr.section-rule {
 .cast-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* Ten cards over four columns makes three rows, and by default each row
+     sizes to its own tallest card, so the rows end up different heights.
+     1fr auto-rows makes every row match the tallest card in the whole grid. */
+  grid-auto-rows: 1fr;
   gap: 1rem;
 }
 .cast-card {

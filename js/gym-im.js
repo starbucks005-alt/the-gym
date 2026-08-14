@@ -16,7 +16,7 @@ export const CAST = {
   },
   therapist: {
     name: 'Dr. Lena Brandt, DPT', short: 'Dr. Lena', role: 'the Physical Therapist',
-    chat: 'therapist', voice: null, color: '#3a7fa0',
+    chat: 'therapist', voice: 'therapist', color: '#3a7fa0',
     img: '/assets/Dr_Lena_eyes_open.png', page: '/body-map.html',
     lane: 'training around an injury, and when to stop and see someone',
   },
