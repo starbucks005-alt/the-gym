@@ -56,7 +56,10 @@ const STOP = new Set(('a an the and or but if so of to in on at by for with from
   'thing things way ways lot lots kind sort like think know say said ok okay hey hello thanks ' +
   'often usually always never sometimes long short fast quick quickly easy hard many enough better worse ' +
   'big small start starting stop help helps helpful use using used really actually ' +
-  'okay normal normally lately recently').split(' '));
+  'okay normal normally lately recently without within between difference differences versus same ' +
+  'different another other others each every because matter matters mean means meant why mine ' +
+  'let lets try tried trying going gone come comes came keep keeps kept something anything everything ' +
+  'nothing someone anyone everyone somewhere anywhere whatever whenever however probably maybe').split(' '));
 
 /* Everyday words that mean something specific to a research database. "How
    often" is a question about frequency; "get bigger" is hypertrophy. */
@@ -213,44 +216,77 @@ async function pubmed(question, opts) {
 }
 
 /* ── Wikipedia ──────────────────────────────────────────────────────────── */
-/* Wikipedia search is lexical. Take its top few hits and keep the one whose
-   title or snippet actually shares a stem with what was asked; if none does,
-   say nothing rather than hand the model an unrelated article. */
-const fold = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+/* Wikipedia's search is lexical, so a plain question needs safeguards:
+   1. An article is accepted only when its TITLE shares a stem with what was
+      actually asked ("why does chocolate seize" once returned "Chocolate
+      liqueur": the word appeared somewhere, the answer did not).
+   2. When the agent has a subject, the title or the search snippet must
+      belong to it (opts.family), so "what matters" cannot land on a sitcom.
+   3. Episode lists, songs, films and the like are never the answer to a craft
+      question.
+   If the first search finds nothing acceptable it tries again with fewer
+   terms before giving up. Saying nothing beats handing over the wrong article. */
+const fold = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const stem = (w) => fold(w).slice(0, 5);
+
+const NOT_AN_ANSWER_TITLE = /\b(episodes?|seasons?|soundtrack|discography|filmography)\b|^list of\b|\((?:[^)]*\b)?(?:tv|television|film|movie|album|song|band|novel|series|character|miniseries|video game|musical|podcast)\b[^)]*\)/i;
+const NOT_AN_ANSWER_SNIPPET = /\b(episode of|television series|sitcom|album by|song by|single by|film directed|feature film|studio album|rock band)\b/i;
 
 async function wikipedia(question, opts) {
   opts = opts || {};
   const ms = opts.ms || 3000, chars = opts.chars || 1500;
   const hint = opts.hint ? String(opts.hint).toLowerCase() : '';
-  const own = keywords(question, 5).filter((k) => k !== hint);
+  const family = (opts.family || (hint ? [hint] : [])).map(fold);
+  const own = keywords(question, 6).filter((k) => k !== hint);
   if (!own.length && !hint) return [];
-  const kw = (hint ? [hint] : []).concat(own);
+
+  const longest = own.slice().sort((a, b) => b.length - a.length);
+  const variants = [];
+  const add = (terms) => {
+    const q = (hint ? [hint] : []).concat(terms).join(' ');
+    if (q && !variants.some((v) => v.q === q)) variants.push({ q, terms });
+  };
+  add(own.slice(0, 4));
+  if (own.length > 2) add(own.slice(0, 2));
+  if (own.length > 2) add(longest.slice(0, 2));
+  if (own.length > 1) add(longest.slice(0, 1));
+  if (!own.length) add([]);
+
   try {
-    const s = await getJson('https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=' +
-      enc(kw.join(' ')), ms);
-    const hits = (s.query && s.query.search) || [];
-    if (!hits.length) return [];
-    let hit = hits[0];
-    if (own.length) {
-      // The article's TITLE has to share a stem with what was actually asked.
-      // A body-text match is how "why does chocolate seize" once returned
-      // "Chocolate liqueur": the word appeared somewhere, the answer did not.
-      const stems = own.map(stem);
-      const scored = hits.map((h) => {
+    for (const v of variants.slice(0, 4)) {
+      const s = await getJson('https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=5&format=json&srsearch=' +
+        enc(v.q), ms);
+      const hits = (s.query && s.query.search) || [];
+      const stems = v.terms.map(stem);
+      let best = null, bestScore = -1;
+      for (const h of hits) {
+        const snippet = String(h.snippet || '').replace(/<[^>]+>/g, ' ');
+        if (NOT_AN_ANSWER_TITLE.test(h.title) || NOT_AN_ANSWER_SNIPPET.test(snippet)) continue;
         const title = fold(h.title);
-        return [stems.filter((st) => title.includes(st)).length, h];
-      }).sort((a, b) => b[0] - a[0]);
-      if (!scored[0][0]) return [];
-      hit = scored[0][1];
+        const inTitle = stems.filter((st) => title.includes(st)).length;
+        if (stems.length && !inTitle) continue;
+        if (family.length && !family.some((f) => title.includes(f) || fold(snippet).includes(f))) continue;
+        if (inTitle > bestScore) { best = h; bestScore = inTitle; }
+      }
+      if (!best) continue;
+      const e = await getJson('https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&redirects=1&format=json&exchars=' +
+        chars + '&titles=' + enc(best.title), ms);
+      const page = Object.values((e.query && e.query.pages) || {})[0];
+      const text = page && String(page.extract || '').replace(/\n{2,}/g, ' ').trim();
+      if (!text) continue;
+      // The article's first sentence is where it says what the thing IS, so that
+      // is where the agent's subject has to appear. (A rum brand whose second
+      // sentence mentions a "wine and spirits merchant" is not about wine.)
+      if (family.length) {
+        const cut = text.slice(0, 320);
+        const m = cut.slice(30).search(/[.!?]\s+(?=[A-Z])/);
+        const first = fold(m >= 0 ? cut.slice(0, 30 + m + 1) : cut);
+        if (!family.some((f) => first.includes(f))) continue;
+      }
+      return [{ source: 'Wikipedia', title: page.title, text: clip(text, chars),
+        url: 'https://en.wikipedia.org/wiki/' + enc(String(page.title).replace(/ /g, '_')) }];
     }
-    const e = await getJson('https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&redirects=1&format=json&exchars=' +
-      chars + '&titles=' + enc(hit.title), ms);
-    const page = Object.values((e.query && e.query.pages) || {})[0];
-    const text = page && String(page.extract || '').replace(/\n{2,}/g, ' ').trim();
-    if (!text) return [];
-    return [{ source: 'Wikipedia', title: page.title, text: clip(text, chars),
-      url: 'https://en.wikipedia.org/wiki/' + enc(String(page.title).replace(/ /g, '_')) }];
+    return [];
   } catch (e) { return []; }
 }
 
