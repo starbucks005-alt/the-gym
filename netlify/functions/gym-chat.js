@@ -3,8 +3,25 @@
 // Same pattern as gym-tts.js. Required env var: ANTHROPIC_API_KEY
 // Optional: GYM_CHAT_MODEL (defaults below)
 
+import sourcesModule from "./_sources.cjs";
+const { lookup, lookupBlock, worthLooking } = sourcesModule;
+
 const MODEL = process.env.GYM_CHAT_MODEL || "claude-sonnet-5";
 const MAX_TOKENS = 700;
+
+// Who checks a real source before answering, and where. Everyone else on the
+// floor answers from their own lane. Each entry names the sources to try and
+// the field to keep PubMed inside, so a question about "progressive overload"
+// is answered from training research and not from kidney disease. A lookup that
+// finds nothing, or fails, changes nothing: the character just answers.
+const LOOKUPS = {
+  trainer:      { use: ["exercise", "pubmed"], domain: "exercise OR resistance training OR strength training OR athletes OR sports OR physical fitness" },
+  therapist:    { use: ["pubmed"], domain: "rehabilitation OR physical therapy OR exercise therapy OR musculoskeletal OR orthopedic OR sports injuries" },
+  noor:         { use: ["pubmed"], domain: "yoga OR breathing exercises OR meditation OR relaxation OR mindfulness OR breathwork" },
+  recovery:     { use: ["pubmed"], domain: "sleep OR recovery OR athletes OR exercise OR overtraining OR athletic performance" },
+  nutritionist: { use: ["pubmed"], domain: "nutrition OR diet OR dietary supplements OR protein OR sports nutrition OR athletes" },
+  factchecker:  { use: ["pubmed"], domain: "exercise OR sports OR fitness OR dietary supplements OR nutrition OR physical training" },
+};
 
 // House rules every character inherits. The voice rules mirror
 // js/data/personal-notes.js so IM sounds like the rest of the site.
@@ -189,8 +206,8 @@ Your page is the Smoothie Bar at /smoothie-bar.html.`,
     persona: `You are Nadia Hassan, the sports nutrition authority, crossing over from The
 Dose to the Gym floor. Protein, pre-workout, fueling, recovery eating, and every supplement
 label checked against the research.
-Rigorous, warm, practical. You carry PubMed, USDA FoodData Central, and NIH ODS, and you
-actually use them. You have an ongoing argument with Wyatt about whether a drink can be a
+Rigorous, warm, practical. You look up what PubMed says before you answer a research
+question, and you cite it. You have an ongoing argument with Wyatt about whether a drink can be a
 meal. You are winning.
 You are direct about the boundary: supplements are not reviewed by the FDA for safety or
 effectiveness before sale, and you say so whenever it matters. You give protein targets in
@@ -272,6 +289,19 @@ Keep the whole exchange tight; this is still an IM panel.`;
     }
   }
 
+  // Staff whose job is evidence check a real source first. The question is the
+  // visitor's latest message; whatever comes back goes in front of the model
+  // with its links, and the reply carries them too so the panel can show them.
+  let found = [];
+  const plan = LOOKUPS[characterId];
+  const lastUser = [...clean].reverse().find((m) => m.role === "user");
+  if (plan && lastUser && worthLooking(lastUser.content)) {
+    try {
+      found = await lookup(lastUser.content, plan.use, { pubmed: { domain: plan.domain }, deadlineMs: 4200 });
+    } catch { found = []; }
+    system += lookupBlock(found);
+  }
+
   try {
     const upstream = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
@@ -300,7 +330,10 @@ Keep the whole exchange tight; this is still an IM panel.`;
       .join("")
       .trim();
 
-    return json({ reply: reply || "…", name: who.name, role: who.role });
+    return json({
+      reply: reply || "…", name: who.name, role: who.role,
+      sources: found.map((s) => ({ title: s.title, source: s.source, url: s.url })),
+    });
   } catch (err) {
     return json({ error: err.message }, 500);
   }

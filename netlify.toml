@@ -5,6 +5,12 @@
 [functions]
   node_bundler = "esbuild"
 
+  # gym-chat can now check a real source before it answers, on top of the
+  # model call. 26s is the platform ceiling; it keeps a slow lookup plus a
+  # slow reply from being cut off as a 504, the way study design was.
+  [functions."gym-chat"]
+    timeout = 26
+
 [[headers]]
   for = "/*"
   [headers.values]
