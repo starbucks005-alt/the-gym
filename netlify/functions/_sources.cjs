@@ -113,10 +113,14 @@ function parsePubmed(xml) {
     const types = [];
     const tre = /<PublicationType[^>]*>([^<]+)<\/PublicationType>/g;
     while ((m = tre.exec(p))) { const t = decode(m[1]); if (KEEP_TYPES.includes(t) && !types.includes(t)) types.push(t); }
+    // First author's surname, so an agent never has to guess whose study it is.
+    const first = decode((p.match(/<Author[^>]*>[\s\S]*?<LastName>([\s\S]*?)<\/LastName>/) || [])[1]);
+    const authorCount = (p.match(/<Author[ >]/g) || []).length;
+    const by = first ? 'By ' + first + (authorCount > 1 ? ' and colleagues' : '') + '.' : '';
     out.push({
       source: 'PubMed',
       title,
-      text: [journal && year ? journal + ', ' + year : (journal || year || ''), types.length ? '(' + types.join(', ') + ')' : '',
+      text: [by, journal && year ? journal + ', ' + year : (journal || year || ''), types.length ? '(' + types.join(', ') + ')' : '',
         abs.length ? clip(abs.join(' '), 900) : 'No abstract on record.'].filter(Boolean).join(' '),
       url: 'https://pubmed.ncbi.nlm.nih.gov/' + pmid + '/',
     });
@@ -338,9 +342,11 @@ function lookupBlock(items) {
     (i + 1) + '. ' + it.title + ' (' + it.source + ')\n   ' + it.text + '\n   ' + it.url);
   return '\n\n---\n\nWHAT YOU JUST LOOKED UP for this question, from real sources:\n\n' + lines.join('\n\n') +
     '\n\nHow to use it: draw on these only where they actually bear on what was asked. When you rely on one, ' +
-    'name it and give its link. Do not claim a source says more than the text above shows; a title or an abstract ' +
-    'is not the whole paper. If none of it bears on the question, say you would want to check properly instead of ' +
-    'guessing. Never present a lookup as certain when it is one study or one article.';
+    'name it and give its link. Refer to a source only by what is written above: its title, its first author as ' +
+    'shown, its journal and year. Never add an author name, a sample size, a number or a finding that is not in ' +
+    'the text above, and never put a name to a study from memory. Do not claim a source says more than the text ' +
+    'shows; a title or an abstract is not the whole paper. If none of it bears on the question, say you would ' +
+    'want to check properly instead of guessing. Never present a lookup as certain when it is one study or one article.';
 }
 
 module.exports = { lookup, lookupBlock, worthLooking, keywords, pubmed, wikipedia, exercise, parsePubmed };
